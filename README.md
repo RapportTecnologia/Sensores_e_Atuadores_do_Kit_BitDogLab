@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sensores e Atuadores do KIT
 
 Repositório raiz (monorepo) para projetos do KIT BitDogLab/EmbarcaTech, organizado com submódulos Git.
@@ -59,3 +60,7 @@ O UF2 será gerado em `build/`.
 ## Integração de históricos
 
 Este repositório pode ter sido mesclado com outros repositórios com históricos não relacionados (ex.: `Sensores_e_Atuadores_do_Kit_BitDogLab`). Quando necessário, a mesclagem foi feita com `--allow-unrelated-histories` para preservar histórico.
+=======
+# Sensores_e_Atuadores_do_Kit_BitDogLab
+Firmware para Sensores e Atuadores utilizado no kit básico para a BitDogLab, os códigos foram feitos de forma que possam ser portado para outros microcontroladores, mas neste repositório as informações são ajustadas para a BitDogLab
+>>>>>>> bitdog/main
