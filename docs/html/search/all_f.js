@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['o_20proxy_0',['Boas Práticas para Melhor Resultado com o Proxy',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md36',1,'']]],
-  ['o_20sensor_20mpu6050_1',['Sobre o sensor MPU6050',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/MPU6050-RP2040-RP2350/README.md#autotoc_md18',1,'']]],
-  ['objetivo_2',['Objetivo',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/HDMI-RP2040-RP2350/README.md#autotoc_md12',1,'']]],
-  ['observações_3',['Limitações e Observações',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md37',1,'']]],
-  ['oled_4',['Dependência OLED',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/HDMI-RP2040-RP2350/README.md#autotoc_md14',1,'']]],
-  ['oled_20h_20tt_5',['API do Proxy (&lt;tt&gt;oled.h&lt;/tt&gt;)',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md31',1,'']]],
+  ['o_20proxy_0',['Boas Práticas para Melhor Resultado com o Proxy',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md44',1,'']]],
+  ['o_20sensor_20mpu6050_1',['Sobre o sensor MPU6050',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/MPU6050-RP2040-RP2350/README.md#autotoc_md25',1,'']]],
+  ['objetivo_2',['Objetivo',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/HDMI-RP2040-RP2350/README.md#autotoc_md17',1,'']]],
+  ['observações_3',['Limitações e Observações',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md45',1,'']]],
+  ['oled_4',['Dependência OLED',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/HDMI-RP2040-RP2350/README.md#autotoc_md19',1,'']]],
+  ['oled_20h_20tt_5',['API do Proxy (&lt;tt&gt;oled.h&lt;/tt&gt;)',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md39',1,'']]],
   ['oled_2ec_6',['oled.c',['../oled_8c.html',1,'']]],
   ['oled_2eh_7',['oled.h',['../oled_8h.html',1,'']]],
   ['oled_5falign_5fcenter_8',['OLED_ALIGN_CENTER',['../oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5',1,'oled.h']]],
