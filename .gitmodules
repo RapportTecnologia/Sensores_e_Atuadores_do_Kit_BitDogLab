@@ -4,8 +4,8 @@
 [submodule "VL53L0X-RP2040-RP2350"]
 	path = VL53L0X-RP2040-RP2350
 	url = https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350.git
-[submodule "OLED_SSD1306"]
-	path = OLED_SSD1306
+[submodule "OLED_SSD1306-RP2040-RP2350"]
+	path = OLED_SSD1306-RP2040-RP2350
 	url = https://github.com/RapportTecnologia/OLED_SSD1306-RP2040-RP2350.git
 [submodule "MPU6050-RP2040-RP2350"]
 	path = MPU6050-RP2040-RP2350
