@@ -1,3 +1,5 @@
 A\ serem\ trabalhados
 .vscode
 build
+build-host
+.cache
