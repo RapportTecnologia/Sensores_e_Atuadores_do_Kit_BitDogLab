@@ -1,0 +1,46 @@
+name: Generate Doxygen Docs
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.c'
+      - '**/*.cpp'
+      - '**/*.h'
+      - '**/*.hpp'
+      - 'Doxyfile'
+      - '.github/workflows/doxygen.yml'
+      - 'README.md'
+      - '**/README.md'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  doxygen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository (with submodules)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Install dependencies (Doxygen, Graphviz)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz
+
+      - name: Show Doxygen version
+        run: doxygen -v
+
+      - name: Generate docs with Doxygen
+        run: doxygen Doxyfile
+
+      - name: Commit docs/html changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs(doxygen): atualizar documentação consolidada em docs/html [skip ci]"
+          file_pattern: docs/html/**
+          branch: ${{ github.ref_name }}
