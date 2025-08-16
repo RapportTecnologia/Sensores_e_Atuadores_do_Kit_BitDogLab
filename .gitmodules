@@ -1,6 +1,6 @@
 [submodule "I2C-RP2040-RP2350"]
 	path = I2C-RP2040-RP2350
-	url = https://github.com/carlosdelfino/I2C_proxy_RP2040_RP2350.git
+	url = git@github.com:RapportTecnologia/I2C_proxy_RP2040_RP2350.git
 [submodule "VL53L0X-RP2040-RP2350"]
 	path = VL53L0X-RP2040-RP2350
 	url = https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350.git

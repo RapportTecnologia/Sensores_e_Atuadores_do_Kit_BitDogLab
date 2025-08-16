@@ -3,3 +3,6 @@ A\ serem\ trabalhados
 build
 build-host
 .cache
+
+# Doxygen outputs (do not version generated docs)
+docs/doxygen_warnings.log
