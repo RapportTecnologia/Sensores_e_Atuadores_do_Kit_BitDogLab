@@ -13,3 +13,6 @@
 [submodule "unity"]
 	path = unity
 	url = https://github.com/ThrowTheSwitch/Unity.git
+[submodule "RP-Pico-Mock"]
+	path = RP-Pico-Mock
+	url = https://github.com/RapportTecnologia/RP-Pico-Mock.git
