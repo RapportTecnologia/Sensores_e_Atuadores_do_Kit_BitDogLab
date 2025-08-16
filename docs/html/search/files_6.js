@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['readme_2emd_0',['readme.md',['../BH1750-RP2040-RP3050_2README_8md.html',1,'(Namespace global)'],['../HDMI-RP2040-RP2350_2README_8md.html',1,'(Namespace global)'],['../I2C-RP2040-RP2350_2README_8md.html',1,'(Namespace global)'],['../MPU6050-RP2040-RP2350_2README_8md.html',1,'(Namespace global)'],['../OLED__SSD1306-RP2040-RP2350_2README_8md.html',1,'(Namespace global)'],['../README_8md.html',1,'(Namespace global)'],['../RP-Pico-Mock_2README_8md.html',1,'(Namespace global)'],['../VL53L0X-RP2040-RP2350_2README_8md.html',1,'(Namespace global)']]]
+];

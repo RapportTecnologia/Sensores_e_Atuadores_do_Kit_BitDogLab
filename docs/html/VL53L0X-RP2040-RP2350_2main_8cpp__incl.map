@@ -1,0 +1,28 @@
+<map id="VL53L0X&#45;RP2040&#45;RP2350/main.cpp" name="VL53L0X&#45;RP2040&#45;RP2350/main.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="195,5,381,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="119,93,185,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,48,185,89,183,84,254,43"/>
+<area shape="rect" id="Node000003" href="$stdlib_8h.html" title=" " alt="" coords="5,167,107,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,47,242,84,199,121,153,146,108,165,106,160,151,141,196,116,239,80,271,44"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="427,93,565,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="339,43,454,86,452,91,337,48"/>
+<area shape="rect" id="Node000009" href="$I2C_8h.html" title="Interface C++ simples para o periférico I2C do RP2040/RP2350." alt="" coords="261,93,315,119"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="291,46,291,79,285,79,285,46"/>
+<area shape="rect" id="Node000011" href="$VL53L0X_8h.html" title="Interface C++ para o sensor de distância VL53L0X (Time&#45;of&#45;Flight) no RP2040." alt="" coords="377,240,519,265"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="304,44,434,227,430,230,299,47"/>
+<area shape="rect" id="Node000004" href="$pico__sdk__stubs_8h.html" title=" " alt="" coords="105,240,250,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="77,190,147,231,145,235,74,194"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="315,313,381,339"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="206,263,309,306,307,310,204,268"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="219,313,290,339"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="192,263,234,302,230,306,188,267"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="144,313,195,339"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="179,266,175,300,169,300,173,265"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="261,118,108,165,106,160,260,113"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="294,118,344,299,339,300,289,120"/>
+<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="289,119,261,300,256,299,284,119"/>
+<area shape="rect" id="Node000010" href="$i2c_8h.html" title=" " alt="" coords="131,167,250,192"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="274,121,219,160,216,156,271,117"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="191,193,185,227,179,226,186,192"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="433,268,377,307,374,303,430,263"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="MPU6050" name="MPU6050">
+<area shape="rect" id="Node000001" title="Classe que encapsula o acesso ao sensor MPU6050 via I2C." alt="" coords="5,5,151,211"/>
+</map>

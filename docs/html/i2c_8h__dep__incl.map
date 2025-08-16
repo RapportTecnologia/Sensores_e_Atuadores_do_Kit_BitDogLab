@@ -1,0 +1,39 @@
+<map id="RP&#45;Pico&#45;Mock/include/hardware/i2c.h" name="RP&#45;Pico&#45;Mock/include/hardware/i2c.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1489,5,1652,45"/>
+<area shape="rect" id="Node000002" href="$I2C_8h.html" title="Interface C++ simples para o periférico I2C do RP2040/RP2350." alt="" coords="675,108,863,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1476,40,864,111,863,106,1475,35"/>
+<area shape="rect" id="Node000011" href="$ssd1306__i2c_8c.html" title=" " alt="" coords="1417,196,1597,251"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="1552,58,1534,94,1520,148,1512,196,1507,195,1514,147,1530,92,1548,56"/>
+<area shape="rect" id="Node000012" href="$ssd1306__i2c_8h.html" title=" " alt="" coords="1545,93,1725,148"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1594,55,1619,92,1614,95,1589,58"/>
+<area shape="rect" id="Node000017" href="$OLED__SSD1306-RP2040-RP2350_2main_8c.html" title=" " alt="" coords="1819,409,1995,449"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="1654,47,1697,66,1738,91,1776,127,1809,169,1836,214,1858,260,1890,346,1906,408,1900,409,1884,348,1853,262,1831,216,1804,172,1772,131,1734,95,1695,71,1652,52"/>
+<area shape="rect" id="Node000003" href="$bh1750_8h.html" title=" " alt="" coords="83,203,264,243"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="667,138,487,164,283,199,249,206,248,201,282,193,486,158,666,133"/>
+<area shape="rect" id="Node000005" href="$BH1750-RP2040-RP3050_2main_8cpp.html" title=" " alt="" coords="211,306,392,346"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="662,129,567,136,469,149,383,170,351,183,329,198,312,223,303,252,301,281,302,306,296,306,296,281,298,251,307,220,325,194,348,178,382,164,468,144,567,131,662,124"/>
+<area shape="rect" id="Node000006" href="$I2C_8cpp.html" title=" " alt="" coords="339,211,541,236"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="719,140,478,213,477,208,718,135"/>
+<area shape="rect" id="Node000007" href="$MPU6050_8cpp.html" title="Implementação do driver do sensor MPU6050 utilizando o proxy I2C." alt="" coords="565,203,757,243"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="749,145,683,205,680,201,745,141"/>
+<area shape="rect" id="Node000008" href="$MPU6050-RP2040-RP2350_2main_8cpp.html" title="Exemplo de uso do driver MPU6050 com o proxy I2C." alt="" coords="781,203,973,243"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="794,141,859,201,855,205,790,145"/>
+<area shape="rect" id="Node000009" href="$VL53L0X-RP2040-RP2350_2main_8cpp.html" title=" " alt="" coords="998,203,1183,243"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="820,135,1031,201,1029,206,818,140"/>
+<area shape="rect" id="Node000010" href="$VL53L0X_8cpp.html" title="Implementação da classe VL53L0X para RP2040." alt="" coords="1207,203,1393,243"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="858,133,1015,159,1195,193,1228,201,1226,206,1194,199,1014,164,857,138"/>
+<area shape="rect" id="Node000004" href="$bh1750_8cpp.html" title=" " alt="" coords="5,306,187,346"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="152,256,113,308,108,304,148,253"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="210,250,279,304,276,308,207,254"/>
+<area shape="poly" id="edge19_Node000012_Node000011" title=" " alt="" coords="1592,158,1542,198,1539,194,1589,154"/>
+<area shape="rect" id="Node000013" href="$ssd1306_8h.html" title=" " alt="" coords="1621,196,1801,251"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1665,157,1693,194,1689,198,1661,161"/>
+<area shape="rect" id="Node000014" href="$oled_8c.html" title=" " alt="" coords="1423,401,1603,456"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1659,261,1610,301,1565,353,1531,403,1527,400,1561,350,1606,297,1655,256"/>
+<area shape="rect" id="Node000015" href="$oled_8h.html" title=" " alt="" coords="1621,299,1801,353"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="1713,264,1713,299,1708,299,1708,264"/>
+<area shape="poly" id="edge17_Node000015_Node000014" title=" " alt="" coords="1649,362,1566,404,1564,399,1646,357"/>
+<area shape="rect" id="Node000016" href="$HDMI-RP2040-RP2350_2main_8c.html" title=" " alt="" coords="1627,409,1794,449"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1713,367,1713,408,1708,408,1708,367"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="1775,357,1871,406,1868,411,1773,362"/>
+</map>

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['calcmacroperiod_0',['calcMacroPeriod',['../VL53L0X_8cpp.html#a5f0c17e6d23211686e92570b058587f3',1,'VL53L0X.cpp']]],
+  ['calculate_5frender_5farea_5fbuffer_5flength_1',['calculate_render_area_buffer_length',['../ssd1306_8h.html#ae5932cd62770dbfc045462197e471e05',1,'calculate_render_area_buffer_length(struct render_area *area):&#160;ssd1306_i2c.c'],['../ssd1306__i2c_8c.html#ae5932cd62770dbfc045462197e471e05',1,'calculate_render_area_buffer_length(struct render_area *area):&#160;ssd1306_i2c.c']]],
+  ['características_2',['Características',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/VL53L0X-RP2040-RP2350/README.md#autotoc_md46',1,'']]],
+  ['check_5fboth_5fbuttons_3',['check_both_buttons',['../HDMI-RP2040-RP2350_2main_8c.html#a50e6e56a16435f106989449c7ddc99d1',1,'main.c']]],
+  ['checktimeoutexpired_4',['checkTimeoutExpired',['../VL53L0X_8cpp.html#abab7c5b1cbb48c1f149d63407116b4a7',1,'VL53L0X.cpp']]],
+  ['chip_20de_20sinal_20diferencial_5',['Chip de Sinal Diferencial',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/HDMI-RP2040-RP2350/README.md#autotoc_md9',1,'']]],
+  ['clonagem_6',['Clonagem',['../index.html#autotoc_md2',1,'']]],
+  ['cmake_7',['Como usar (CMake)',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/RP-Pico-Mock/README.md#autotoc_md42',1,'']]],
+  ['com_20alinhamento_8',['Exemplo (Modo de texto com alinhamento)',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md34',1,'']]],
+  ['com_20o_20proxy_9',['Boas Práticas para Melhor Resultado com o Proxy',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md36',1,'']]],
+  ['como_20compilar_10',['como compilar',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/HDMI-RP2040-RP2350/README.md#autotoc_md15',1,'Como compilar'],['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/VL53L0X-RP2040-RP2350/README.md#autotoc_md55',1,'Como Compilar']]],
+  ['como_20compilar_20e_20gravar_11',['Como compilar e gravar',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/MPU6050-RP2040-RP2350/README.md#autotoc_md21',1,'']]],
+  ['como_20usar_12',['Como Usar',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/VL53L0X-RP2040-RP2350/README.md#autotoc_md58',1,'']]],
+  ['como_20usar_20cmake_13',['Como usar (CMake)',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/RP-Pico-Mock/README.md#autotoc_md42',1,'']]],
+  ['compilação_14',['Passos de Compilação',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/VL53L0X-RP2040-RP2350/README.md#autotoc_md57',1,'']]],
+  ['compilar_15',['compilar',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/HDMI-RP2040-RP2350/README.md#autotoc_md15',1,'Como compilar'],['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/VL53L0X-RP2040-RP2350/README.md#autotoc_md55',1,'Como Compilar']]],
+  ['compilar_20e_20gravar_16',['Como compilar e gravar',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/MPU6050-RP2040-RP2350/README.md#autotoc_md21',1,'']]],
+  ['comuns_17',['Problemas Comuns',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/VL53L0X-RP2040-RP2350/README.md#autotoc_md66',1,'']]],
+  ['configurações_20do_20sensor_18',['Configurações do Sensor',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/VL53L0X-RP2040-RP2350/README.md#autotoc_md53',1,'']]],
+  ['count_5fof_19',['count_of',['../ssd1306__i2c_8h.html#a29022c0c92a05cf88ca5046c59d6f629',1,'ssd1306_i2c.h']]],
+  ['créditos_20',['Créditos',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/MPU6050-RP2040-RP2350/README.md#autotoc_md26',1,'']]],
+  ['criada_20para_20este_20projeto_21',['1. I2C (Criada para este projeto)',['..//home/carlosdelfino/workspace/EmbarcaTech/Sensores_e_Atuadores_do_KIT/VL53L0X-RP2040-RP2350/README.md#autotoc_md50',1,'']]],
+  ['crosstalk_5fcompensation_5fpeak_5frate_5fmcps_22',['CROSSTALK_COMPENSATION_PEAK_RATE_MCPS',['../classVL53L0X.html#ae9d956d60961a009db8621edde00bfeaac50e3abd89f2fc70a9706524923d3bcb',1,'VL53L0X']]],
+  ['current_5fpattern_23',['current_pattern',['../HDMI-RP2040-RP2350_2main_8c.html#ad7b1562214589580b6d5e29ccfbacf25',1,'main.c']]]
+];

@@ -1,0 +1,21 @@
+<map id="BH1750&#45;RP2040&#45;RP3050/BH1750/bh1750.h" name="BH1750&#45;RP2040&#45;RP3050/BH1750/bh1750.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,187,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="44,313,111,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,46,82,140,77,202,76,265,78,300,73,300,71,265,72,202,77,140,90,45"/>
+<area shape="rect" id="Node000003" href="$I2C_8h.html" title="Interface C++ simples para o periférico I2C do RP2040/RP2350." alt="" coords="138,93,193,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,44,148,81,144,84,111,47"/>
+<area shape="poly" id="edge11_Node000003_Node000002" title=" " alt="" coords="150,121,126,141,105,168,92,202,84,237,79,300,74,300,78,237,86,200,100,165,122,137,146,117"/>
+<area shape="rect" id="Node000004" href="$stdlib_8h.html" title=" " alt="" coords="115,167,216,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,119,168,153,163,153,163,119"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="325,313,395,339"/>
+<area shape="poly" id="edge10_Node000003_Node000006" title=" " alt="" coords="194,109,294,129,342,145,360,154,373,165,382,181,388,199,389,236,383,272,373,302,368,300,377,271,384,236,382,200,377,183,369,168,357,159,340,150,292,134,192,114"/>
+<area shape="rect" id="Node000008" href="$i2c_8h.html" title=" " alt="" coords="241,167,359,192"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="188,116,267,158,265,162,186,121"/>
+<area shape="rect" id="Node000005" href="$pico__sdk__stubs_8h.html" title=" " alt="" coords="165,240,310,265"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="179,190,218,228,214,232,175,194"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="213,268,117,310,115,305,211,263"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="258,263,330,304,327,309,256,268"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="212,313,263,339"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="240,266,240,300,235,300,235,266"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="292,194,259,231,255,228,288,191"/>
+</map>

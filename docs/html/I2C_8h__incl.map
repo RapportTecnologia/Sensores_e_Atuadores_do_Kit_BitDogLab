@@ -1,0 +1,18 @@
+<map id="I2C&#45;RP2040&#45;RP2350/I2C.h" name="I2C&#45;RP2040&#45;RP2350/I2C.h">
+<area shape="rect" id="Node000001" title="Interface C++ simples para o periférico I2C do RP2040/RP2350." alt="" coords="54,5,242,31"/>
+<area shape="rect" id="Node000002" href="$stdlib_8h.html" title=" " alt="" coords="31,79,132,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,33,104,70,100,67,135,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="6,225,72,251"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="92,33,52,51,35,64,21,80,14,96,10,113,10,149,18,183,30,212,25,214,13,185,5,149,4,112,9,94,17,77,31,60,50,46,90,28"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="246,225,317,251"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="214,28,256,46,274,60,289,77,303,111,305,148,301,184,293,213,288,212,295,183,300,148,298,113,285,80,271,64,253,51,212,33"/>
+<area shape="rect" id="Node000007" href="$i2c_8h.html" title=" " alt="" coords="157,79,276,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="161,29,198,67,194,70,158,33"/>
+<area shape="rect" id="Node000003" href="$pico__sdk__stubs_8h.html" title=" " alt="" coords="62,152,208,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,103,120,140,116,143,88,106"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="121,180,67,219,64,215,118,175"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="160,175,247,217,244,222,157,180"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="110,225,160,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="138,178,138,212,132,212,132,178"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="205,106,160,145,157,141,201,102"/>
+</map>

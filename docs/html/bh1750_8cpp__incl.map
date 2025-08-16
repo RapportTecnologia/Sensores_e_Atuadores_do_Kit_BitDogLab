@@ -1,0 +1,24 @@
+<map id="BH1750&#45;RP2040&#45;RP3050/BH1750/bh1750.cpp" name="BH1750&#45;RP2040&#45;RP3050/BH1750/bh1750.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="97,5,279,45"/>
+<area shape="rect" id="Node000002" href="$bh1750_8h.html" title=" " alt="" coords="108,93,191,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,47,164,82,159,80,176,44"/>
+<area shape="rect" id="Node000005" href="$stdlib_8h.html" title=" " alt="" coords="220,240,321,265"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="197,45,264,226,259,228,192,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,387,72,412"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,121,94,170,70,204,49,241,39,275,34,311,37,373,32,374,29,311,33,274,44,239,65,201,90,167,135,117"/>
+<area shape="rect" id="Node000004" href="$I2C_8h.html" title="Interface C++ simples para o periférico I2C do RP2040/RP2350." alt="" coords="122,167,177,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="152,119,152,153,147,153,147,119"/>
+<area shape="poly" id="edge12_Node000004_Node000003" title=" " alt="" coords="124,194,93,214,66,241,51,274,43,310,40,373,34,373,38,309,46,273,62,239,89,209,121,190"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="170,190,241,231,238,235,167,194"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="286,387,357,412"/>
+<area shape="poly" id="edge11_Node000004_Node000007" title=" " alt="" coords="177,178,214,180,258,189,301,208,320,221,335,238,345,255,350,272,351,309,344,345,335,375,330,373,339,344,346,309,344,273,340,257,331,242,316,225,298,212,256,194,214,186,177,183"/>
+<area shape="rect" id="Node000009" href="$i2c_8h.html" title=" " alt="" coords="77,240,195,265"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="150,193,143,227,138,226,145,192"/>
+<area shape="rect" id="Node000006" href="$pico__sdk__stubs_8h.html" title=" " alt="" coords="126,313,271,339"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="261,268,222,306,218,302,257,264"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="174,341,78,383,76,379,172,336"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="220,336,291,377,288,382,217,341"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="173,387,224,412"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="201,339,201,373,196,373,196,339"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="148,264,181,301,177,305,144,267"/>
+</map>
