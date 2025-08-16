@@ -14,3 +14,9 @@ Documentação local gerada pelo Doxygen: consulte `docs/html/index.html`.
 - MPU6050-RP2040-RP2350 — [GitHub](https://github.com/RapportTecnologia/MPU6050-RP2040-RP2350) · [rapport.tec.br](https://rapport.tec.br/MPU6050-RP2040-RP2350)
 - OLED_SSD1306-RP2040-RP2350 — [GitHub](https://github.com/RapportTecnologia/OLED_SSD1306-RP2040-RP2350) · [rapport.tec.br](https://rapport.tec.br/OLED_SSD1306-RP2040-RP2350)
 - VL53L0X-RP2040-RP2350 — [GitHub](https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350) · [rapport.tec.br](https://rapport.tec.br/VL53L0X-RP2040-RP2350)
+
+## Autores e Colaboradores
+
+- Carlos Delfino — consultoria@carlosdelfino.eti.br — GitHub: [@carlosdelfino](https://github.com/carlosdelfino)
+
+_Seu nome pode estar aqui: basta colaborar testando ou trazendo melhorias a este código._
