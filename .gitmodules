@@ -10,3 +10,6 @@
 [submodule "MPU6050-RP2040-RP2350"]
 	path = MPU6050-RP2040-RP2350
 	url = https://github.com/RapportTecnologia/MPU6050-RP2040-RP2350.git
+[submodule "unity"]
+	path = unity
+	url = https://github.com/ThrowTheSwitch/Unity.git
