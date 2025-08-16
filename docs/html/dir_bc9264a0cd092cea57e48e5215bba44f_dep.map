@@ -1,9 +1,10 @@
 <map id="HDMI&#45;RP2040&#45;RP2350" name="HDMI&#45;RP2040&#45;RP2350">
-<area shape="rect" id="node1" href="dir_bc9264a0cd092cea57e48e5215bba44f.html" title="HDMI&#45;RP2040&#45;RP2350" alt="" coords="61,5,228,31"/>
-<area shape="rect" id="node2" href="dir_58feeb1fd685818ef953c7f6da627f79.html" title="RP&#45;Pico&#45;Mock" alt="" coords="5,86,116,111"/>
-<area shape="poly" id="edge1" href="dir_000003_000011.html" alt="" coords="134,33,85,78,81,75,130,29"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000003_000011.html" title="1" alt="" coords="87,72,97,87"/>
-<area shape="rect" id="node3" href="dir_86e9c711a67426f61c3d468943ef7b92.html" title="OLED_SSD1306&#45;RP2040\l&#45;RP2350" alt="" coords="141,79,317,119"/>
-<area shape="poly" id="edge2" href="dir_000003_000009.html" alt="" coords="159,29,200,67,197,71,155,33"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000003_000009.html" title="1" alt="" coords="196,53,206,67"/>
+<area shape="rect" id="node3" href="dir_58feeb1fd685818ef953c7f6da627f79.html" title="RP&#45;Pico&#45;Mock" alt="" coords="47,107,158,133"/>
+<area shape="poly" id="edge1" href="dir_000009_000017.html" alt="" coords="176,54,127,100,123,96,172,50"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000009_000017.html" title="1" alt="" coords="129,94,139,108"/>
+<area shape="rect" id="node4" href="dir_86e9c711a67426f61c3d468943ef7b92.html" title="OLED_SSD1306&#45;RP2040\l&#45;RP2350" alt="" coords="183,100,359,140"/>
+<area shape="poly" id="edge2" href="dir_000009_000015.html" alt="" coords="201,50,242,89,239,93,197,54"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000009_000015.html" title="1" alt="" coords="238,74,248,89"/>
+<area shape="rect" id="node2" href="dir_a786f4c36410760a4ac7cefc6a70fa01.html" title="docs" alt="" coords="27,27,79,52"/>
+<area shape="rect" id="clust1" href="dir_bc9264a0cd092cea57e48e5215bba44f.html" alt="" coords="16,16,281,63"/>
 </map>

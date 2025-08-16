@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i2c_0',['i2c',['../classI2C.html',1,'I2C'],['../classI2C.html#ad7e43c8c3c42893ec2bfa82b6a025e41',1,'I2C::I2C()']]],
-  ['i2c_20criada_20para_20este_20projeto_1',['1. I2C (Criada para este projeto)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md53',1,'']]],
+  ['i2c_20criada_20para_20este_20projeto_1',['1. I2C (Criada para este projeto)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md65',1,'']]],
   ['i2c_2ecpp_2',['I2C.cpp',['../I2C_8cpp.html',1,'']]],
   ['i2c_2eh_3',['i2c.h',['../I2C_8h.html',1,'(Namespace global)'],['../i2c_8h.html',1,'(Namespace global)']]],
   ['i2c_5faddr_4',['I2C_ADDR',['../classMPU6050.html#a2604c81a87a29e6070ff25114a3e8f92',1,'MPU6050']]],
@@ -23,7 +23,7 @@ var searchData=
   ['id_20',['ID',['../classMPU6050.html#a2db376463de3c167d29ff2c6f0379005',1,'MPU6050']]],
   ['identification_5fmodel_5fid_21',['IDENTIFICATION_MODEL_ID',['../classVL53L0X.html#ae9d956d60961a009db8621edde00bfeaa46a7b149a8bc8fb858f3b8053c708361',1,'VL53L0X']]],
   ['identification_5frevision_5fid_22',['IDENTIFICATION_REVISION_ID',['../classVL53L0X.html#ae9d956d60961a009db8621edde00bfeaa3c3a540efc504bde5a1b074119b48981',1,'VL53L0X']]],
-  ['implementadas_23',['Funcionalidades Implementadas',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md55',1,'']]],
+  ['implementadas_23',['Funcionalidades Implementadas',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md67',1,'']]],
   ['init_24',['init',['../classVL53L0X.html#a2bd7f966631ee954fd1c4119f901b240',1,'VL53L0X']]],
   ['integração_20de_20históricos_25',['Integração de históricos',['../index.html#autotoc_md8',1,'']]]
 ];

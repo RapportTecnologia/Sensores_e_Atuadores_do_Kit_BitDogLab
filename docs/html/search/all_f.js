@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['o_20proxy_0',['Boas Práticas para Melhor Resultado com o Proxy',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md39',1,'']]],
-  ['o_20sensor_20mpu6050_1',['Sobre o sensor MPU6050',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/MPU6050-RP2040-RP2350/README.md#autotoc_md21',1,'']]],
-  ['objetivo_2',['Objetivo',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/HDMI-RP2040-RP2350/README.md#autotoc_md15',1,'']]],
-  ['observações_3',['Limitações e Observações',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md40',1,'']]],
-  ['oled_4',['Dependência OLED',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/HDMI-RP2040-RP2350/README.md#autotoc_md17',1,'']]],
-  ['oled_20h_20tt_5',['API do Proxy (&lt;tt&gt;oled.h&lt;/tt&gt;)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md34',1,'']]],
+  ['o_20proxy_0',['Boas Práticas para Melhor Resultado com o Proxy',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md49',1,'']]],
+  ['o_20sensor_20mpu6050_1',['Sobre o sensor MPU6050',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/MPU6050-RP2040-RP2350/README.md#autotoc_md29',1,'']]],
+  ['objetivo_2',['Objetivo',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/HDMI-RP2040-RP2350/README.md#autotoc_md19',1,'']]],
+  ['observações_3',['Limitações e Observações',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md50',1,'']]],
+  ['oled_4',['Dependência OLED',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/HDMI-RP2040-RP2350/README.md#autotoc_md21',1,'']]],
+  ['oled_20h_20tt_5',['API do Proxy (&lt;tt&gt;oled.h&lt;/tt&gt;)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md44',1,'']]],
   ['oled_2ec_6',['oled.c',['../oled_8c.html',1,'']]],
   ['oled_2eh_7',['oled.h',['../oled_8h.html',1,'']]],
   ['oled_5falign_5fcenter_8',['OLED_ALIGN_CENTER',['../oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5',1,'oled.h']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['geral_0',['Visão Geral',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md31',1,'']]],
-  ['gerar_20documentação_20doxygen_1',['Gerar documentação (Doxygen)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/MPU6050-RP2040-RP2350/README.md#autotoc_md27',1,'']]],
+  ['geral_0',['Visão Geral',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md41',1,'']]],
+  ['gerar_20documentação_20doxygen_1',['Gerar documentação (Doxygen)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/MPU6050-RP2040-RP2350/README.md#autotoc_md35',1,'']]],
   ['get_5fabsolute_5ftime_2',['get_absolute_time',['../pico__sdk__mocks_8cpp.html#a3148c2194da0af9c04af97336818edf8',1,'get_absolute_time():&#160;pico_sdk_mocks.cpp'],['../pico__sdk__stubs_8h.html#a3148c2194da0af9c04af97336818edf8',1,'get_absolute_time():&#160;pico_sdk_mocks.cpp']]],
   ['get_5fmock_5ftime_5fus_3',['get_mock_time_us',['../pico__sdk__mocks_8cpp.html#a738684e615df3e1e76d4567f6b2f91ad',1,'get_mock_time_us():&#160;pico_sdk_mocks.cpp'],['../pico__sdk__stubs_8h.html#a738684e615df3e1e76d4567f6b2f91ad',1,'get_mock_time_us():&#160;pico_sdk_mocks.cpp']]],
   ['getaccelleration_4',['getAccelleration',['../classMPU6050.html#a74b7f69a847c53b0092911d907de8790',1,'MPU6050']]],
@@ -34,6 +34,6 @@ var searchData=
   ['gpio_5fput_31',['gpio_put',['../pico__sdk__mocks_8cpp.html#aa9323775e480e4765b320ebfd4949fd0',1,'gpio_put(uint pin, bool value):&#160;pico_sdk_mocks.cpp'],['../pico__sdk__stubs_8h.html#aa9323775e480e4765b320ebfd4949fd0',1,'gpio_put(uint pin, bool value):&#160;pico_sdk_mocks.cpp']]],
   ['gpio_5fset_5fdir_32',['gpio_set_dir',['../pico__sdk__mocks_8cpp.html#a12bbbbb167d28c82edf06a5a1f96caf3',1,'gpio_set_dir(uint pin, bool out):&#160;pico_sdk_mocks.cpp'],['../pico__sdk__stubs_8h.html#a12bbbbb167d28c82edf06a5a1f96caf3',1,'gpio_set_dir(uint pin, bool out):&#160;pico_sdk_mocks.cpp']]],
   ['gpio_5fset_5ffunction_33',['gpio_set_function',['../pico__sdk__stubs_8h.html#a28125be5146cca1eb28a76aa3592af74',1,'gpio_set_function(uint gpio, gpio_function fn):&#160;pico_sdk_mocks.cpp'],['../pico__sdk__mocks_8cpp.html#a28125be5146cca1eb28a76aa3592af74',1,'gpio_set_function(uint gpio, gpio_function fn):&#160;pico_sdk_mocks.cpp']]],
-  ['grande_34',['Exemplo (Fonte grande)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md38',1,'']]],
-  ['gravar_35',['Como compilar e gravar',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/MPU6050-RP2040-RP2350/README.md#autotoc_md24',1,'']]]
+  ['grande_34',['Exemplo (Fonte grande)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md48',1,'']]],
+  ['gravar_35',['Como compilar e gravar',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/MPU6050-RP2040-RP2350/README.md#autotoc_md32',1,'']]]
 ];

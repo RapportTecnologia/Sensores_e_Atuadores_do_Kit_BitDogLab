@@ -7,12 +7,12 @@ var searchData=
   ['final_5frange_5fconfig_5fvalid_5fphase_5fhigh_4',['FINAL_RANGE_CONFIG_VALID_PHASE_HIGH',['../classVL53L0X.html#ae9d956d60961a009db8621edde00bfeaa37c56b218e287c0a64ebe8f2b108d1fd',1,'VL53L0X']]],
   ['final_5frange_5fconfig_5fvalid_5fphase_5flow_5',['FINAL_RANGE_CONFIG_VALID_PHASE_LOW',['../classVL53L0X.html#ae9d956d60961a009db8621edde00bfeaabc84c4fa489966a82e671ad9e72db8a8',1,'VL53L0X']]],
   ['final_5frange_5fconfig_5fvcsel_5fperiod_6',['FINAL_RANGE_CONFIG_VCSEL_PERIOD',['../classVL53L0X.html#ae9d956d60961a009db8621edde00bfeaa9cc9910f3016348bdae931947fe43795',1,'VL53L0X']]],
-  ['firmware_7',['Upload do Firmware',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md62',1,'']]],
-  ['fluxo_20de_20uso_20recomendado_8',['Fluxo de Uso Recomendado',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md35',1,'']]],
+  ['firmware_7',['Upload do Firmware',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md74',1,'']]],
+  ['fluxo_20de_20uso_20recomendado_8',['Fluxo de Uso Recomendado',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md45',1,'']]],
   ['font_5fwidth_9',['font_width',['../oled_8h.html#a7e8baadc9147363c8bb243b1ef40020b',1,'oled.h']]],
-  ['fonte_20grande_10',['Exemplo (Fonte grande)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md38',1,'']]],
+  ['fonte_20grande_10',['Exemplo (Fonte grande)',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md48',1,'']]],
   ['fractal_5factive_11',['fractal_active',['../HDMI-RP2040-RP2350_2main_8c.html#a77eba73da1515293a1ac9e02b5bc0997',1,'main.c']]],
-  ['função_20do_20ds90lv027a_12',['Função do DS90LV027A',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/HDMI-RP2040-RP2350/README.md#autotoc_md13',1,'']]],
-  ['funcionalidades_20implementadas_13',['Funcionalidades Implementadas',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md55',1,'']]],
-  ['futuras_14',['Melhorias Futuras',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md71',1,'']]]
+  ['função_20do_20ds90lv027a_12',['Função do DS90LV027A',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/HDMI-RP2040-RP2350/README.md#autotoc_md17',1,'']]],
+  ['funcionalidades_20implementadas_13',['Funcionalidades Implementadas',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md67',1,'']]],
+  ['futuras_14',['Melhorias Futuras',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/VL53L0X-RP2040-RP2350/README.md#autotoc_md83',1,'']]]
 ];

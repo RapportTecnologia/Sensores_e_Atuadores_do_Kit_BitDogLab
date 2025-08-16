@@ -55,7 +55,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BH1750-RP2040-RP3050_2main_8cpp.html",
-"index.html#autotoc_md6"
+"index.html"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

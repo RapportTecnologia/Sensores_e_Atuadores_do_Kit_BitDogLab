@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['h_20tt_0',['h tt',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/MPU6050-RP2040-RP2350/README.md#autotoc_md26',1,'API do driver (&lt;tt&gt;MPU6050/MPU6050.h&lt;/tt&gt;)'],['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md34',1,'API do Proxy (&lt;tt&gt;oled.h&lt;/tt&gt;)']]],
-  ['hardware_1',['Requisitos e Hardware',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md33',1,'']]],
+  ['h_20tt_0',['h tt',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/MPU6050-RP2040-RP2350/README.md#autotoc_md34',1,'API do driver (&lt;tt&gt;MPU6050/MPU6050.h&lt;/tt&gt;)'],['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md44',1,'API do Proxy (&lt;tt&gt;oled.h&lt;/tt&gt;)']]],
+  ['hardware_1',['Requisitos e Hardware',['..//home/runner/work/Sensores_e_Atuadores_do_Kit_BitDogLab/Sensores_e_Atuadores_do_Kit_BitDogLab/OLED_SSD1306-RP2040-RP2350/README.md#autotoc_md43',1,'']]],
   ['hdmi_5fclk_2',['HDMI_CLK',['../HDMI-RP2040-RP2350_2main_8c.html#a3c687621ecc22f38bfc62fe61dca8db0',1,'main.c']]],
   ['hdmi_5fclk_5foffset_3',['hdmi_clk_offset',['../HDMI-RP2040-RP2350_2main_8c.html#a00c0e4c8711ee09ae1ccadf4cd49de98',1,'main.c']]],
   ['hdmi_5fd0_4',['HDMI_D0',['../HDMI-RP2040-RP2350_2main_8c.html#a388a690a4ff20df39515e52b722d41ab',1,'main.c']]],
