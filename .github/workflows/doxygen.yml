@@ -9,6 +9,8 @@ on:
       - '**/*.h'
       - '**/*.hpp'
       - 'Doxyfile'
+      - 'CMakeLists.txt'
+      - '**/CMakeLists.txt'
       - '.github/workflows/doxygen.yml'
       - 'README.md'
       - '**/README.md'
@@ -27,16 +29,27 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
-      - name: Install dependencies (Doxygen, Graphviz)
+      - name: Install dependencies (Build tools, ARM GCC, Doxygen, Graphviz)
         run: |
           sudo apt-get update
-          sudo apt-get install -y doxygen graphviz
+          sudo apt-get install -y ninja-build gcc-arm-none-eabi cmake build-essential doxygen graphviz
 
       - name: Show Doxygen version
         run: doxygen -v
 
-      - name: Generate docs with Doxygen
-        run: doxygen Doxyfile
+      - name: Configure CMake (root superbuild)
+        env:
+          PICO_SDK_FETCH_FROM_GIT: "1"
+        run: |
+          cmake -S . -B build -G Ninja
+
+      - name: Build all modules
+        run: |
+          cmake --build build --parallel
+
+      - name: Generate docs via CMake target docs-all
+        run: |
+          cmake --build build --target docs-all
 
       - name: Commit docs/html changes
         uses: stefanzweifel/git-auto-commit-action@v5
