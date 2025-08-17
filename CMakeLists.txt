@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 # Projeto "superbuild" para compilar todos os módulos e agregar documentação
-project(EmbarcaTechAll C CXX)
+project(EmbarcaTech_Sensores_e_Atuadores_do_KIT_BitDogLab C CXX)
 
 # Opções para habilitar/desabilitar módulos
 option(BUILD_BH1750 "Build BH1750 module" ON)
