@@ -3,6 +3,7 @@ A\ serem\ trabalhados
 build
 build-host
 .cache
+Bluetooh\ e\ RP2040
 
 # Doxygen outputs (do not version generated docs)
 docs/doxygen_warnings.log
