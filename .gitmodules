@@ -24,4 +24,4 @@
 	url = https://github.com/RapportTecnologia/BH1750-RP2040-RP3050.git
 [submodule "no-OS-FatFS-SD-SPI-RPi-Pico"]
 	path = no-OS-FatFS-SD-SPI-RPi-Pico
-	url = https://github.com/ArvoreDosSaberes/no-OS-FatFS-SD-SPI-RPi-Pico.git
+	url = https://github.com/RapportTecnologia/no-OS-FatFS-SD-SPI-RPi-Pico.git
