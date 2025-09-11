@@ -18,10 +18,10 @@
 	url = https://github.com/RapportTecnologia/RP-Pico-Mock.git
 [submodule "HDMI-RP2040-RP2350"]
 	path = HDMI-RP2040-RP2350
-	url = git@github.com:RapportTecnologia/HDMI-RP2040-RP2350.git
+	url = https://github.com/RapportTecnologia/HDMI-RP2040-RP2350.git
 [submodule "BH1750-RP2040-RP3050"]
 	path = BH1750-RP2040-RP3050
-	url = git@github.com:RapportTecnologia/BH1750-RP2040-RP3050.git
+	url = https://github.com/RapportTecnologia/BH1750-RP2040-RP3050.git
 [submodule "no-OS-FatFS-SD-SPI-RPi-Pico"]
 	path = no-OS-FatFS-SD-SPI-RPi-Pico
-	url = git@github.com:ArvoreDosSaberes/no-OS-FatFS-SD-SPI-RPi-Pico.git
+	url = https://github.com/ArvoreDosSaberes/no-OS-FatFS-SD-SPI-RPi-Pico.git
