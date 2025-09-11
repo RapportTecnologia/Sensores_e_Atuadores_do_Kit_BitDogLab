@@ -1,0 +1,2203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sensores_e_Atuadores_do_Kit_BitDogLab: Referência ao ficheiro no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sensores_e_Atuadores_do_Kit_BitDogLab
+   </div>
+   <div id="projectbrief">Documentação consolidada dos módulos (RP2040/RP2350)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('ff_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estruturas de Dados</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro ff.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="ffconf_8h_source.html">ffconf.h</a>&quot;</code><br />
+</div>
+<p><a href="ff_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estruturas de Dados</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDIR.html">DIR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFATFS.html">FATFS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFFOBJID.html">FFOBJID</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFIL.html">FIL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFILINFO.html">FILINFO</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMKFS__PARM.html">MKFS_PARM</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae936e4c15227768f7da4e0951def89c8" id="r_ae936e4c15227768f7da4e0951def89c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ae936e4c15227768f7da4e0951def89c8">_T</a>(x)&#160;&#160;&#160;u8 ## x</td></tr>
+<tr class="separator:ae936e4c15227768f7da4e0951def89c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3232964568d17bb4a1af30f9db826ce2" id="r_a3232964568d17bb4a1af30f9db826ce2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a3232964568d17bb4a1af30f9db826ce2">_TEXT</a>(x)&#160;&#160;&#160;u8 ## x</td></tr>
+<tr class="separator:a3232964568d17bb4a1af30f9db826ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8174d00798e34e7c9e95898cb9e1a09" id="r_ae8174d00798e34e7c9e95898cb9e1a09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ae8174d00798e34e7c9e95898cb9e1a09">AM_ARC</a>&#160;&#160;&#160;0x20	/* Archive */</td></tr>
+<tr class="separator:ae8174d00798e34e7c9e95898cb9e1a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9db44e978ed6c13b641e092d4cd7d3" id="r_a3a9db44e978ed6c13b641e092d4cd7d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a3a9db44e978ed6c13b641e092d4cd7d3">AM_DIR</a>&#160;&#160;&#160;0x10	/* Directory */</td></tr>
+<tr class="separator:a3a9db44e978ed6c13b641e092d4cd7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90c4c921c1955fd407d8bbf17f1674e" id="r_aa90c4c921c1955fd407d8bbf17f1674e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#aa90c4c921c1955fd407d8bbf17f1674e">AM_HID</a>&#160;&#160;&#160;0x02	/* Hidden */</td></tr>
+<tr class="separator:aa90c4c921c1955fd407d8bbf17f1674e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6d85d1e7a02b4f6188783ef91a5f1e" id="r_add6d85d1e7a02b4f6188783ef91a5f1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#add6d85d1e7a02b4f6188783ef91a5f1e">AM_RDO</a>&#160;&#160;&#160;0x01	/* Read only */</td></tr>
+<tr class="separator:add6d85d1e7a02b4f6188783ef91a5f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f25d5c17b5a3a6397b3398add8cdc15" id="r_a1f25d5c17b5a3a6397b3398add8cdc15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a1f25d5c17b5a3a6397b3398add8cdc15">AM_SYS</a>&#160;&#160;&#160;0x04	/* System */</td></tr>
+<tr class="separator:a1f25d5c17b5a3a6397b3398add8cdc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee297a9011164cf485a4df2a72758b08" id="r_aee297a9011164cf485a4df2a72758b08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#aee297a9011164cf485a4df2a72758b08">CREATE_LINKMAP</a>&#160;&#160;&#160;((<a class="el" href="ff_8h.html#a6d13af1e8b9530747438bab80f5dea86">FSIZE_t</a>)0 - 1)</td></tr>
+<tr class="separator:aee297a9011164cf485a4df2a72758b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970cdd8970a3a94967ad64cfc5d4c161" id="r_a970cdd8970a3a94967ad64cfc5d4c161"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a970cdd8970a3a94967ad64cfc5d4c161">f_eof</a>(fp)&#160;&#160;&#160;((int)((fp)-&gt;fptr == (fp)-&gt;obj.objsize))</td></tr>
+<tr class="separator:a970cdd8970a3a94967ad64cfc5d4c161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25cbdabeed318802cf0e9db6671a33b7" id="r_a25cbdabeed318802cf0e9db6671a33b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a25cbdabeed318802cf0e9db6671a33b7">f_error</a>(fp)&#160;&#160;&#160;((fp)-&gt;err)</td></tr>
+<tr class="separator:a25cbdabeed318802cf0e9db6671a33b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4caf47dd5cbc123b61d35542481b1be" id="r_ae4caf47dd5cbc123b61d35542481b1be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ae4caf47dd5cbc123b61d35542481b1be">f_rewind</a>(fp)&#160;&#160;&#160;<a class="el" href="ff_8c.html#a7c4bcf81d9122f0b5376852ec6a8c3eb">f_lseek</a>((fp), 0)</td></tr>
+<tr class="separator:ae4caf47dd5cbc123b61d35542481b1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f92b6c0c1648de678283ab6f1610161" id="r_a3f92b6c0c1648de678283ab6f1610161"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a3f92b6c0c1648de678283ab6f1610161">f_rewinddir</a>(dp)&#160;&#160;&#160;<a class="el" href="ff_8c.html#ab39e82a110695de45f416f3149358012">f_readdir</a>((dp), 0)</td></tr>
+<tr class="separator:a3f92b6c0c1648de678283ab6f1610161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58df56d084ad3dd9f8cd49b245a7a7ca" id="r_a58df56d084ad3dd9f8cd49b245a7a7ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a58df56d084ad3dd9f8cd49b245a7a7ca">f_rmdir</a>(path)&#160;&#160;&#160;<a class="el" href="ff_8c.html#a2858167fcd0bced48e9be434b3895efe">f_unlink</a>(path)</td></tr>
+<tr class="separator:a58df56d084ad3dd9f8cd49b245a7a7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f33722c5bf1aa3cd6f0290a83eb2bc" id="r_a26f33722c5bf1aa3cd6f0290a83eb2bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a26f33722c5bf1aa3cd6f0290a83eb2bc">f_size</a>(fp)&#160;&#160;&#160;((fp)-&gt;obj.objsize)</td></tr>
+<tr class="separator:a26f33722c5bf1aa3cd6f0290a83eb2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1daca7ce13cdc277e42185f7f9124f" id="r_a5e1daca7ce13cdc277e42185f7f9124f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a5e1daca7ce13cdc277e42185f7f9124f">f_tell</a>(fp)&#160;&#160;&#160;((fp)-&gt;fptr)</td></tr>
+<tr class="separator:a5e1daca7ce13cdc277e42185f7f9124f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22c4b32404b35d0a0bd138fa63f2e75" id="r_aa22c4b32404b35d0a0bd138fa63f2e75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#aa22c4b32404b35d0a0bd138fa63f2e75">f_unmount</a>(path)&#160;&#160;&#160;<a class="el" href="ff_8c.html#a16a934c2bbfa2160295810adc49d5509">f_mount</a>(0, path, 0)</td></tr>
+<tr class="separator:aa22c4b32404b35d0a0bd138fa63f2e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba4546b131dea4b24727fa20a80e29f" id="r_afba4546b131dea4b24727fa20a80e29f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#afba4546b131dea4b24727fa20a80e29f">FA_CREATE_ALWAYS</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="separator:afba4546b131dea4b24727fa20a80e29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417bb1babd1785fd181a806b5613eba3" id="r_a417bb1babd1785fd181a806b5613eba3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a417bb1babd1785fd181a806b5613eba3">FA_CREATE_NEW</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:a417bb1babd1785fd181a806b5613eba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b01553029920ac0468912b4bcb16c7" id="r_a17b01553029920ac0468912b4bcb16c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a17b01553029920ac0468912b4bcb16c7">FA_OPEN_ALWAYS</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:a17b01553029920ac0468912b4bcb16c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f135b2ae90fba5080f6bd2b6c57b8a" id="r_a90f135b2ae90fba5080f6bd2b6c57b8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a90f135b2ae90fba5080f6bd2b6c57b8a">FA_OPEN_APPEND</a>&#160;&#160;&#160;0x30</td></tr>
+<tr class="separator:a90f135b2ae90fba5080f6bd2b6c57b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5dd686b10f84c2a2b3954957a5979a" id="r_a0c5dd686b10f84c2a2b3954957a5979a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a0c5dd686b10f84c2a2b3954957a5979a">FA_OPEN_EXISTING</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a0c5dd686b10f84c2a2b3954957a5979a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4f3530ff03abbd979b072536e72290" id="r_a1f4f3530ff03abbd979b072536e72290"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a1f4f3530ff03abbd979b072536e72290">FA_READ</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a1f4f3530ff03abbd979b072536e72290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa366963220c89b882c0361794020c14" id="r_afa366963220c89b882c0361794020c14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#afa366963220c89b882c0361794020c14">FA_WRITE</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:afa366963220c89b882c0361794020c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f86fd50a009422bed52a85b7a28a77" id="r_a67f86fd50a009422bed52a85b7a28a77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a67f86fd50a009422bed52a85b7a28a77">FF_DEFINED</a>&#160;&#160;&#160;80286	/* Revision ID */</td></tr>
+<tr class="separator:a67f86fd50a009422bed52a85b7a28a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb7cbd9d1d0548d54856f1cc8a2021f" id="r_a3eb7cbd9d1d0548d54856f1cc8a2021f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a3eb7cbd9d1d0548d54856f1cc8a2021f">FF_INTDEF</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a3eb7cbd9d1d0548d54856f1cc8a2021f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701ab2eee8c2d9b5b445aadc8f14df4d" id="r_a701ab2eee8c2d9b5b445aadc8f14df4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a701ab2eee8c2d9b5b445aadc8f14df4d">FM_ANY</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="separator:a701ab2eee8c2d9b5b445aadc8f14df4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9348c28116bc29e88195b23f6945f81d" id="r_a9348c28116bc29e88195b23f6945f81d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a9348c28116bc29e88195b23f6945f81d">FM_EXFAT</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:a9348c28116bc29e88195b23f6945f81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd205b7d09147e55169d3713f46e9ea" id="r_a8bd205b7d09147e55169d3713f46e9ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a8bd205b7d09147e55169d3713f46e9ea">FM_FAT</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a8bd205b7d09147e55169d3713f46e9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff61d3ed8f8c6ea5c25c3cb366320e08" id="r_aff61d3ed8f8c6ea5c25c3cb366320e08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#aff61d3ed8f8c6ea5c25c3cb366320e08">FM_FAT32</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:aff61d3ed8f8c6ea5c25c3cb366320e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3d16ac135fe57669fc8a93dfa0c0a5" id="r_a3b3d16ac135fe57669fc8a93dfa0c0a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a3b3d16ac135fe57669fc8a93dfa0c0a5">FM_SFD</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="separator:a3b3d16ac135fe57669fc8a93dfa0c0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50bfa912e87473bc54333523983f39f6" id="r_a50bfa912e87473bc54333523983f39f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a50bfa912e87473bc54333523983f39f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab755aa1b4f81f4aabee4a5d4738cfb0" id="r_aab755aa1b4f81f4aabee4a5d4738cfb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#aab755aa1b4f81f4aabee4a5d4738cfb0">FS_FAT12</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aab755aa1b4f81f4aabee4a5d4738cfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef90a36d99edfc0138a2155a17a79b9" id="r_a7ef90a36d99edfc0138a2155a17a79b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a7ef90a36d99edfc0138a2155a17a79b9">FS_FAT16</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a7ef90a36d99edfc0138a2155a17a79b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63e0796095a789cefdbc3c3c676c9ce" id="r_ac63e0796095a789cefdbc3c3c676c9ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ac63e0796095a789cefdbc3c3c676c9ce">FS_FAT32</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ac63e0796095a789cefdbc3c3c676c9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:a4ae1dab0fb4b072a66584546209e7d58" id="r_a4ae1dab0fb4b072a66584546209e7d58"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a></td></tr>
+<tr class="separator:a4ae1dab0fb4b072a66584546209e7d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad342ac907eb044443153a22f964bf0af" id="r_ad342ac907eb044443153a22f964bf0af"><td class="memItemLeft" align="right" valign="top">typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a></td></tr>
+<tr class="separator:ad342ac907eb044443153a22f964bf0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d13af1e8b9530747438bab80f5dea86" id="r_a6d13af1e8b9530747438bab80f5dea86"><td class="memItemLeft" align="right" valign="top">typedef QWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a6d13af1e8b9530747438bab80f5dea86">FSIZE_t</a></td></tr>
+<tr class="separator:a6d13af1e8b9530747438bab80f5dea86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df88f2210b5660cba59baeb8befaa8c" id="r_a9df88f2210b5660cba59baeb8befaa8c"><td class="memItemLeft" align="right" valign="top">typedef QWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a9df88f2210b5660cba59baeb8befaa8c">LBA_t</a></td></tr>
+<tr class="separator:a9df88f2210b5660cba59baeb8befaa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03bdb8ce5895c7e261aadc2529637546" id="r_a03bdb8ce5895c7e261aadc2529637546"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a></td></tr>
+<tr class="separator:a03bdb8ce5895c7e261aadc2529637546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cb3b01d81ffd844bbbfb54003e06ec" id="r_a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></td></tr>
+<tr class="separator:a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb095da65fbe52192dd9e3e643c7568" id="r_a0bb095da65fbe52192dd9e3e643c7568"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a0bb095da65fbe52192dd9e3e643c7568">WCHAR</a></td></tr>
+<tr class="separator:a0bb095da65fbe52192dd9e3e643c7568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197942eefa7db30960ae396d68339b97" id="r_a197942eefa7db30960ae396d68339b97"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a></td></tr>
+<tr class="separator:a197942eefa7db30960ae396d68339b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:a49d0171ecbd362cda5680a0d360db44c" id="r_a49d0171ecbd362cda5680a0d360db44c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> { <br />
+&#160;&#160;<a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a> = 0
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cac9894bed3e8632ede8d2712235fa8e45">FR_NOT_READY</a>
+, <br />
+&#160;&#160;<a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c">FR_NO_FILE</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cae4529c8cc8b59783d6efc9ba4f574532">FR_NO_PATH</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca83e45a4b579558c57192c0a391b9bb45">FR_INVALID_NAME</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca897e9f2dd7629a80f48af242d8bc1a3d">FR_DENIED</a>
+, <br />
+&#160;&#160;<a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca0d8f024d256df76e84782b95018a2450">FR_EXIST</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca3dec4eba481cdf5e99d7cd6009e6dcf8">FR_INVALID_OBJECT</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cac3afbb423b1d4497229416812aff383b">FR_WRITE_PROTECTED</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca487844af77de15f6932a3b41ef3a2d65">FR_INVALID_DRIVE</a>
+, <br />
+&#160;&#160;<a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cafc56605c68aaffab4a428339a8bd600d">FR_NOT_ENABLED</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca086154b5fee763f28c49fd0e2c1cb463">FR_NO_FILESYSTEM</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca4b02760f758f5b1a89f445244fe9fbca">FR_MKFS_ABORTED</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca3f8ca7e51af8b129d14328de7243c5d4">FR_TIMEOUT</a>
+, <br />
+&#160;&#160;<a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca7db5afaaa2af591bd4a208b2967075d7">FR_LOCKED</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44caf56a76a86602cbdeb2c4f3d00cfad21c">FR_NOT_ENOUGH_CORE</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca50dd3c3c274ccebb2cfbddde9d065bb9">FR_TOO_MANY_OPEN_FILES</a>
+, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca3b89faeceab64db277d0fcdeaaa315d6">FR_INVALID_PARAMETER</a>
+<br />
+ }</td></tr>
+<tr class="separator:a49d0171ecbd362cda5680a0d360db44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a53c7e9a7fb3c279254cd2d0445667e2f" id="r_a53c7e9a7fb3c279254cd2d0445667e2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a53c7e9a7fb3c279254cd2d0445667e2f">f_chdir</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path)</td></tr>
+<tr class="separator:a53c7e9a7fb3c279254cd2d0445667e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e5933f851b436890361189f64261cd" id="r_a13e5933f851b436890361189f64261cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a13e5933f851b436890361189f64261cd">f_chdrive</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path)</td></tr>
+<tr class="separator:a13e5933f851b436890361189f64261cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee7e560eec8d82755c636ae41e702cd" id="r_a9ee7e560eec8d82755c636ae41e702cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a9ee7e560eec8d82755c636ae41e702cd">f_chmod</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path, <a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> attr, <a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> mask)</td></tr>
+<tr class="separator:a9ee7e560eec8d82755c636ae41e702cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53882db20ef4323dcfd1874d7733ffc3" id="r_a53882db20ef4323dcfd1874d7733ffc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a53882db20ef4323dcfd1874d7733ffc3">f_close</a> (<a class="el" href="structFIL.html">FIL</a> *fp)</td></tr>
+<tr class="separator:a53882db20ef4323dcfd1874d7733ffc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f7376b6f3e3bcc7f5ff5497c8b7364" id="r_ab5f7376b6f3e3bcc7f5ff5497c8b7364"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ab5f7376b6f3e3bcc7f5ff5497c8b7364">f_closedir</a> (<a class="el" href="structDIR.html">DIR</a> *dp)</td></tr>
+<tr class="separator:ab5f7376b6f3e3bcc7f5ff5497c8b7364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ff90f5219df5cdb6c8f408b1b9e1a3" id="r_a35ff90f5219df5cdb6c8f408b1b9e1a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a35ff90f5219df5cdb6c8f408b1b9e1a3">f_expand</a> (<a class="el" href="structFIL.html">FIL</a> *fp, <a class="el" href="ff_8h.html#a6d13af1e8b9530747438bab80f5dea86">FSIZE_t</a> fsz, <a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> opt)</td></tr>
+<tr class="separator:a35ff90f5219df5cdb6c8f408b1b9e1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70461190a46edc96bb7baef1ab4dbd4d" id="r_a70461190a46edc96bb7baef1ab4dbd4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a70461190a46edc96bb7baef1ab4dbd4d">f_fdisk</a> (<a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> pdrv, const <a class="el" href="ff_8h.html#a9df88f2210b5660cba59baeb8befaa8c">LBA_t</a> ptbl[], void *work)</td></tr>
+<tr class="separator:a70461190a46edc96bb7baef1ab4dbd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db7bc3d037b51a9f205eacda6177a5f" id="r_a6db7bc3d037b51a9f205eacda6177a5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a6db7bc3d037b51a9f205eacda6177a5f">f_findfirst</a> (<a class="el" href="structDIR.html">DIR</a> *dp, <a class="el" href="structFILINFO.html">FILINFO</a> *fno, const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path, const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *pattern)</td></tr>
+<tr class="separator:a6db7bc3d037b51a9f205eacda6177a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013999e446481a607316b916441f8673" id="r_a013999e446481a607316b916441f8673"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a013999e446481a607316b916441f8673">f_findnext</a> (<a class="el" href="structDIR.html">DIR</a> *dp, <a class="el" href="structFILINFO.html">FILINFO</a> *fno)</td></tr>
+<tr class="separator:a013999e446481a607316b916441f8673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0c4cd695704aa6d952c90be81d9849" id="r_a6c0c4cd695704aa6d952c90be81d9849"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a6c0c4cd695704aa6d952c90be81d9849">f_forward</a> (<a class="el" href="structFIL.html">FIL</a> *fp, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>(*func)(const <a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>), <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> btf, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> *bf)</td></tr>
+<tr class="separator:a6c0c4cd695704aa6d952c90be81d9849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb865a03dbac0031ac5cb8a031f7b71c" id="r_acb865a03dbac0031ac5cb8a031f7b71c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#acb865a03dbac0031ac5cb8a031f7b71c">f_getcwd</a> (<a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *buff, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> len)</td></tr>
+<tr class="separator:acb865a03dbac0031ac5cb8a031f7b71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff39f75a87cbda9cd6ea65d83f16cec" id="r_a0ff39f75a87cbda9cd6ea65d83f16cec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a0ff39f75a87cbda9cd6ea65d83f16cec">f_getfree</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path, <a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a> *nclst, <a class="el" href="structFATFS.html">FATFS</a> **fatfs)</td></tr>
+<tr class="separator:a0ff39f75a87cbda9cd6ea65d83f16cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ff40a674bcbfe40d81b1e8e54befc6" id="r_ac4ff40a674bcbfe40d81b1e8e54befc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ac4ff40a674bcbfe40d81b1e8e54befc6">f_getlabel</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path, <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *label, <a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a> *vsn)</td></tr>
+<tr class="separator:ac4ff40a674bcbfe40d81b1e8e54befc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a47f14a554ff3a49fc122fe3e190f2f" id="r_a4a47f14a554ff3a49fc122fe3e190f2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a4a47f14a554ff3a49fc122fe3e190f2f">f_gets</a> (<a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *buff, int len, <a class="el" href="structFIL.html">FIL</a> *fp)</td></tr>
+<tr class="separator:a4a47f14a554ff3a49fc122fe3e190f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4bcf81d9122f0b5376852ec6a8c3eb" id="r_a7c4bcf81d9122f0b5376852ec6a8c3eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a7c4bcf81d9122f0b5376852ec6a8c3eb">f_lseek</a> (<a class="el" href="structFIL.html">FIL</a> *fp, <a class="el" href="ff_8h.html#a6d13af1e8b9530747438bab80f5dea86">FSIZE_t</a> ofs)</td></tr>
+<tr class="separator:a7c4bcf81d9122f0b5376852ec6a8c3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4d38db58e89c526cfcf53200d719d0" id="r_a4b4d38db58e89c526cfcf53200d719d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a4b4d38db58e89c526cfcf53200d719d0">f_mkdir</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path)</td></tr>
+<tr class="separator:a4b4d38db58e89c526cfcf53200d719d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983f0614033bd7cf587eb56d3054a91c" id="r_a983f0614033bd7cf587eb56d3054a91c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a983f0614033bd7cf587eb56d3054a91c">f_mkfs</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path, const <a class="el" href="structMKFS__PARM.html">MKFS_PARM</a> *opt, void *work, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> len)</td></tr>
+<tr class="separator:a983f0614033bd7cf587eb56d3054a91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a934c2bbfa2160295810adc49d5509" id="r_a16a934c2bbfa2160295810adc49d5509"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a16a934c2bbfa2160295810adc49d5509">f_mount</a> (<a class="el" href="structFATFS.html">FATFS</a> *fs, const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path, <a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> opt)</td></tr>
+<tr class="separator:a16a934c2bbfa2160295810adc49d5509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefdef7126128d99d0b3bd82c28e54d80" id="r_aefdef7126128d99d0b3bd82c28e54d80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#aefdef7126128d99d0b3bd82c28e54d80">f_open</a> (<a class="el" href="structFIL.html">FIL</a> *fp, const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path, <a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> mode)</td></tr>
+<tr class="separator:aefdef7126128d99d0b3bd82c28e54d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63b213c75f7335fbb63a1f3f70e5fc7" id="r_ab63b213c75f7335fbb63a1f3f70e5fc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ab63b213c75f7335fbb63a1f3f70e5fc7">f_opendir</a> (<a class="el" href="structDIR.html">DIR</a> *dp, const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path)</td></tr>
+<tr class="separator:ab63b213c75f7335fbb63a1f3f70e5fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce26253177c167df849e76f69b5c66c" id="r_a4ce26253177c167df849e76f69b5c66c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a4ce26253177c167df849e76f69b5c66c">f_printf</a> (<a class="el" href="structFIL.html">FIL</a> *fp, const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *str,...)</td></tr>
+<tr class="separator:a4ce26253177c167df849e76f69b5c66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d73b8d01c2ef89eddf920b7fcc6beb" id="r_ad1d73b8d01c2ef89eddf920b7fcc6beb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ad1d73b8d01c2ef89eddf920b7fcc6beb">f_putc</a> (<a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> c, <a class="el" href="structFIL.html">FIL</a> *fp)</td></tr>
+<tr class="separator:ad1d73b8d01c2ef89eddf920b7fcc6beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699fc03ffa785ceab8812a7f204421f3" id="r_a699fc03ffa785ceab8812a7f204421f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a699fc03ffa785ceab8812a7f204421f3">f_puts</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *str, <a class="el" href="structFIL.html">FIL</a> *cp)</td></tr>
+<tr class="separator:a699fc03ffa785ceab8812a7f204421f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c3dcb6869ca252888eebabe39727b3" id="r_ac4c3dcb6869ca252888eebabe39727b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ac4c3dcb6869ca252888eebabe39727b3">f_read</a> (<a class="el" href="structFIL.html">FIL</a> *fp, void *buff, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> btr, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> *br)</td></tr>
+<tr class="separator:ac4c3dcb6869ca252888eebabe39727b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39e82a110695de45f416f3149358012" id="r_ab39e82a110695de45f416f3149358012"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ab39e82a110695de45f416f3149358012">f_readdir</a> (<a class="el" href="structDIR.html">DIR</a> *dp, <a class="el" href="structFILINFO.html">FILINFO</a> *fno)</td></tr>
+<tr class="separator:ab39e82a110695de45f416f3149358012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa775b9b024acfeb3a66523cab497d142" id="r_aa775b9b024acfeb3a66523cab497d142"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#aa775b9b024acfeb3a66523cab497d142">f_rename</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path_old, const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path_new)</td></tr>
+<tr class="separator:aa775b9b024acfeb3a66523cab497d142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a529e8f17cae495f6536ff405622c996c" id="r_a529e8f17cae495f6536ff405622c996c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a529e8f17cae495f6536ff405622c996c">f_setcp</a> (<a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> cp)</td></tr>
+<tr class="separator:a529e8f17cae495f6536ff405622c996c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82bca64e28bc0d656a7999dd0eadec7" id="r_aa82bca64e28bc0d656a7999dd0eadec7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#aa82bca64e28bc0d656a7999dd0eadec7">f_setlabel</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *label)</td></tr>
+<tr class="separator:aa82bca64e28bc0d656a7999dd0eadec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1f60daab5c7d11170c334fb832c798" id="r_abe1f60daab5c7d11170c334fb832c798"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#abe1f60daab5c7d11170c334fb832c798">f_stat</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path, <a class="el" href="structFILINFO.html">FILINFO</a> *fno)</td></tr>
+<tr class="separator:abe1f60daab5c7d11170c334fb832c798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69c7246b122ba56a134939ee0eaf847" id="r_ad69c7246b122ba56a134939ee0eaf847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ad69c7246b122ba56a134939ee0eaf847">f_sync</a> (<a class="el" href="structFIL.html">FIL</a> *fp)</td></tr>
+<tr class="separator:ad69c7246b122ba56a134939ee0eaf847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691a27b40c348f7c84b42e911636f38a" id="r_a691a27b40c348f7c84b42e911636f38a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a691a27b40c348f7c84b42e911636f38a">f_truncate</a> (<a class="el" href="structFIL.html">FIL</a> *fp)</td></tr>
+<tr class="separator:a691a27b40c348f7c84b42e911636f38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2858167fcd0bced48e9be434b3895efe" id="r_a2858167fcd0bced48e9be434b3895efe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a2858167fcd0bced48e9be434b3895efe">f_unlink</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path)</td></tr>
+<tr class="separator:a2858167fcd0bced48e9be434b3895efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafaa718d1a487e12a8f0087173dba0b9" id="r_aafaa718d1a487e12a8f0087173dba0b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#aafaa718d1a487e12a8f0087173dba0b9">f_utime</a> (const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *path, const <a class="el" href="structFILINFO.html">FILINFO</a> *fno)</td></tr>
+<tr class="separator:aafaa718d1a487e12a8f0087173dba0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a4dfae8a9e308bdb2283a37ef680f2" id="r_ae6a4dfae8a9e308bdb2283a37ef680f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ae6a4dfae8a9e308bdb2283a37ef680f2">f_write</a> (<a class="el" href="structFIL.html">FIL</a> *fp, const void *buff, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> btw, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> *bw)</td></tr>
+<tr class="separator:ae6a4dfae8a9e308bdb2283a37ef680f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63913186246b80cfce42dbab9e8bcab" id="r_ae63913186246b80cfce42dbab9e8bcab"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ae63913186246b80cfce42dbab9e8bcab">ff_memalloc</a> (<a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> msize)</td></tr>
+<tr class="separator:ae63913186246b80cfce42dbab9e8bcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85fd090c8b8b17846ccc1e8cda16a9b" id="r_ab85fd090c8b8b17846ccc1e8cda16a9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#ab85fd090c8b8b17846ccc1e8cda16a9b">ff_memfree</a> (void *mblock)</td></tr>
+<tr class="separator:ab85fd090c8b8b17846ccc1e8cda16a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f09f31c84747cc135c90282509961a" id="r_a52f09f31c84747cc135c90282509961a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a0bb095da65fbe52192dd9e3e643c7568">WCHAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a52f09f31c84747cc135c90282509961a">ff_oem2uni</a> (<a class="el" href="ff_8h.html#a0bb095da65fbe52192dd9e3e643c7568">WCHAR</a> oem, <a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> cp)</td></tr>
+<tr class="separator:a52f09f31c84747cc135c90282509961a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72914966e82f8df3504a3659834f2abe" id="r_a72914966e82f8df3504a3659834f2abe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ff_8h.html#a0bb095da65fbe52192dd9e3e643c7568">WCHAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#a72914966e82f8df3504a3659834f2abe">ff_uni2oem</a> (<a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a> uni, <a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> cp)</td></tr>
+<tr class="separator:a72914966e82f8df3504a3659834f2abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0bf9acde41b603662ab45811cbc806" id="r_acb0bf9acde41b603662ab45811cbc806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#acb0bf9acde41b603662ab45811cbc806">ff_wtoupper</a> (<a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a> uni)</td></tr>
+<tr class="separator:acb0bf9acde41b603662ab45811cbc806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58b536abfd30f77213f4ecaf2ac52f5" id="r_af58b536abfd30f77213f4ecaf2ac52f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ff_8h.html#af58b536abfd30f77213f4ecaf2ac52f5">get_fattime</a> (void)</td></tr>
+<tr class="separator:af58b536abfd30f77213f4ecaf2ac52f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ae936e4c15227768f7da4e0951def89c8" name="ae936e4c15227768f7da4e0951def89c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae936e4c15227768f7da4e0951def89c8">&#9670;&#160;</a></span>_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _T</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;u8 ## x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3232964568d17bb4a1af30f9db826ce2" name="a3232964568d17bb4a1af30f9db826ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3232964568d17bb4a1af30f9db826ce2">&#9670;&#160;</a></span>_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _TEXT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;u8 ## x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8174d00798e34e7c9e95898cb9e1a09" name="ae8174d00798e34e7c9e95898cb9e1a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8174d00798e34e7c9e95898cb9e1a09">&#9670;&#160;</a></span>AM_ARC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AM_ARC&#160;&#160;&#160;0x20	/* Archive */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a9db44e978ed6c13b641e092d4cd7d3" name="a3a9db44e978ed6c13b641e092d4cd7d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9db44e978ed6c13b641e092d4cd7d3">&#9670;&#160;</a></span>AM_DIR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AM_DIR&#160;&#160;&#160;0x10	/* Directory */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa90c4c921c1955fd407d8bbf17f1674e" name="aa90c4c921c1955fd407d8bbf17f1674e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90c4c921c1955fd407d8bbf17f1674e">&#9670;&#160;</a></span>AM_HID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AM_HID&#160;&#160;&#160;0x02	/* Hidden */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add6d85d1e7a02b4f6188783ef91a5f1e" name="add6d85d1e7a02b4f6188783ef91a5f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6d85d1e7a02b4f6188783ef91a5f1e">&#9670;&#160;</a></span>AM_RDO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AM_RDO&#160;&#160;&#160;0x01	/* Read only */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f25d5c17b5a3a6397b3398add8cdc15" name="a1f25d5c17b5a3a6397b3398add8cdc15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f25d5c17b5a3a6397b3398add8cdc15">&#9670;&#160;</a></span>AM_SYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AM_SYS&#160;&#160;&#160;0x04	/* System */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee297a9011164cf485a4df2a72758b08" name="aee297a9011164cf485a4df2a72758b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee297a9011164cf485a4df2a72758b08">&#9670;&#160;</a></span>CREATE_LINKMAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CREATE_LINKMAP&#160;&#160;&#160;((<a class="el" href="ff_8h.html#a6d13af1e8b9530747438bab80f5dea86">FSIZE_t</a>)0 - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a970cdd8970a3a94967ad64cfc5d4c161" name="a970cdd8970a3a94967ad64cfc5d4c161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970cdd8970a3a94967ad64cfc5d4c161">&#9670;&#160;</a></span>f_eof</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f_eof</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fp</td><td>)</td>
+          <td>&#160;&#160;&#160;((int)((fp)-&gt;fptr == (fp)-&gt;obj.objsize))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25cbdabeed318802cf0e9db6671a33b7" name="a25cbdabeed318802cf0e9db6671a33b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25cbdabeed318802cf0e9db6671a33b7">&#9670;&#160;</a></span>f_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f_error</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fp</td><td>)</td>
+          <td>&#160;&#160;&#160;((fp)-&gt;err)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4caf47dd5cbc123b61d35542481b1be" name="ae4caf47dd5cbc123b61d35542481b1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4caf47dd5cbc123b61d35542481b1be">&#9670;&#160;</a></span>f_rewind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f_rewind</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fp</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="ff_8c.html#a7c4bcf81d9122f0b5376852ec6a8c3eb">f_lseek</a>((fp), 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f92b6c0c1648de678283ab6f1610161" name="a3f92b6c0c1648de678283ab6f1610161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f92b6c0c1648de678283ab6f1610161">&#9670;&#160;</a></span>f_rewinddir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f_rewinddir</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dp</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="ff_8c.html#ab39e82a110695de45f416f3149358012">f_readdir</a>((dp), 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58df56d084ad3dd9f8cd49b245a7a7ca" name="a58df56d084ad3dd9f8cd49b245a7a7ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58df56d084ad3dd9f8cd49b245a7a7ca">&#9670;&#160;</a></span>f_rmdir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f_rmdir</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">path</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="ff_8c.html#a2858167fcd0bced48e9be434b3895efe">f_unlink</a>(path)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26f33722c5bf1aa3cd6f0290a83eb2bc" name="a26f33722c5bf1aa3cd6f0290a83eb2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f33722c5bf1aa3cd6f0290a83eb2bc">&#9670;&#160;</a></span>f_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f_size</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fp</td><td>)</td>
+          <td>&#160;&#160;&#160;((fp)-&gt;obj.objsize)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e1daca7ce13cdc277e42185f7f9124f" name="a5e1daca7ce13cdc277e42185f7f9124f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1daca7ce13cdc277e42185f7f9124f">&#9670;&#160;</a></span>f_tell</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f_tell</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fp</td><td>)</td>
+          <td>&#160;&#160;&#160;((fp)-&gt;fptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa22c4b32404b35d0a0bd138fa63f2e75" name="aa22c4b32404b35d0a0bd138fa63f2e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa22c4b32404b35d0a0bd138fa63f2e75">&#9670;&#160;</a></span>f_unmount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f_unmount</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">path</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="ff_8c.html#a16a934c2bbfa2160295810adc49d5509">f_mount</a>(0, path, 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afba4546b131dea4b24727fa20a80e29f" name="afba4546b131dea4b24727fa20a80e29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba4546b131dea4b24727fa20a80e29f">&#9670;&#160;</a></span>FA_CREATE_ALWAYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FA_CREATE_ALWAYS&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a417bb1babd1785fd181a806b5613eba3" name="a417bb1babd1785fd181a806b5613eba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a417bb1babd1785fd181a806b5613eba3">&#9670;&#160;</a></span>FA_CREATE_NEW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FA_CREATE_NEW&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17b01553029920ac0468912b4bcb16c7" name="a17b01553029920ac0468912b4bcb16c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17b01553029920ac0468912b4bcb16c7">&#9670;&#160;</a></span>FA_OPEN_ALWAYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FA_OPEN_ALWAYS&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90f135b2ae90fba5080f6bd2b6c57b8a" name="a90f135b2ae90fba5080f6bd2b6c57b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f135b2ae90fba5080f6bd2b6c57b8a">&#9670;&#160;</a></span>FA_OPEN_APPEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FA_OPEN_APPEND&#160;&#160;&#160;0x30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c5dd686b10f84c2a2b3954957a5979a" name="a0c5dd686b10f84c2a2b3954957a5979a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5dd686b10f84c2a2b3954957a5979a">&#9670;&#160;</a></span>FA_OPEN_EXISTING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FA_OPEN_EXISTING&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f4f3530ff03abbd979b072536e72290" name="a1f4f3530ff03abbd979b072536e72290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4f3530ff03abbd979b072536e72290">&#9670;&#160;</a></span>FA_READ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FA_READ&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa366963220c89b882c0361794020c14" name="afa366963220c89b882c0361794020c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa366963220c89b882c0361794020c14">&#9670;&#160;</a></span>FA_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FA_WRITE&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67f86fd50a009422bed52a85b7a28a77" name="a67f86fd50a009422bed52a85b7a28a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f86fd50a009422bed52a85b7a28a77">&#9670;&#160;</a></span>FF_DEFINED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FF_DEFINED&#160;&#160;&#160;80286	/* Revision ID */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3eb7cbd9d1d0548d54856f1cc8a2021f" name="a3eb7cbd9d1d0548d54856f1cc8a2021f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb7cbd9d1d0548d54856f1cc8a2021f">&#9670;&#160;</a></span>FF_INTDEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FF_INTDEF&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a701ab2eee8c2d9b5b445aadc8f14df4d" name="a701ab2eee8c2d9b5b445aadc8f14df4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a701ab2eee8c2d9b5b445aadc8f14df4d">&#9670;&#160;</a></span>FM_ANY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FM_ANY&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9348c28116bc29e88195b23f6945f81d" name="a9348c28116bc29e88195b23f6945f81d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9348c28116bc29e88195b23f6945f81d">&#9670;&#160;</a></span>FM_EXFAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FM_EXFAT&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bd205b7d09147e55169d3713f46e9ea" name="a8bd205b7d09147e55169d3713f46e9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd205b7d09147e55169d3713f46e9ea">&#9670;&#160;</a></span>FM_FAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FM_FAT&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff61d3ed8f8c6ea5c25c3cb366320e08" name="aff61d3ed8f8c6ea5c25c3cb366320e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff61d3ed8f8c6ea5c25c3cb366320e08">&#9670;&#160;</a></span>FM_FAT32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FM_FAT32&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b3d16ac135fe57669fc8a93dfa0c0a5" name="a3b3d16ac135fe57669fc8a93dfa0c0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b3d16ac135fe57669fc8a93dfa0c0a5">&#9670;&#160;</a></span>FM_SFD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FM_SFD&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50bfa912e87473bc54333523983f39f6" name="a50bfa912e87473bc54333523983f39f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50bfa912e87473bc54333523983f39f6">&#9670;&#160;</a></span>FS_EXFAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FS_EXFAT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab755aa1b4f81f4aabee4a5d4738cfb0" name="aab755aa1b4f81f4aabee4a5d4738cfb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab755aa1b4f81f4aabee4a5d4738cfb0">&#9670;&#160;</a></span>FS_FAT12</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FS_FAT12&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ef90a36d99edfc0138a2155a17a79b9" name="a7ef90a36d99edfc0138a2155a17a79b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ef90a36d99edfc0138a2155a17a79b9">&#9670;&#160;</a></span>FS_FAT16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FS_FAT16&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac63e0796095a789cefdbc3c3c676c9ce" name="ac63e0796095a789cefdbc3c3c676c9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63e0796095a789cefdbc3c3c676c9ce">&#9670;&#160;</a></span>FS_FAT32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FS_FAT32&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="a4ae1dab0fb4b072a66584546209e7d58" name="a4ae1dab0fb4b072a66584546209e7d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae1dab0fb4b072a66584546209e7d58">&#9670;&#160;</a></span>BYTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad342ac907eb044443153a22f964bf0af" name="ad342ac907eb044443153a22f964bf0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad342ac907eb044443153a22f964bf0af">&#9670;&#160;</a></span>DWORD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned long <a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d13af1e8b9530747438bab80f5dea86" name="a6d13af1e8b9530747438bab80f5dea86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d13af1e8b9530747438bab80f5dea86">&#9670;&#160;</a></span>FSIZE_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef QWORD <a class="el" href="ff_8h.html#a6d13af1e8b9530747438bab80f5dea86">FSIZE_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9df88f2210b5660cba59baeb8befaa8c" name="a9df88f2210b5660cba59baeb8befaa8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df88f2210b5660cba59baeb8befaa8c">&#9670;&#160;</a></span>LBA_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef QWORD <a class="el" href="ff_8h.html#a9df88f2210b5660cba59baeb8befaa8c">LBA_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03bdb8ce5895c7e261aadc2529637546" name="a03bdb8ce5895c7e261aadc2529637546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03bdb8ce5895c7e261aadc2529637546">&#9670;&#160;</a></span>TCHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36cb3b01d81ffd844bbbfb54003e06ec" name="a36cb3b01d81ffd844bbbfb54003e06ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36cb3b01d81ffd844bbbfb54003e06ec">&#9670;&#160;</a></span>UINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bb095da65fbe52192dd9e3e643c7568" name="a0bb095da65fbe52192dd9e3e643c7568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb095da65fbe52192dd9e3e643c7568">&#9670;&#160;</a></span>WCHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> <a class="el" href="ff_8h.html#a0bb095da65fbe52192dd9e3e643c7568">WCHAR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a197942eefa7db30960ae396d68339b97" name="a197942eefa7db30960ae396d68339b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197942eefa7db30960ae396d68339b97">&#9670;&#160;</a></span>WORD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned short <a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos valores da enumeração</h2>
+<a id="a49d0171ecbd362cda5680a0d360db44c" name="a49d0171ecbd362cda5680a0d360db44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d0171ecbd362cda5680a0d360db44c">&#9670;&#160;</a></span>FRESULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1" name="a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1"></a>FR_OK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34" name="a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34"></a>FR_DISK_ERR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76" name="a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76"></a>FR_INT_ERR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44cac9894bed3e8632ede8d2712235fa8e45" name="a49d0171ecbd362cda5680a0d360db44cac9894bed3e8632ede8d2712235fa8e45"></a>FR_NOT_READY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c" name="a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c"></a>FR_NO_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44cae4529c8cc8b59783d6efc9ba4f574532" name="a49d0171ecbd362cda5680a0d360db44cae4529c8cc8b59783d6efc9ba4f574532"></a>FR_NO_PATH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca83e45a4b579558c57192c0a391b9bb45" name="a49d0171ecbd362cda5680a0d360db44ca83e45a4b579558c57192c0a391b9bb45"></a>FR_INVALID_NAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca897e9f2dd7629a80f48af242d8bc1a3d" name="a49d0171ecbd362cda5680a0d360db44ca897e9f2dd7629a80f48af242d8bc1a3d"></a>FR_DENIED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca0d8f024d256df76e84782b95018a2450" name="a49d0171ecbd362cda5680a0d360db44ca0d8f024d256df76e84782b95018a2450"></a>FR_EXIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca3dec4eba481cdf5e99d7cd6009e6dcf8" name="a49d0171ecbd362cda5680a0d360db44ca3dec4eba481cdf5e99d7cd6009e6dcf8"></a>FR_INVALID_OBJECT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44cac3afbb423b1d4497229416812aff383b" name="a49d0171ecbd362cda5680a0d360db44cac3afbb423b1d4497229416812aff383b"></a>FR_WRITE_PROTECTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca487844af77de15f6932a3b41ef3a2d65" name="a49d0171ecbd362cda5680a0d360db44ca487844af77de15f6932a3b41ef3a2d65"></a>FR_INVALID_DRIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44cafc56605c68aaffab4a428339a8bd600d" name="a49d0171ecbd362cda5680a0d360db44cafc56605c68aaffab4a428339a8bd600d"></a>FR_NOT_ENABLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca086154b5fee763f28c49fd0e2c1cb463" name="a49d0171ecbd362cda5680a0d360db44ca086154b5fee763f28c49fd0e2c1cb463"></a>FR_NO_FILESYSTEM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca4b02760f758f5b1a89f445244fe9fbca" name="a49d0171ecbd362cda5680a0d360db44ca4b02760f758f5b1a89f445244fe9fbca"></a>FR_MKFS_ABORTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca3f8ca7e51af8b129d14328de7243c5d4" name="a49d0171ecbd362cda5680a0d360db44ca3f8ca7e51af8b129d14328de7243c5d4"></a>FR_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca7db5afaaa2af591bd4a208b2967075d7" name="a49d0171ecbd362cda5680a0d360db44ca7db5afaaa2af591bd4a208b2967075d7"></a>FR_LOCKED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44caf56a76a86602cbdeb2c4f3d00cfad21c" name="a49d0171ecbd362cda5680a0d360db44caf56a76a86602cbdeb2c4f3d00cfad21c"></a>FR_NOT_ENOUGH_CORE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca50dd3c3c274ccebb2cfbddde9d065bb9" name="a49d0171ecbd362cda5680a0d360db44ca50dd3c3c274ccebb2cfbddde9d065bb9"></a>FR_TOO_MANY_OPEN_FILES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a49d0171ecbd362cda5680a0d360db44ca3b89faeceab64db277d0fcdeaaa315d6" name="a49d0171ecbd362cda5680a0d360db44ca3b89faeceab64db277d0fcdeaaa315d6"></a>FR_INVALID_PARAMETER&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a53c7e9a7fb3c279254cd2d0445667e2f" name="a53c7e9a7fb3c279254cd2d0445667e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c7e9a7fb3c279254cd2d0445667e2f">&#9670;&#160;</a></span>f_chdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_chdir </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8h.html#a3a9db44e978ed6c13b641e092d4cd7d3">AM_DIR</a>, <a class="el" href="structFFOBJID.html#ae9b1e6f98dbad367cc00f92b87f8d279">FFOBJID::attr</a>, <a class="el" href="structDIR.html#afdb5d6302a88eaf5d43da0352ca2cc91">DIR::blk_ofs</a>, <a class="el" href="structFFOBJID.html#a564878e1c6951edfcd1a6ed29007eb36">FFOBJID::c_ofs</a>, <a class="el" href="structFFOBJID.html#a1ecaff32cf70a8f1d2c4b80964b283c8">FFOBJID::c_scl</a>, <a class="el" href="structFFOBJID.html#a989b81519645681bee531d56df5a9360">FFOBJID::c_size</a>, <a class="el" href="structFATFS.html#a5c550420faccf751479362b169ceb4b6">FATFS::cdc_ofs</a>, <a class="el" href="structFATFS.html#a414276514ce740c8d9c918902b6a0209">FATFS::cdc_scl</a>, <a class="el" href="structFATFS.html#ac73223fa63b37375636ef8d5c2d079d1">FATFS::cdc_size</a>, <a class="el" href="structFATFS.html#a217d0ce0c8cec84aa7f0c142679412c6">FATFS::cdir</a>, <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="structDIR.html#a6c2a8c0cf2d55ae99775e93a16593449">DIR::dir</a>, <a class="el" href="structFATFS.html#a6ef76f8c5e30a9c6eeb6d868a7cbc91b">FATFS::dirbuf</a>, <a class="el" href="ffconf_8h.html#a2343dca8b59f249f6a88574fda8ac31c">FF_VOLUMES</a>, <a class="el" href="structDIR.html#ad90d974c0e7640307598c586bf141b32">DIR::fn</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c">FR_NO_FILE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cae4529c8cc8b59783d6efc9ba4f574532">FR_NO_PATH</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="ff_8c.html#a03a711029b966a7fad4f01e546b5e034">NS_NONAME</a>, <a class="el" href="ff_8c.html#ad2306816015e67e72cfd0a20a880b227">NSFLAG</a>, <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>, <a class="el" href="structFFOBJID.html#a83c51ba99687054f0cc653b45f195268">FFOBJID::objsize</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a>, <a class="el" href="structFFOBJID.html#aa7bfa8dd8958d11df042a67e1da25f63">FFOBJID::stat</a> e <a class="el" href="ff_8c.html#ae08bbe65fd20259cb98c85ce08aa53cb">XDIR_FstClus</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#a8e04d7283dea389adfbedca14cea5b5c">ff_chdir()</a>, <a class="el" href="ff__stdio_8h.html#a02f6cf92e67f39c89bebd31f8edaa7c8">ff_findfirst()</a> e <a class="el" href="FatFS__SPI__example_8cpp.html#af5fed851546ab6b44c411e14f35f68ab">simple()</a>.</p>
+
+</div>
+</div>
+<a id="a13e5933f851b436890361189f64261cd" name="a13e5933f851b436890361189f64261cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e5933f851b436890361189f64261cd">&#9670;&#160;</a></span>f_chdrive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_chdrive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca487844af77de15f6932a3b41ef3a2d65">FR_INVALID_DRIVE</a> e <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="dynamic__config__example_8cpp.html#a1a711423bb6fba823d102de280a8b732">test()</a>.</p>
+
+</div>
+</div>
+<a id="a9ee7e560eec8d82755c636ae41e702cd" name="a9ee7e560eec8d82755c636ae41e702cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee7e560eec8d82755c636ae41e702cd">&#9670;&#160;</a></span>f_chmod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_chmod </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td>
+          <td class="paramname"><em>attr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53882db20ef4323dcfd1874d7733ffc3" name="a53882db20ef4323dcfd1874d7733ffc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53882db20ef4323dcfd1874d7733ffc3">&#9670;&#160;</a></span>f_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_close </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#ad69c7246b122ba56a134939ee0eaf847">f_sync()</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="structFFOBJID.html#a61f23dcb8ffcbe46cf8f1385b6065be7">FFOBJID::lockid</a> e <a class="el" href="structFIL.html#ad95b6e85106673b0d7a1855da4d264f4">FIL::obj</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#a5b15f8ec073fa17cc651690af3f53ebe">ff_fclose()</a>, <a class="el" href="simple__example_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, <a class="el" href="app1_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>, <a class="el" href="app1_8c.html#a1fce2c571e1e933acc7a1cbfb9173e3c">open_append()</a>, <a class="el" href="data__log__demo_8c.html#a5b78d5eb4cdd83b8b092a029509328d8">process_logger()</a>, <a class="el" href="FatFS__SPI__example_8cpp.html#af5fed851546ab6b44c411e14f35f68ab">simple()</a> e <a class="el" href="dynamic__config__example_8cpp.html#a1a711423bb6fba823d102de280a8b732">test()</a>.</p>
+
+</div>
+</div>
+<a id="ab5f7376b6f3e3bcc7f5ff5497c8b7364" name="ab5f7376b6f3e3bcc7f5ff5497c8b7364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f7376b6f3e3bcc7f5ff5497c8b7364">&#9670;&#160;</a></span>f_closedir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_closedir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDIR.html">DIR</a> *&#160;</td>
+          <td class="paramname"><em>dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="structFFOBJID.html#a61f23dcb8ffcbe46cf8f1385b6065be7">FFOBJID::lockid</a> e <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="app2_8c.html#a246fe870ae7876feb9840f35c36f0969">delete_node()</a> e <a class="el" href="FatFS__SPI__example_8cpp.html#a65b1549b942b57937d33243d8c8685ae">ls()</a>.</p>
+
+</div>
+</div>
+<a id="a35ff90f5219df5cdb6c8f408b1b9e1a3" name="a35ff90f5219df5cdb6c8f408b1b9e1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ff90f5219df5cdb6c8f408b1b9e1a3">&#9670;&#160;</a></span>f_expand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_expand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a6d13af1e8b9530747438bab80f5dea86">FSIZE_t</a>&#160;</td>
+          <td class="paramname"><em>fsz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70461190a46edc96bb7baef1ab4dbd4d" name="a70461190a46edc96bb7baef1ab4dbd4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70461190a46edc96bb7baef1ab4dbd4d">&#9670;&#160;</a></span>f_fdisk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_fdisk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td>
+          <td class="paramname"><em>pdrv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a9df88f2210b5660cba59baeb8befaa8c">LBA_t</a>&#160;</td>
+          <td class="paramname"><em>ptbl</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>work</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6db7bc3d037b51a9f205eacda6177a5f" name="a6db7bc3d037b51a9f205eacda6177a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db7bc3d037b51a9f205eacda6177a5f">&#9670;&#160;</a></span>f_findfirst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_findfirst </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDIR.html">DIR</a> *&#160;</td>
+          <td class="paramname"><em>dp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFILINFO.html">FILINFO</a> *&#160;</td>
+          <td class="paramname"><em>fno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#a013999e446481a607316b916441f8673">f_findnext()</a>, <a class="el" href="ff_8c.html#ab63b213c75f7335fbb63a1f3f70e5fc7">f_opendir()</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a> e <a class="el" href="structDIR.html#a1f636884096de91deb97f59209d60e96">DIR::pat</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#a02f6cf92e67f39c89bebd31f8edaa7c8">ff_findfirst()</a> e <a class="el" href="FatFS__SPI__example_8cpp.html#a65b1549b942b57937d33243d8c8685ae">ls()</a>.</p>
+
+</div>
+</div>
+<a id="a013999e446481a607316b916441f8673" name="a013999e446481a607316b916441f8673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a013999e446481a607316b916441f8673">&#9670;&#160;</a></span>f_findnext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_findnext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDIR.html">DIR</a> *&#160;</td>
+          <td class="paramname"><em>dp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFILINFO.html">FILINFO</a> *&#160;</td>
+          <td class="paramname"><em>fno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structFILINFO.html#ab2a4c2f1ec81c11897c37bf0da4f9856">FILINFO::altname</a>, <a class="el" href="ff_8c.html#ab39e82a110695de45f416f3149358012">f_readdir()</a>, <a class="el" href="ff_8c.html#abc2c9878bd400cb8975878fdca89348b">FIND_RECURS</a>, <a class="el" href="structFILINFO.html#aab1ba8d85467346a528f7569e4d15381">FILINFO::fname</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a> e <a class="el" href="structDIR.html#a1f636884096de91deb97f59209d60e96">DIR::pat</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff_8c.html#a6db7bc3d037b51a9f205eacda6177a5f">f_findfirst()</a>, <a class="el" href="ff__stdio_8h.html#aa8a96be67632fd0bd93baa3eaf5bf722">ff_findnext()</a> e <a class="el" href="FatFS__SPI__example_8cpp.html#a65b1549b942b57937d33243d8c8685ae">ls()</a>.</p>
+
+</div>
+</div>
+<a id="a6c0c4cd695704aa6d952c90be81d9849" name="a6c0c4cd695704aa6d952c90be81d9849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c0c4cd695704aa6d952c90be81d9849">&#9670;&#160;</a></span>f_forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_forward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>(*)(const <a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *, <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramname"><em>btf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> *&#160;</td>
+          <td class="paramname"><em>bf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb865a03dbac0031ac5cb8a031f7b71c" name="acb865a03dbac0031ac5cb8a031f7b71c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb865a03dbac0031ac5cb8a031f7b71c">&#9670;&#160;</a></span>f_getcwd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_getcwd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structFATFS.html#a217d0ce0c8cec84aa7f0c142679412c6">FATFS::cdir</a>, <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="structDIR.html#a6c2a8c0cf2d55ae99775e93a16593449">DIR::dir</a>, <a class="el" href="ff_8c.html#a7dc00ac3fd99f0a14d6b7f3fc76b8778">DIR_READ_FILE</a>, <a class="el" href="ffconf_8h.html#a4374b721b8019acc9761fdd8b829ccd0">FF_FS_EXFAT</a>, <a class="el" href="ffconf_8h.html#a056575130662da5bc7ac26a5b1d25838">FF_STR_VOLUME_ID</a>, <a class="el" href="structFILINFO.html#aab1ba8d85467346a528f7569e4d15381">FILINFO::fname</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c">FR_NO_FILE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44caf56a76a86602cbdeb2c4f3d00cfad21c">FR_NOT_ENOUGH_CORE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a>, <a class="el" href="structDIR.html#ae76119034beae8f34eb1536d0ef83a40">DIR::sect</a> e <a class="el" href="ff_8c.html#a90943705ce4b32e47562c9f56860c7af">SZDIRE</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#a02f6cf92e67f39c89bebd31f8edaa7c8">ff_findfirst()</a>, <a class="el" href="ff__stdio_8h.html#a1a536dc743c880f709c82237e9a9cdde">ff_getcwd()</a>, <a class="el" href="FatFS__SPI__example_8cpp.html#a65b1549b942b57937d33243d8c8685ae">ls()</a> e <a class="el" href="FatFS__SPI__example_8cpp.html#af5fed851546ab6b44c411e14f35f68ab">simple()</a>.</p>
+
+</div>
+</div>
+<a id="a0ff39f75a87cbda9cd6ea65d83f16cec" name="a0ff39f75a87cbda9cd6ea65d83f16cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff39f75a87cbda9cd6ea65d83f16cec">&#9670;&#160;</a></span>f_getfree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_getfree </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a> *&#160;</td>
+          <td class="paramname"><em>nclst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFATFS.html">FATFS</a> **&#160;</td>
+          <td class="paramname"><em>fatfs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structFATFS.html#abe1d60a5141cd3a1891cd424faf02f54">FATFS::bitbase</a>, <a class="el" href="structFATFS.html#a78b1024e7d7d086d132a58ee943b31df">FATFS::fatbase</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="structFATFS.html#ac834248773bf338df807f0d7e6b6a579">FATFS::free_clst</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="ff_8h.html#aab755aa1b4f81f4aabee4a5d4738cfb0">FS_FAT12</a>, <a class="el" href="ff_8h.html#a7ef90a36d99edfc0138a2155a17a79b9">FS_FAT16</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="structFATFS.html#a84e9cdc5a6a8e33ea7ec192058abf161">FATFS::fsi_flag</a>, <a class="el" href="app3_8c.html#a65611adf1626e5e08da77cd33a98dd8b">get_fat()</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="structFATFS.html#a8da50eeba6469bc20d60ca0cf9a1307c">FATFS::n_fatent</a>, <a class="el" href="ff_8c.html#a42b5140fc5e09a53c8f4cba66dc0e6c1">SS</a> e <a class="el" href="structFATFS.html#a49e9c5c3ae9c13755242b6ce5748ecb1">FATFS::win</a>.</p>
+
+</div>
+</div>
+<a id="ac4ff40a674bcbfe40d81b1e8e54befc6" name="ac4ff40a674bcbfe40d81b1e8e54befc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ff40a674bcbfe40d81b1e8e54befc6">&#9670;&#160;</a></span>f_getlabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_getlabel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a> *&#160;</td>
+          <td class="paramname"><em>vsn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a47f14a554ff3a49fc122fe3e190f2f" name="a4a47f14a554ff3a49fc122fe3e190f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a47f14a554ff3a49fc122fe3e190f2f">&#9670;&#160;</a></span>f_gets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> * f_gets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#a0532865fc94e93704941f95e9425ccb9">CODEPAGE</a>, <a class="el" href="ff_8c.html#ac4c3dcb6869ca252888eebabe39727b3">f_read()</a>, <a class="el" href="ffconf_8h.html#a95aeacb103bd1c4e03b3e154e450c534">FF_LFN_UNICODE</a>, <a class="el" href="ff_8h.html#a52f09f31c84747cc135c90282509961a">ff_oem2uni()</a>, <a class="el" href="ffconf_8h.html#a6ecc215308b4ead043b2e4e513ea203e">FF_STRF_ENCODE</a>, <a class="el" href="ffconf_8h.html#a9870e2a5b84ce00fc47e0fd89b337495">FF_USE_STRFUNC</a>, <a class="el" href="ff_8c.html#a1678f40df73ed6cd30ed3e837b3558e7">IsSurrogate</a>, <a class="el" href="ff_8c.html#ad148073d4a74bdff0f86f2b18284b569">IsSurrogateH</a> e <a class="el" href="ff_8c.html#a7a67adc6a71fa08dbbe481ad756849c4">IsSurrogateL</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#a8ac366456015168ac7171a4e01d52943">ff_fgets()</a> e <a class="el" href="FatFS__SPI__example_8cpp.html#af5fed851546ab6b44c411e14f35f68ab">simple()</a>.</p>
+
+</div>
+</div>
+<a id="a7c4bcf81d9122f0b5376852ec6a8c3eb" name="a7c4bcf81d9122f0b5376852ec6a8c3eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4bcf81d9122f0b5376852ec6a8c3eb">&#9670;&#160;</a></span>f_lseek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_lseek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a6d13af1e8b9530747438bab80f5dea86">FSIZE_t</a>&#160;</td>
+          <td class="paramname"><em>ofs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#a41e4c46636679236568cf50b5535847f">ABORT</a>, <a class="el" href="structFIL.html#ac2aa36f0fa61cd82f905173d51f719b0">FIL::buf</a>, <a class="el" href="structFIL.html#a28a30613d48cefcf9efbd334cd861fc8">FIL::cltbl</a>, <a class="el" href="structFIL.html#aa41312aba551b9a6d1c9d3c8c7d2734b">FIL::clust</a>, <a class="el" href="ff_8h.html#aee297a9011164cf485a4df2a72758b08">CREATE_LINKMAP</a>, <a class="el" href="structFATFS.html#ad7fa7a509f8d097a9ab182d6c47be568">FATFS::csize</a>, <a class="el" href="diskio_8c.html#a0711b1d03b833e9d73b3be1a6397f461">disk_read()</a>, <a class="el" href="diskio_8c.html#ac24448955ef914f54a499df1fb45689d">disk_write()</a>, <a class="el" href="structFIL.html#aea440945db26de9c4a88065c0c887fda">FIL::err</a>, <a class="el" href="ff_8c.html#affd69e5e6d205e09e1070b2f3c039072">FA_DIRTY</a>, <a class="el" href="ff_8c.html#a9ae82de1b6841df9041411357f8d3eb5">FA_MODIFIED</a>, <a class="el" href="ff_8h.html#afa366963220c89b882c0361794020c14">FA_WRITE</a>, <a class="el" href="ffconf_8h.html#a4374b721b8019acc9761fdd8b829ccd0">FF_FS_EXFAT</a>, <a class="el" href="ffconf_8h.html#ac932d228331b07248a3faa6f5904a49d">FF_FS_READONLY</a>, <a class="el" href="structFIL.html#ac409508881f5a16f2998ae675072b376">FIL::flag</a>, <a class="el" href="structFIL.html#a088b03ab2e02f82e10e17bdd938190a6">FIL::fptr</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44caf56a76a86602cbdeb2c4f3d00cfad21c">FR_NOT_ENOUGH_CORE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="app3_8c.html#a65611adf1626e5e08da77cd33a98dd8b">get_fat()</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="structFATFS.html#a8da50eeba6469bc20d60ca0cf9a1307c">FATFS::n_fatent</a>, <a class="el" href="structFIL.html#ad95b6e85106673b0d7a1855da4d264f4">FIL::obj</a>, <a class="el" href="structFFOBJID.html#a83c51ba99687054f0cc653b45f195268">FFOBJID::objsize</a>, <a class="el" href="structFATFS.html#acae426c920cd7f59e5883f948e1b3184">FATFS::pdrv</a>, <a class="el" href="diskio_8h.html#aacdfef1dad6565f65c26d12fe0ea4b2ba2ea4b6ef3fffc17dd1d38ab5c2837737">RES_OK</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a>, <a class="el" href="structFIL.html#aa3f9f9ed9341b765862d073a95c86001">FIL::sect</a> e <a class="el" href="ff_8c.html#a42b5140fc5e09a53c8f4cba66dc0e6c1">SS</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="app3_8c.html#a93a18e2a0a10c54e2911d39b95cca157">allocate_contiguous_clusters()</a>, <a class="el" href="ff__stdio_8h.html#a9e7da1b8549ae70014a400a2c8e456cb">ff_fseek()</a>, <a class="el" href="ff__stdio_8h.html#a13549e8d2483b3b5870fe21de3ca71af">ff_truncate()</a>, <a class="el" href="app1_8c.html#a1fce2c571e1e933acc7a1cbfb9173e3c">open_append()</a>, <a class="el" href="FatFS__SPI__example_8cpp.html#af5fed851546ab6b44c411e14f35f68ab">simple()</a> e <a class="el" href="app5_8c.html#a9772009a10ab7b6825e887b38708628a">test_contiguous_file()</a>.</p>
+
+</div>
+</div>
+<a id="a4b4d38db58e89c526cfcf53200d719d0" name="a4b4d38db58e89c526cfcf53200d719d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4d38db58e89c526cfcf53200d719d0">&#9670;&#160;</a></span>f_mkdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_mkdir </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8h.html#a3a9db44e978ed6c13b641e092d4cd7d3">AM_DIR</a>, <a class="el" href="structFATFS.html#ad7fa7a509f8d097a9ab182d6c47be568">FATFS::csize</a>, <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="structDIR.html#a6c2a8c0cf2d55ae99775e93a16593449">DIR::dir</a>, <a class="el" href="ff_8c.html#ad3233e40118ed66095f3c9545b788f8a">DIR_Attr</a>, <a class="el" href="ff_8c.html#aa136ac8eaf0b3febba999e37b7d01803">DIR_ModTime</a>, <a class="el" href="ff_8c.html#afa89348e9fc2de82ae9e12c661366b0e">DIR_Name</a>, <a class="el" href="structFATFS.html#a6ef76f8c5e30a9c6eeb6d868a7cbc91b">FATFS::dirbuf</a>, <a class="el" href="ff_8h.html#afa366963220c89b882c0361794020c14">FA_WRITE</a>, <a class="el" href="ffconf_8h.html#a4374b721b8019acc9761fdd8b829ccd0">FF_FS_EXFAT</a>, <a class="el" href="ffconf_8h.html#af0d4b41a010f1a611bc6fb9e42357350">FF_FS_RPATH</a>, <a class="el" href="structDIR.html#ad90d974c0e7640307598c586bf141b32">DIR::fn</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca897e9f2dd7629a80f48af242d8bc1a3d">FR_DENIED</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca0d8f024d256df76e84782b95018a2450">FR_EXIST</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca83e45a4b579558c57192c0a391b9bb45">FR_INVALID_NAME</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c">FR_NO_FILE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="ff_8c.html#a72589f5bbb514c0b222ab8b292764418">GET_FATTIME</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="ff_8c.html#a2db528782a021797b34bdc6e9e9de1c3">NS_DOT</a>, <a class="el" href="ff_8c.html#ad2306816015e67e72cfd0a20a880b227">NSFLAG</a>, <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a>, <a class="el" href="ff_8c.html#a42b5140fc5e09a53c8f4cba66dc0e6c1">SS</a>, <a class="el" href="ff_8c.html#a90943705ce4b32e47562c9f56860c7af">SZDIRE</a>, <a class="el" href="structFATFS.html#a647e43c9ccae94b7274793d1909897de">FATFS::wflag</a>, <a class="el" href="structFATFS.html#a49e9c5c3ae9c13755242b6ce5748ecb1">FATFS::win</a>, <a class="el" href="ff_8c.html#aafe8687fb9356906c13ccd9fe88eb3de">XDIR_Attr</a>, <a class="el" href="ff_8c.html#a899bf596ce53d81a373229662249f524">XDIR_FileSize</a>, <a class="el" href="ff_8c.html#ae08bbe65fd20259cb98c85ce08aa53cb">XDIR_FstClus</a>, <a class="el" href="ff_8c.html#ac3fd42ab7ee833b0e3683b1843d310d6">XDIR_GenFlags</a>, <a class="el" href="ff_8c.html#aecb0af980a40b38b30dd0a736c8d6406">XDIR_ModTime</a> e <a class="el" href="ff_8c.html#a543e2a11cefac978a0108a7973416d56">XDIR_ValidFileSize</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#aead5117d908f8a3bf6d51b97e3092d70">ff_mkdir()</a>.</p>
+
+</div>
+</div>
+<a id="a983f0614033bd7cf587eb56d3054a91c" name="a983f0614033bd7cf587eb56d3054a91c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a983f0614033bd7cf587eb56d3054a91c">&#9670;&#160;</a></span>f_mkfs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_mkfs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structMKFS__PARM.html">MKFS_PARM</a> *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>work</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structMKFS__PARM.html#af244e017c4cb2c821e5e819fff7db710">MKFS_PARM::align</a>, <a class="el" href="structMKFS__PARM.html#adb29b0af8e486fc53d8b629c3e49d567">MKFS_PARM::au_size</a>, <a class="el" href="ff_8c.html#a6fceac966c2f2b277e8f472c5a7de0c7">BPB_BkBootSec32</a>, <a class="el" href="ff_8c.html#a8551844b4eb4e15aecd8cc9aa3585fa2">BPB_BytsPerSec</a>, <a class="el" href="ff_8c.html#a3d35e000a1033bb913d3fbc3aa5c68af">BPB_BytsPerSecEx</a>, <a class="el" href="ff_8c.html#ad3ab64cc288e66c0643af23094aa9645">BPB_DataOfsEx</a>, <a class="el" href="ff_8c.html#ac926d7c74f368a033dc8240167df9bc0">BPB_DrvNumEx</a>, <a class="el" href="ff_8c.html#a12af2061024593ffc7a92daf1c2d3470">BPB_FatOfsEx</a>, <a class="el" href="ff_8c.html#a60a2f6efeb6a4c7cb2da1e5def6ca43b">BPB_FATSz16</a>, <a class="el" href="ff_8c.html#a6e6340030dc29e7da2e9f92e472a763d">BPB_FATSz32</a>, <a class="el" href="ff_8c.html#a54579961bdbed995bcb7e077fedff1f4">BPB_FatSzEx</a>, <a class="el" href="ff_8c.html#a86b761a0ed35d7f6e9774be44482ee5b">BPB_FSInfo32</a>, <a class="el" href="ff_8c.html#a86f95a0a4b798a61967e086540e6ebd9">BPB_FSVerEx</a>, <a class="el" href="ff_8c.html#a449d4ed5c4c8105daf29aad9488277f7">BPB_HiddSec</a>, <a class="el" href="ff_8c.html#a414e054c4b5ea3414ebefa3539e7e554">BPB_Media</a>, <a class="el" href="ff_8c.html#a5bb065cee85104cbb58390ea9dfa01d8">BPB_NumClusEx</a>, <a class="el" href="ff_8c.html#af44a1e8c89ec5502595f23496d24cbf1">BPB_NumFATs</a>, <a class="el" href="ff_8c.html#a20cab50b62fe9cb5a99ce28cb54da60e">BPB_NumFATsEx</a>, <a class="el" href="ff_8c.html#a9c03603c3be34d4c5cc1b481b0bc6774">BPB_NumHeads</a>, <a class="el" href="ff_8c.html#a935b5f7cb38489adf96f42775583025b">BPB_PercInUseEx</a>, <a class="el" href="ff_8c.html#a4c99b85429f73c8f6a0ac2bc7a1d81ea">BPB_RootClus32</a>, <a class="el" href="ff_8c.html#a8447a1c7d19cab308ab198e1de2e086f">BPB_RootClusEx</a>, <a class="el" href="ff_8c.html#aaa667f14c87c45dc128f2ab208e92f98">BPB_RootEntCnt</a>, <a class="el" href="ff_8c.html#ab3ec444c8457c9bc98aa07e846f5c1b7">BPB_RsvdSecCnt</a>, <a class="el" href="ff_8c.html#aab78e41c617a14b9540c0563d6b957fa">BPB_SecPerClus</a>, <a class="el" href="ff_8c.html#a64dfd457aa404e53c16d58a3d249adfe">BPB_SecPerClusEx</a>, <a class="el" href="ff_8c.html#ac71bb771432ea532bc47713a028ebd76">BPB_SecPerTrk</a>, <a class="el" href="ff_8c.html#a4eb540eecde0f2df26fa8c7969341d68">BPB_TotSec16</a>, <a class="el" href="ff_8c.html#a7723a9f0da553e8879d60909d85ccb7b">BPB_TotSec32</a>, <a class="el" href="ff_8c.html#ac0c21531f17f5690b31622fcf98d3581">BPB_TotSecEx</a>, <a class="el" href="ff_8c.html#af7b37995f89d832a47898aa787ecfbc8">BPB_VolFlagEx</a>, <a class="el" href="ff_8c.html#a465d34bfcd2bf930e04ae1b379047199">BPB_VolIDEx</a>, <a class="el" href="ff_8c.html#ab09fe2e1cd6205eb848e5fd00374efd4">BPB_VolOfsEx</a>, <a class="el" href="ff_8c.html#a74b810b3f3583c1eb54bd4305c0f261a">BS_55AA</a>, <a class="el" href="ff_8c.html#adea4123eb450eb09933fac339b08eeee">BS_BootCodeEx</a>, <a class="el" href="ff_8c.html#a85a92e790602efef4da3a2f141611ce8">BS_BootSig</a>, <a class="el" href="ff_8c.html#a59c4b2f802ab4bc9319e5bd840e615b8">BS_BootSig32</a>, <a class="el" href="ff_8c.html#a0c51f7393341b839dfb241c2951f3ef4">BS_DrvNum</a>, <a class="el" href="ff_8c.html#aa670c7b495f5b347c442df67b188c58f">BS_DrvNum32</a>, <a class="el" href="ff_8c.html#a664130f8583af5ccc48d5c79952cea8a">BS_JmpBoot</a>, <a class="el" href="ff_8c.html#a383a71bda500a0fb5a37f4edd785acbf">BS_VolID</a>, <a class="el" href="ff_8c.html#abaa3aafdcf5e83f8cb7e2bb373b13525">BS_VolID32</a>, <a class="el" href="ff_8c.html#a28498ba4b07ff90aaa9628e81fb89d32">BS_VolLab</a>, <a class="el" href="ff_8c.html#a8241a49bce313184a58617ba1ad9e84c">BS_VolLab32</a>, <a class="el" href="diskio_8h.html#a1b3c492f9aec325f0655941b75256f3c">CTRL_SYNC</a>, <a class="el" href="diskio_8h.html#af09fd84bea8d4e889e272471f44d60d6">CTRL_TRIM</a>, <a class="el" href="diskio_8c.html#a09cdaa6f36fa409bdf002727bff98eb1">disk_initialize()</a>, <a class="el" href="diskio_8c.html#ab00fa450a811dbdabe3c655c1a36fab4">disk_ioctl()</a>, <a class="el" href="diskio_8c.html#a0711b1d03b833e9d73b3be1a6397f461">disk_read()</a>, <a class="el" href="diskio_8c.html#ac24448955ef914f54a499df1fb45689d">disk_write()</a>, <a class="el" href="ff_8c.html#ab9becfd202f51394d189dffe291a5959">ET_BITMAP</a>, <a class="el" href="ff_8c.html#a25a8a4c5eb49dc0d306d0fa6011cd9af">ET_UPCASE</a>, <a class="el" href="ff_8c.html#a9c991beac4793083d6bd370735bcb9c6">ET_VLABEL</a>, <a class="el" href="ffconf_8h.html#a4374b721b8019acc9761fdd8b829ccd0">FF_FS_EXFAT</a>, <a class="el" href="ffconf_8h.html#ab92e95c077afccc4d6f847cbf766e1cd">FF_LBA64</a>, <a class="el" href="big__file__test_8c.html#a104c36ee46f9d6e76dadf37f3d9696cc">FF_MAX_SS</a>, <a class="el" href="ff_8h.html#ae63913186246b80cfce42dbab9e8bcab">ff_memalloc()</a>, <a class="el" href="ffconf_8h.html#a1f3a98483912d219d3688edfa5717949">FF_MIN_GPT</a>, <a class="el" href="ffconf_8h.html#a5c25535bf118c111157fe72fff3cbea5">FF_MIN_SS</a>, <a class="el" href="ffconf_8h.html#a6f07d18b72c37af9fb5deda0e8a13131">FF_MULTI_PARTITION</a>, <a class="el" href="ff_8h.html#acb0bf9acde41b603662ab45811cbc806">ff_wtoupper()</a>, <a class="el" href="ff_8h.html#a701ab2eee8c2d9b5b445aadc8f14df4d">FM_ANY</a>, <a class="el" href="ff_8h.html#a9348c28116bc29e88195b23f6945f81d">FM_EXFAT</a>, <a class="el" href="ff_8h.html#a8bd205b7d09147e55169d3713f46e9ea">FM_FAT</a>, <a class="el" href="ff_8h.html#aff61d3ed8f8c6ea5c25c3cb366320e08">FM_FAT32</a>, <a class="el" href="ff_8h.html#a3b3d16ac135fe57669fc8a93dfa0c0a5">FM_SFD</a>, <a class="el" href="structMKFS__PARM.html#a54cb609ecff9f1586f3628b00aeb8f23">MKFS_PARM::fmt</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca487844af77de15f6932a3b41ef3a2d65">FR_INVALID_DRIVE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca3b89faeceab64db277d0fcdeaaa315d6">FR_INVALID_PARAMETER</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca4b02760f758f5b1a89f445244fe9fbca">FR_MKFS_ABORTED</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44caf56a76a86602cbdeb2c4f3d00cfad21c">FR_NOT_ENOUGH_CORE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cac9894bed3e8632ede8d2712235fa8e45">FR_NOT_READY</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cac3afbb423b1d4497229416812aff383b">FR_WRITE_PROTECTED</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="ff_8h.html#aab755aa1b4f81f4aabee4a5d4738cfb0">FS_FAT12</a>, <a class="el" href="ff_8h.html#a7ef90a36d99edfc0138a2155a17a79b9">FS_FAT16</a>, <a class="el" href="ff_8h.html#ac63e0796095a789cefdbc3c3c676c9ce">FS_FAT32</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="ff_8c.html#ab711e50459aba01b11c6b46a7cc1410b">FSI_Free_Count</a>, <a class="el" href="ff_8c.html#a318e58c1966aba52b90ab98dcb649883">FSI_LeadSig</a>, <a class="el" href="ff_8c.html#a320700cedf300c9b418edf56e5e6b086">FSI_Nxt_Free</a>, <a class="el" href="ff_8c.html#a3bac0e6ff5907873030db1d0a7c4ebef">FSI_StrucSig</a>, <a class="el" href="diskio_8h.html#aec3bb4dfe075d0ba2f3b07b300a95500">GET_BLOCK_SIZE</a>, <a class="el" href="ff_8c.html#a72589f5bbb514c0b222ab8b292764418">GET_FATTIME</a>, <a class="el" href="diskio_8h.html#a570216006f6a8fc4e1698b1bbb2d1dde">GET_SECTOR_COUNT</a>, <a class="el" href="diskio_8h.html#ac73b5cf2135cbd459d109b96c9aa346a">GET_SECTOR_SIZE</a>, <a class="el" href="ff_8c.html#a7f901110fcf3b8bc941e6086cc7ba860">GPT_ALIGN</a>, <a class="el" href="ff_8c.html#a5ba0a17d3228d2ccda3859b6ed0c4fb8">GPT_ITEMS</a>, <a class="el" href="ff_8c.html#a25029670f9bc74da6eae5001fe4acdb4">GPTE_FstLba</a>, <a class="el" href="ff_8c.html#a4f37e50e5eabcfb8353749dc8b8be4b4">GPTE_LstLba</a>, <a class="el" href="ff_8c.html#a8e8517c1287b2d9c93d164bccc0133db">GPTE_PtGuid</a>, <a class="el" href="ff_8c.html#a950d43a4211a4bdcc19888bfc8fde5f9">GPTH_PtNum</a>, <a class="el" href="ff_8c.html#acf59802a11562c5dc1f0d99ae5a89946">GPTH_PtOfs</a>, <a class="el" href="ff_8c.html#a6577ed2f95527745bf4d27c53488b9a7">LD2PD</a>, <a class="el" href="ff_8c.html#aadc4a9aefaf2588bdd7565549f5d91e7">LD2PT</a>, <a class="el" href="ff_8c.html#aeeb83ea2531f2af57f2d9fa191ef4531">LEAVE_MKFS</a>, <a class="el" href="ff_8c.html#ad7bea1c4a86cb654807e6da0370cb694">MAX_EXFAT</a>, <a class="el" href="ff_8c.html#a03962fce05a65b3e0ff6855d5436869f">MAX_FAT12</a>, <a class="el" href="ff_8c.html#a259e5a1973d5209304482a5bcd89372f">MAX_FAT16</a>, <a class="el" href="ff_8c.html#a40e7471b7ae3620a0419aa4d8d6dc684">MAX_FAT32</a>, <a class="el" href="ff_8c.html#ac3f187bf0ba891551f594af6b61f3188">MBR_Table</a>, <a class="el" href="structMKFS__PARM.html#a0ff8e4728bddfe0636c50367af399e25">MKFS_PARM::n_fat</a>, <a class="el" href="structMKFS__PARM.html#a2b8a26b614381e0c2e0ff26f138feea6">MKFS_PARM::n_root</a>, <a class="el" href="ff_8c.html#aa7655ed8fbdcfec3965be1d6f412d0f6">N_SEC_TRACK</a>, <a class="el" href="ff_8c.html#a195f11dd0185a4edbe7064ebe40092bc">PTE_SizLba</a>, <a class="el" href="ff_8c.html#ae33f69bfe238a35fb3fd1949c4e087da">PTE_StLba</a>, <a class="el" href="ff_8c.html#a71a2bd9498580394a97fe0b5246635d6">PTE_System</a>, <a class="el" href="diskio_8h.html#aacdfef1dad6565f65c26d12fe0ea4b2ba2ea4b6ef3fffc17dd1d38ab5c2837737">RES_OK</a>, <a class="el" href="diskio_8h.html#abd6503c70d862b979a3f7080a59e9acd">STA_NOINIT</a>, <a class="el" href="diskio_8h.html#a9ec6dc5f6620a33fabe388d3a111ca8c">STA_PROTECT</a>, <a class="el" href="ff_8c.html#aaaa69650a3bce4a6f68f88e2e3a07f43">SZ_GPTE</a>, <a class="el" href="ff_8c.html#af133060c47366e7e557d4085d931183f">SZ_PTE</a> e <a class="el" href="ff_8c.html#a90943705ce4b32e47562c9f56860c7af">SZDIRE</a>.</p>
+
+</div>
+</div>
+<a id="a16a934c2bbfa2160295810adc49d5509" name="a16a934c2bbfa2160295810adc49d5509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a934c2bbfa2160295810adc49d5509">&#9670;&#160;</a></span>f_mount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_mount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFATFS.html">FATFS</a> *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ffconf_8h.html#a2343dca8b59f249f6a88574fda8ac31c">FF_VOLUMES</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca487844af77de15f6932a3b41ef3a2d65">FR_INVALID_DRIVE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="ff_8c.html#a6577ed2f95527745bf4d27c53488b9a7">LD2PD</a>, <a class="el" href="structFATFS.html#aaa678cb2c36f5e7d8157ae295f1fbb42">FATFS::ldrv</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a> e <a class="el" href="structFATFS.html#acae426c920cd7f59e5883f948e1b3184">FATFS::pdrv</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="simple__example_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, <a class="el" href="app1_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a> e <a class="el" href="dynamic__config__example_8cpp.html#a1a711423bb6fba823d102de280a8b732">test()</a>.</p>
+
+</div>
+</div>
+<a id="aefdef7126128d99d0b3bd82c28e54d80" name="aefdef7126128d99d0b3bd82c28e54d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefdef7126128d99d0b3bd82c28e54d80">&#9670;&#160;</a></span>f_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8h.html#ae8174d00798e34e7c9e95898cb9e1a09">AM_ARC</a>, <a class="el" href="ff_8h.html#a3a9db44e978ed6c13b641e092d4cd7d3">AM_DIR</a>, <a class="el" href="ff_8h.html#add6d85d1e7a02b4f6188783ef91a5f1e">AM_RDO</a>, <a class="el" href="structFFOBJID.html#ae9b1e6f98dbad367cc00f92b87f8d279">FFOBJID::attr</a>, <a class="el" href="structDIR.html#afdb5d6302a88eaf5d43da0352ca2cc91">DIR::blk_ofs</a>, <a class="el" href="structFIL.html#ac2aa36f0fa61cd82f905173d51f719b0">FIL::buf</a>, <a class="el" href="structFFOBJID.html#a564878e1c6951edfcd1a6ed29007eb36">FFOBJID::c_ofs</a>, <a class="el" href="structFFOBJID.html#a1ecaff32cf70a8f1d2c4b80964b283c8">FFOBJID::c_scl</a>, <a class="el" href="structFFOBJID.html#a989b81519645681bee531d56df5a9360">FFOBJID::c_size</a>, <a class="el" href="structFIL.html#a28a30613d48cefcf9efbd334cd861fc8">FIL::cltbl</a>, <a class="el" href="structFIL.html#aa41312aba551b9a6d1c9d3c8c7d2734b">FIL::clust</a>, <a class="el" href="structFATFS.html#ad7fa7a509f8d097a9ab182d6c47be568">FATFS::csize</a>, <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="structDIR.html#a6c2a8c0cf2d55ae99775e93a16593449">DIR::dir</a>, <a class="el" href="ff_8c.html#ad3233e40118ed66095f3c9545b788f8a">DIR_Attr</a>, <a class="el" href="ff_8c.html#a47fb1881ea71d860db9b8280564cb4d5">DIR_CrtTime</a>, <a class="el" href="ff_8c.html#abfbfa613864a02a65f0bf70ead6672c7">DIR_FileSize</a>, <a class="el" href="ff_8c.html#aa136ac8eaf0b3febba999e37b7d01803">DIR_ModTime</a>, <a class="el" href="structFIL.html#a5af9e9fb312b629220eaf684dd28c4a9">FIL::dir_ptr</a>, <a class="el" href="structFIL.html#a19e61b116df8e6f2138243998e43f131">FIL::dir_sect</a>, <a class="el" href="structFATFS.html#a6ef76f8c5e30a9c6eeb6d868a7cbc91b">FATFS::dirbuf</a>, <a class="el" href="diskio_8c.html#a0711b1d03b833e9d73b3be1a6397f461">disk_read()</a>, <a class="el" href="structFIL.html#aea440945db26de9c4a88065c0c887fda">FIL::err</a>, <a class="el" href="ff_8h.html#afba4546b131dea4b24727fa20a80e29f">FA_CREATE_ALWAYS</a>, <a class="el" href="ff_8h.html#a417bb1babd1785fd181a806b5613eba3">FA_CREATE_NEW</a>, <a class="el" href="ff_8c.html#a9ae82de1b6841df9041411357f8d3eb5">FA_MODIFIED</a>, <a class="el" href="ff_8h.html#a17b01553029920ac0468912b4bcb16c7">FA_OPEN_ALWAYS</a>, <a class="el" href="ff_8h.html#a90f135b2ae90fba5080f6bd2b6c57b8a">FA_OPEN_APPEND</a>, <a class="el" href="ff_8h.html#a1f4f3530ff03abbd979b072536e72290">FA_READ</a>, <a class="el" href="ff_8c.html#ad4d0d6afc5e28678b87a1b75b6645f7d">FA_SEEKEND</a>, <a class="el" href="ff_8h.html#afa366963220c89b882c0361794020c14">FA_WRITE</a>, <a class="el" href="ffconf_8h.html#ac932d228331b07248a3faa6f5904a49d">FF_FS_READONLY</a>, <a class="el" href="structFIL.html#ac409508881f5a16f2998ae675072b376">FIL::flag</a>, <a class="el" href="structDIR.html#ad90d974c0e7640307598c586bf141b32">DIR::fn</a>, <a class="el" href="structFIL.html#a088b03ab2e02f82e10e17bdd938190a6">FIL::fptr</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca897e9f2dd7629a80f48af242d8bc1a3d">FR_DENIED</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca0d8f024d256df76e84782b95018a2450">FR_EXIST</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca83e45a4b579558c57192c0a391b9bb45">FR_INVALID_NAME</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca3dec4eba481cdf5e99d7cd6009e6dcf8">FR_INVALID_OBJECT</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c">FR_NO_FILE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca50dd3c3c274ccebb2cfbddde9d065bb9">FR_TOO_MANY_OPEN_FILES</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="app3_8c.html#a65611adf1626e5e08da77cd33a98dd8b">get_fat()</a>, <a class="el" href="ff_8c.html#a72589f5bbb514c0b222ab8b292764418">GET_FATTIME</a>, <a class="el" href="structFATFS.html#a417095d7c20d56d417dc0998e0dd5a5c">FATFS::id</a>, <a class="el" href="structFFOBJID.html#afc765e01ff97bfd9645c42b0ba30397f">FFOBJID::id</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="structFATFS.html#ac26e848817569fedc15a9a4e49ddedd1">FATFS::last_clst</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="structFFOBJID.html#a61f23dcb8ffcbe46cf8f1385b6065be7">FFOBJID::lockid</a>, <a class="el" href="ff_8c.html#a03a711029b966a7fad4f01e546b5e034">NS_NONAME</a>, <a class="el" href="ff_8c.html#ad2306816015e67e72cfd0a20a880b227">NSFLAG</a>, <a class="el" href="structFIL.html#ad95b6e85106673b0d7a1855da4d264f4">FIL::obj</a>, <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>, <a class="el" href="structFFOBJID.html#a83c51ba99687054f0cc653b45f195268">FFOBJID::objsize</a>, <a class="el" href="structFATFS.html#acae426c920cd7f59e5883f948e1b3184">FATFS::pdrv</a>, <a class="el" href="diskio_8h.html#aacdfef1dad6565f65c26d12fe0ea4b2ba2ea4b6ef3fffc17dd1d38ab5c2837737">RES_OK</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a>, <a class="el" href="structFIL.html#aa3f9f9ed9341b765862d073a95c86001">FIL::sect</a>, <a class="el" href="ff_8c.html#a42b5140fc5e09a53c8f4cba66dc0e6c1">SS</a>, <a class="el" href="structFFOBJID.html#aa7bfa8dd8958d11df042a67e1da25f63">FFOBJID::stat</a>, <a class="el" href="structFATFS.html#a647e43c9ccae94b7274793d1909897de">FATFS::wflag</a>, <a class="el" href="structFATFS.html#aaf7eccaccdc9c4243230672d6b2f6566">FATFS::winsect</a>, <a class="el" href="ff_8c.html#aafe8687fb9356906c13ccd9fe88eb3de">XDIR_Attr</a>, <a class="el" href="ff_8c.html#a74046208323ac5e8b5214b05e1a43b87">XDIR_CrtTime</a> e <a class="el" href="ff_8c.html#ac3fd42ab7ee833b0e3683b1843d310d6">XDIR_GenFlags</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#a4d64c986de4f3fd2592bfd750693dad3">ff_fopen()</a>, <a class="el" href="ff__stdio_8h.html#a13549e8d2483b3b5870fe21de3ca71af">ff_truncate()</a>, <a class="el" href="simple__example_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, <a class="el" href="app3_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>, <a class="el" href="app1_8c.html#a1fce2c571e1e933acc7a1cbfb9173e3c">open_append()</a>, <a class="el" href="FatFS__SPI__example_8cpp.html#af5fed851546ab6b44c411e14f35f68ab">simple()</a> e <a class="el" href="dynamic__config__example_8cpp.html#a1a711423bb6fba823d102de280a8b732">test()</a>.</p>
+
+</div>
+</div>
+<a id="ab63b213c75f7335fbb63a1f3f70e5fc7" name="ab63b213c75f7335fbb63a1f3f70e5fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63b213c75f7335fbb63a1f3f70e5fc7">&#9670;&#160;</a></span>f_opendir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_opendir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDIR.html">DIR</a> *&#160;</td>
+          <td class="paramname"><em>dp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8h.html#a3a9db44e978ed6c13b641e092d4cd7d3">AM_DIR</a>, <a class="el" href="structFFOBJID.html#ae9b1e6f98dbad367cc00f92b87f8d279">FFOBJID::attr</a>, <a class="el" href="structDIR.html#afdb5d6302a88eaf5d43da0352ca2cc91">DIR::blk_ofs</a>, <a class="el" href="structFFOBJID.html#a564878e1c6951edfcd1a6ed29007eb36">FFOBJID::c_ofs</a>, <a class="el" href="structFFOBJID.html#a1ecaff32cf70a8f1d2c4b80964b283c8">FFOBJID::c_scl</a>, <a class="el" href="structFFOBJID.html#a989b81519645681bee531d56df5a9360">FFOBJID::c_size</a>, <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="structDIR.html#a6c2a8c0cf2d55ae99775e93a16593449">DIR::dir</a>, <a class="el" href="structDIR.html#ad90d974c0e7640307598c586bf141b32">DIR::fn</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca3dec4eba481cdf5e99d7cd6009e6dcf8">FR_INVALID_OBJECT</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c">FR_NO_FILE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cae4529c8cc8b59783d6efc9ba4f574532">FR_NO_PATH</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca50dd3c3c274ccebb2cfbddde9d065bb9">FR_TOO_MANY_OPEN_FILES</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="structFATFS.html#a417095d7c20d56d417dc0998e0dd5a5c">FATFS::id</a>, <a class="el" href="structFFOBJID.html#afc765e01ff97bfd9645c42b0ba30397f">FFOBJID::id</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="structFFOBJID.html#a61f23dcb8ffcbe46cf8f1385b6065be7">FFOBJID::lockid</a>, <a class="el" href="ff_8c.html#a03a711029b966a7fad4f01e546b5e034">NS_NONAME</a>, <a class="el" href="ff_8c.html#ad2306816015e67e72cfd0a20a880b227">NSFLAG</a>, <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>, <a class="el" href="structFFOBJID.html#a83c51ba99687054f0cc653b45f195268">FFOBJID::objsize</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a> e <a class="el" href="structFFOBJID.html#aa7bfa8dd8958d11df042a67e1da25f63">FFOBJID::stat</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="app2_8c.html#a246fe870ae7876feb9840f35c36f0969">delete_node()</a> e <a class="el" href="ff_8c.html#a6db7bc3d037b51a9f205eacda6177a5f">f_findfirst()</a>.</p>
+
+</div>
+</div>
+<a id="a4ce26253177c167df849e76f69b5c66c" name="a4ce26253177c167df849e76f69b5c66c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ce26253177c167df849e76f69b5c66c">&#9670;&#160;</a></span>f_printf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int f_printf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#a65dee564f69f2ec27f25b67a348018b9">IsDigit</a> e <a class="el" href="ff_8c.html#aedd31d207555a11109ae6158be2e1d97">SZ_NUM_BUF</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="simple__example_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, <a class="el" href="app1_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>, <a class="el" href="data__log__demo_8c.html#a5b78d5eb4cdd83b8b092a029509328d8">process_logger()</a>, <a class="el" href="FatFS__SPI__example_8cpp.html#af5fed851546ab6b44c411e14f35f68ab">simple()</a> e <a class="el" href="dynamic__config__example_8cpp.html#a1a711423bb6fba823d102de280a8b732">test()</a>.</p>
+
+</div>
+</div>
+<a id="ad1d73b8d01c2ef89eddf920b7fcc6beb" name="ad1d73b8d01c2ef89eddf920b7fcc6beb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d73b8d01c2ef89eddf920b7fcc6beb">&#9670;&#160;</a></span>f_putc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int f_putc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a699fc03ffa785ceab8812a7f204421f3" name="a699fc03ffa785ceab8812a7f204421f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699fc03ffa785ceab8812a7f204421f3">&#9670;&#160;</a></span>f_puts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int f_puts </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>cp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4c3dcb6869ca252888eebabe39727b3" name="ac4c3dcb6869ca252888eebabe39727b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c3dcb6869ca252888eebabe39727b3">&#9670;&#160;</a></span>f_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramname"><em>btr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> *&#160;</td>
+          <td class="paramname"><em>br</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#a41e4c46636679236568cf50b5535847f">ABORT</a>, <a class="el" href="structFIL.html#ac2aa36f0fa61cd82f905173d51f719b0">FIL::buf</a>, <a class="el" href="structFIL.html#a28a30613d48cefcf9efbd334cd861fc8">FIL::cltbl</a>, <a class="el" href="structFIL.html#aa41312aba551b9a6d1c9d3c8c7d2734b">FIL::clust</a>, <a class="el" href="structFATFS.html#ad7fa7a509f8d097a9ab182d6c47be568">FATFS::csize</a>, <a class="el" href="diskio_8c.html#a0711b1d03b833e9d73b3be1a6397f461">disk_read()</a>, <a class="el" href="diskio_8c.html#ac24448955ef914f54a499df1fb45689d">disk_write()</a>, <a class="el" href="structFIL.html#aea440945db26de9c4a88065c0c887fda">FIL::err</a>, <a class="el" href="ff_8c.html#affd69e5e6d205e09e1070b2f3c039072">FA_DIRTY</a>, <a class="el" href="ff_8h.html#a1f4f3530ff03abbd979b072536e72290">FA_READ</a>, <a class="el" href="structFIL.html#ac409508881f5a16f2998ae675072b376">FIL::flag</a>, <a class="el" href="structFIL.html#a088b03ab2e02f82e10e17bdd938190a6">FIL::fptr</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca897e9f2dd7629a80f48af242d8bc1a3d">FR_DENIED</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="app3_8c.html#a65611adf1626e5e08da77cd33a98dd8b">get_fat()</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="structFIL.html#ad95b6e85106673b0d7a1855da4d264f4">FIL::obj</a>, <a class="el" href="structFFOBJID.html#a83c51ba99687054f0cc653b45f195268">FFOBJID::objsize</a>, <a class="el" href="structFATFS.html#acae426c920cd7f59e5883f948e1b3184">FATFS::pdrv</a>, <a class="el" href="diskio_8h.html#aacdfef1dad6565f65c26d12fe0ea4b2ba2ea4b6ef3fffc17dd1d38ab5c2837737">RES_OK</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a>, <a class="el" href="structFIL.html#aa3f9f9ed9341b765862d073a95c86001">FIL::sect</a>, <a class="el" href="ff_8c.html#a42b5140fc5e09a53c8f4cba66dc0e6c1">SS</a>, <a class="el" href="structFATFS.html#a647e43c9ccae94b7274793d1909897de">FATFS::wflag</a>, <a class="el" href="structFATFS.html#a49e9c5c3ae9c13755242b6ce5748ecb1">FATFS::win</a> e <a class="el" href="structFATFS.html#aaf7eccaccdc9c4243230672d6b2f6566">FATFS::winsect</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff_8c.html#a4a47f14a554ff3a49fc122fe3e190f2f">f_gets()</a>, <a class="el" href="ff__stdio_8h.html#a6ce55d1d77e9997eea97261ec367dacc">ff_fgetc()</a>, <a class="el" href="ff__stdio_8h.html#a107d609a81b597957e92adfa632921c0">ff_fread()</a> e <a class="el" href="FatFS__SPI__example_8cpp.html#af5fed851546ab6b44c411e14f35f68ab">simple()</a>.</p>
+
+</div>
+</div>
+<a id="ab39e82a110695de45f416f3149358012" name="ab39e82a110695de45f416f3149358012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39e82a110695de45f416f3149358012">&#9670;&#160;</a></span>f_readdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_readdir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDIR.html">DIR</a> *&#160;</td>
+          <td class="paramname"><em>dp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFILINFO.html">FILINFO</a> *&#160;</td>
+          <td class="paramname"><em>fno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="ff_8c.html#a7dc00ac3fd99f0a14d6b7f3fc76b8778">DIR_READ_FILE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c">FR_NO_FILE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a> e <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="app2_8c.html#a246fe870ae7876feb9840f35c36f0969">delete_node()</a> e <a class="el" href="ff_8c.html#a013999e446481a607316b916441f8673">f_findnext()</a>.</p>
+
+</div>
+</div>
+<a id="aa775b9b024acfeb3a66523cab497d142" name="aa775b9b024acfeb3a66523cab497d142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa775b9b024acfeb3a66523cab497d142">&#9670;&#160;</a></span>f_rename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_rename </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path_new</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8h.html#ae8174d00798e34e7c9e95898cb9e1a09">AM_ARC</a>, <a class="el" href="ff_8h.html#a3a9db44e978ed6c13b641e092d4cd7d3">AM_DIR</a>, <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="structDIR.html#a6c2a8c0cf2d55ae99775e93a16593449">DIR::dir</a>, <a class="el" href="ff_8c.html#ad3233e40118ed66095f3c9545b788f8a">DIR_Attr</a>, <a class="el" href="structFATFS.html#a6ef76f8c5e30a9c6eeb6d868a7cbc91b">FATFS::dirbuf</a>, <a class="el" href="structDIR.html#a0330e9554e1f38795debe4495156873e">DIR::dptr</a>, <a class="el" href="ff_8h.html#afa366963220c89b882c0361794020c14">FA_WRITE</a>, <a class="el" href="ffconf_8h.html#a4374b721b8019acc9761fdd8b829ccd0">FF_FS_EXFAT</a>, <a class="el" href="structDIR.html#ad90d974c0e7640307598c586bf141b32">DIR::fn</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca0d8f024d256df76e84782b95018a2450">FR_EXIST</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca83e45a4b579558c57192c0a391b9bb45">FR_INVALID_NAME</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c">FR_NO_FILE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="ff_8c.html#a2db528782a021797b34bdc6e9e9de1c3">NS_DOT</a>, <a class="el" href="ff_8c.html#a03a711029b966a7fad4f01e546b5e034">NS_NONAME</a>, <a class="el" href="ff_8c.html#ad2306816015e67e72cfd0a20a880b227">NSFLAG</a>, <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a>, <a class="el" href="ff_8c.html#a90943705ce4b32e47562c9f56860c7af">SZDIRE</a>, <a class="el" href="structFATFS.html#a647e43c9ccae94b7274793d1909897de">FATFS::wflag</a>, <a class="el" href="structFATFS.html#a49e9c5c3ae9c13755242b6ce5748ecb1">FATFS::win</a>, <a class="el" href="ff_8c.html#aafe8687fb9356906c13ccd9fe88eb3de">XDIR_Attr</a>, <a class="el" href="ff_8c.html#a7c0a94f8a7efc7a710d6eb897059462d">XDIR_NameHash</a>, <a class="el" href="ff_8c.html#a382f456b33f0c719163bcf521aa7ecea">XDIR_NumName</a> e <a class="el" href="ff_8c.html#a37e729265403caf1ae349714e069a3e6">XDIR_NumSec</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#ab1776c210388cc2e3099a8cfb8dc0a7e">ff_rename()</a>.</p>
+
+</div>
+</div>
+<a id="a529e8f17cae495f6536ff405622c996c" name="a529e8f17cae495f6536ff405622c996c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a529e8f17cae495f6536ff405622c996c">&#9670;&#160;</a></span>f_setcp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_setcp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>&#160;</td>
+          <td class="paramname"><em>cp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa82bca64e28bc0d656a7999dd0eadec7" name="aa82bca64e28bc0d656a7999dd0eadec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82bca64e28bc0d656a7999dd0eadec7">&#9670;&#160;</a></span>f_setlabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_setlabel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe1f60daab5c7d11170c334fb832c798" name="abe1f60daab5c7d11170c334fb832c798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe1f60daab5c7d11170c334fb832c798">&#9670;&#160;</a></span>f_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_stat </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFILINFO.html">FILINFO</a> *&#160;</td>
+          <td class="paramname"><em>fno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="structDIR.html#ad90d974c0e7640307598c586bf141b32">DIR::fn</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca83e45a4b579558c57192c0a391b9bb45">FR_INVALID_NAME</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="ff_8c.html#a03a711029b966a7fad4f01e546b5e034">NS_NONAME</a>, <a class="el" href="ff_8c.html#ad2306816015e67e72cfd0a20a880b227">NSFLAG</a> e <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#a49475045158007036b818e99affb7a25">ff_stat()</a>.</p>
+
+</div>
+</div>
+<a id="ad69c7246b122ba56a134939ee0eaf847" name="ad69c7246b122ba56a134939ee0eaf847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad69c7246b122ba56a134939ee0eaf847">&#9670;&#160;</a></span>f_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_sync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8h.html#ae8174d00798e34e7c9e95898cb9e1a09">AM_ARC</a>, <a class="el" href="structFIL.html#ac2aa36f0fa61cd82f905173d51f719b0">FIL::buf</a>, <a class="el" href="structFIL.html#aa41312aba551b9a6d1c9d3c8c7d2734b">FIL::clust</a>, <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="ff_8c.html#ad3233e40118ed66095f3c9545b788f8a">DIR_Attr</a>, <a class="el" href="ff_8c.html#abfbfa613864a02a65f0bf70ead6672c7">DIR_FileSize</a>, <a class="el" href="ff_8c.html#afa0625d73f4683df24345f51e7a43da3">DIR_LstAccDate</a>, <a class="el" href="ff_8c.html#aa136ac8eaf0b3febba999e37b7d01803">DIR_ModTime</a>, <a class="el" href="structFIL.html#a5af9e9fb312b629220eaf684dd28c4a9">FIL::dir_ptr</a>, <a class="el" href="structFIL.html#a19e61b116df8e6f2138243998e43f131">FIL::dir_sect</a>, <a class="el" href="structFATFS.html#a6ef76f8c5e30a9c6eeb6d868a7cbc91b">FATFS::dirbuf</a>, <a class="el" href="diskio_8c.html#ac24448955ef914f54a499df1fb45689d">disk_write()</a>, <a class="el" href="ff_8c.html#affd69e5e6d205e09e1070b2f3c039072">FA_DIRTY</a>, <a class="el" href="ff_8c.html#a9ae82de1b6841df9041411357f8d3eb5">FA_MODIFIED</a>, <a class="el" href="structFIL.html#ac409508881f5a16f2998ae675072b376">FIL::flag</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="ff_8c.html#a72589f5bbb514c0b222ab8b292764418">GET_FATTIME</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="structFIL.html#ad95b6e85106673b0d7a1855da4d264f4">FIL::obj</a>, <a class="el" href="structFFOBJID.html#a83c51ba99687054f0cc653b45f195268">FFOBJID::objsize</a>, <a class="el" href="structFATFS.html#acae426c920cd7f59e5883f948e1b3184">FATFS::pdrv</a>, <a class="el" href="diskio_8h.html#aacdfef1dad6565f65c26d12fe0ea4b2ba2ea4b6ef3fffc17dd1d38ab5c2837737">RES_OK</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a>, <a class="el" href="structFIL.html#aa3f9f9ed9341b765862d073a95c86001">FIL::sect</a>, <a class="el" href="structFFOBJID.html#aa7bfa8dd8958d11df042a67e1da25f63">FFOBJID::stat</a>, <a class="el" href="structFATFS.html#a647e43c9ccae94b7274793d1909897de">FATFS::wflag</a>, <a class="el" href="ff_8c.html#af0a826e3f3902172e3ebd5a3132a0153">XDIR_AccTime</a>, <a class="el" href="ff_8c.html#aafe8687fb9356906c13ccd9fe88eb3de">XDIR_Attr</a>, <a class="el" href="ff_8c.html#a899bf596ce53d81a373229662249f524">XDIR_FileSize</a>, <a class="el" href="ff_8c.html#ae08bbe65fd20259cb98c85ce08aa53cb">XDIR_FstClus</a>, <a class="el" href="ff_8c.html#ac3fd42ab7ee833b0e3683b1843d310d6">XDIR_GenFlags</a>, <a class="el" href="ff_8c.html#aecb0af980a40b38b30dd0a736c8d6406">XDIR_ModTime</a>, <a class="el" href="ff_8c.html#a0f63c605687d0ed66c633ba6a10c01e5">XDIR_ModTime10</a> e <a class="el" href="ff_8c.html#a543e2a11cefac978a0108a7973416d56">XDIR_ValidFileSize</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff_8c.html#a53882db20ef4323dcfd1874d7733ffc3">f_close()</a> e <a class="el" href="FatFS__SPI__example_8cpp.html#af5fed851546ab6b44c411e14f35f68ab">simple()</a>.</p>
+
+</div>
+</div>
+<a id="a691a27b40c348f7c84b42e911636f38a" name="a691a27b40c348f7c84b42e911636f38a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691a27b40c348f7c84b42e911636f38a">&#9670;&#160;</a></span>f_truncate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_truncate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#a41e4c46636679236568cf50b5535847f">ABORT</a>, <a class="el" href="structFIL.html#ac2aa36f0fa61cd82f905173d51f719b0">FIL::buf</a>, <a class="el" href="structFIL.html#aa41312aba551b9a6d1c9d3c8c7d2734b">FIL::clust</a>, <a class="el" href="diskio_8c.html#ac24448955ef914f54a499df1fb45689d">disk_write()</a>, <a class="el" href="structFIL.html#aea440945db26de9c4a88065c0c887fda">FIL::err</a>, <a class="el" href="ff_8c.html#affd69e5e6d205e09e1070b2f3c039072">FA_DIRTY</a>, <a class="el" href="ff_8c.html#a9ae82de1b6841df9041411357f8d3eb5">FA_MODIFIED</a>, <a class="el" href="ff_8h.html#afa366963220c89b882c0361794020c14">FA_WRITE</a>, <a class="el" href="structFIL.html#ac409508881f5a16f2998ae675072b376">FIL::flag</a>, <a class="el" href="structFIL.html#a088b03ab2e02f82e10e17bdd938190a6">FIL::fptr</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca897e9f2dd7629a80f48af242d8bc1a3d">FR_DENIED</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="app3_8c.html#a65611adf1626e5e08da77cd33a98dd8b">get_fat()</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="structFIL.html#ad95b6e85106673b0d7a1855da4d264f4">FIL::obj</a>, <a class="el" href="structFFOBJID.html#a83c51ba99687054f0cc653b45f195268">FFOBJID::objsize</a>, <a class="el" href="structFATFS.html#acae426c920cd7f59e5883f948e1b3184">FATFS::pdrv</a>, <a class="el" href="diskio_8h.html#aacdfef1dad6565f65c26d12fe0ea4b2ba2ea4b6ef3fffc17dd1d38ab5c2837737">RES_OK</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a> e <a class="el" href="structFIL.html#aa3f9f9ed9341b765862d073a95c86001">FIL::sect</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="app3_8c.html#a93a18e2a0a10c54e2911d39b95cca157">allocate_contiguous_clusters()</a>, <a class="el" href="ff__stdio_8h.html#a11333d6704842c4cf284cb2685ea326c">ff_seteof()</a> e <a class="el" href="ff__stdio_8h.html#a13549e8d2483b3b5870fe21de3ca71af">ff_truncate()</a>.</p>
+
+</div>
+</div>
+<a id="a2858167fcd0bced48e9be434b3895efe" name="a2858167fcd0bced48e9be434b3895efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2858167fcd0bced48e9be434b3895efe">&#9670;&#160;</a></span>f_unlink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_unlink </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8h.html#a3a9db44e978ed6c13b641e092d4cd7d3">AM_DIR</a>, <a class="el" href="ff_8h.html#add6d85d1e7a02b4f6188783ef91a5f1e">AM_RDO</a>, <a class="el" href="structFFOBJID.html#ae9b1e6f98dbad367cc00f92b87f8d279">FFOBJID::attr</a>, <a class="el" href="structFATFS.html#a217d0ce0c8cec84aa7f0c142679412c6">FATFS::cdir</a>, <a class="el" href="ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503">DEF_NAMBUF</a>, <a class="el" href="structDIR.html#a6c2a8c0cf2d55ae99775e93a16593449">DIR::dir</a>, <a class="el" href="ff_8c.html#a7dc00ac3fd99f0a14d6b7f3fc76b8778">DIR_READ_FILE</a>, <a class="el" href="ff_8h.html#afa366963220c89b882c0361794020c14">FA_WRITE</a>, <a class="el" href="ffconf_8h.html#af0d4b41a010f1a611bc6fb9e42357350">FF_FS_RPATH</a>, <a class="el" href="structDIR.html#ad90d974c0e7640307598c586bf141b32">DIR::fn</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca897e9f2dd7629a80f48af242d8bc1a3d">FR_DENIED</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca83e45a4b579558c57192c0a391b9bb45">FR_INVALID_NAME</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97da8f98fc2e66d8fa7847f9ebb19b8c">FR_NO_FILE</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8c.html#aa2d2dda6ad1a1ec4a09e5cb30ae40e2a">FREE_NAMBUF</a>, <a class="el" href="structFFOBJID.html#a867089659a2374d44ab917c60037fe5c">FFOBJID::fs</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="ff_8c.html#a9880dce2d33fe7708f982b5f80a31142">INIT_NAMBUF</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="ff_8c.html#a2db528782a021797b34bdc6e9e9de1c3">NS_DOT</a>, <a class="el" href="ff_8c.html#a03a711029b966a7fad4f01e546b5e034">NS_NONAME</a>, <a class="el" href="ff_8c.html#ad2306816015e67e72cfd0a20a880b227">NSFLAG</a>, <a class="el" href="structDIR.html#a8fa2dfd8198410ea92a98281d982cf44">DIR::obj</a>, <a class="el" href="structFFOBJID.html#a83c51ba99687054f0cc653b45f195268">FFOBJID::objsize</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a> e <a class="el" href="structFFOBJID.html#aa7bfa8dd8958d11df042a67e1da25f63">FFOBJID::stat</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="app2_8c.html#a246fe870ae7876feb9840f35c36f0969">delete_node()</a>, <a class="el" href="ff__stdio_8h.html#a12e11935112a6092014b16d1be7f77cc">ff_remove()</a>, <a class="el" href="ff__stdio_8h.html#ab1776c210388cc2e3099a8cfb8dc0a7e">ff_rename()</a> e <a class="el" href="ff__stdio_8h.html#a84b8e81964cdf38d4a1ac7bdf10751cf">ff_rmdir()</a>.</p>
+
+</div>
+</div>
+<a id="aafaa718d1a487e12a8f0087173dba0b9" name="aafaa718d1a487e12a8f0087173dba0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafaa718d1a487e12a8f0087173dba0b9">&#9670;&#160;</a></span>f_utime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_utime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structFILINFO.html">FILINFO</a> *&#160;</td>
+          <td class="paramname"><em>fno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6a4dfae8a9e308bdb2283a37ef680f2" name="ae6a4dfae8a9e308bdb2283a37ef680f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a4dfae8a9e308bdb2283a37ef680f2">&#9670;&#160;</a></span>f_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> f_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFIL.html">FIL</a> *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramname"><em>btw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> *&#160;</td>
+          <td class="paramname"><em>bw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ff_8c.html#a41e4c46636679236568cf50b5535847f">ABORT</a>, <a class="el" href="structFIL.html#ac2aa36f0fa61cd82f905173d51f719b0">FIL::buf</a>, <a class="el" href="structFIL.html#a28a30613d48cefcf9efbd334cd861fc8">FIL::cltbl</a>, <a class="el" href="structFIL.html#aa41312aba551b9a6d1c9d3c8c7d2734b">FIL::clust</a>, <a class="el" href="structFATFS.html#ad7fa7a509f8d097a9ab182d6c47be568">FATFS::csize</a>, <a class="el" href="diskio_8c.html#a0711b1d03b833e9d73b3be1a6397f461">disk_read()</a>, <a class="el" href="diskio_8c.html#ac24448955ef914f54a499df1fb45689d">disk_write()</a>, <a class="el" href="structFIL.html#aea440945db26de9c4a88065c0c887fda">FIL::err</a>, <a class="el" href="ff_8c.html#affd69e5e6d205e09e1070b2f3c039072">FA_DIRTY</a>, <a class="el" href="ff_8c.html#a9ae82de1b6841df9041411357f8d3eb5">FA_MODIFIED</a>, <a class="el" href="ff_8h.html#afa366963220c89b882c0361794020c14">FA_WRITE</a>, <a class="el" href="ffconf_8h.html#a4374b721b8019acc9761fdd8b829ccd0">FF_FS_EXFAT</a>, <a class="el" href="structFIL.html#ac409508881f5a16f2998ae675072b376">FIL::flag</a>, <a class="el" href="structFIL.html#a088b03ab2e02f82e10e17bdd938190a6">FIL::fptr</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca897e9f2dd7629a80f48af242d8bc1a3d">FR_DENIED</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca97dee4a6b485dc8f91f37486092dfe34">FR_DISK_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44cab6c9903af6e9bffbb7a288705f4a6a76">FR_INT_ERR</a>, <a class="el" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44ca62fce5cd9df008f8fc85f99706bda5f1">FR_OK</a>, <a class="el" href="ff_8h.html#a50bfa912e87473bc54333523983f39f6">FS_EXFAT</a>, <a class="el" href="structFATFS.html#add27d97babe807b573eac98a71dc4ae5">FATFS::fs_type</a>, <a class="el" href="ff_8c.html#a7e653d8ca0ae09faa49cd5b7335fea84">LEAVE_FF</a>, <a class="el" href="structFIL.html#ad95b6e85106673b0d7a1855da4d264f4">FIL::obj</a>, <a class="el" href="structFFOBJID.html#a83c51ba99687054f0cc653b45f195268">FFOBJID::objsize</a>, <a class="el" href="structFATFS.html#acae426c920cd7f59e5883f948e1b3184">FATFS::pdrv</a>, <a class="el" href="diskio_8h.html#aacdfef1dad6565f65c26d12fe0ea4b2ba2ea4b6ef3fffc17dd1d38ab5c2837737">RES_OK</a>, <a class="el" href="structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb">FFOBJID::sclust</a>, <a class="el" href="structFIL.html#aa3f9f9ed9341b765862d073a95c86001">FIL::sect</a>, <a class="el" href="ff_8c.html#a42b5140fc5e09a53c8f4cba66dc0e6c1">SS</a>, <a class="el" href="structFATFS.html#a647e43c9ccae94b7274793d1909897de">FATFS::wflag</a>, <a class="el" href="structFATFS.html#a49e9c5c3ae9c13755242b6ce5748ecb1">FATFS::win</a> e <a class="el" href="structFATFS.html#aaf7eccaccdc9c4243230672d6b2f6566">FATFS::winsect</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff__stdio_8h.html#ace16784968ed82304c10473e3511b7d4">ff_fputc()</a>, <a class="el" href="ff__stdio_8h.html#ab90fc9888a238b66e45114de90e521bf">ff_fwrite()</a> e <a class="el" href="ff__stdio_8h.html#a13549e8d2483b3b5870fe21de3ca71af">ff_truncate()</a>.</p>
+
+</div>
+</div>
+<a id="ae63913186246b80cfce42dbab9e8bcab" name="ae63913186246b80cfce42dbab9e8bcab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63913186246b80cfce42dbab9e8bcab">&#9670;&#160;</a></span>ff_memalloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * ff_memalloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramname"><em>msize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="big__file__test_8c.html#acf143577800376dd931c059ecc61ba06">malloc</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff_8c.html#a983f0614033bd7cf587eb56d3054a91c">f_mkfs()</a>.</p>
+
+</div>
+</div>
+<a id="ab85fd090c8b8b17846ccc1e8cda16a9b" name="ab85fd090c8b8b17846ccc1e8cda16a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85fd090c8b8b17846ccc1e8cda16a9b">&#9670;&#160;</a></span>ff_memfree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ff_memfree </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mblock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="big__file__test_8c.html#a2c6efa7679f8cd9f61af96e105017560">free</a>.</p>
+
+</div>
+</div>
+<a id="a52f09f31c84747cc135c90282509961a" name="a52f09f31c84747cc135c90282509961a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52f09f31c84747cc135c90282509961a">&#9670;&#160;</a></span>ff_oem2uni()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a0bb095da65fbe52192dd9e3e643c7568">WCHAR</a> ff_oem2uni </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a0bb095da65fbe52192dd9e3e643c7568">WCHAR</a>&#160;</td>
+          <td class="paramname"><em>oem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>&#160;</td>
+          <td class="paramname"><em>cp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ffunicode_8c.html#afcbf86dfddc068d1df5155276ffc8ef8">CVTBL</a> e <a class="el" href="ffconf_8h.html#a56bf522419025961acdfaf6388f40402">FF_CODE_PAGE</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ff_8c.html#a4a47f14a554ff3a49fc122fe3e190f2f">f_gets()</a>.</p>
+
+</div>
+</div>
+<a id="a72914966e82f8df3504a3659834f2abe" name="a72914966e82f8df3504a3659834f2abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72914966e82f8df3504a3659834f2abe">&#9670;&#160;</a></span>ff_uni2oem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ff_8h.html#a0bb095da65fbe52192dd9e3e643c7568">WCHAR</a> ff_uni2oem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a>&#160;</td>
+          <td class="paramname"><em>uni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ff_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>&#160;</td>
+          <td class="paramname"><em>cp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ffunicode_8c.html#afcbf86dfddc068d1df5155276ffc8ef8">CVTBL</a> e <a class="el" href="ffconf_8h.html#a56bf522419025961acdfaf6388f40402">FF_CODE_PAGE</a>.</p>
+
+</div>
+</div>
+<a id="acb0bf9acde41b603662ab45811cbc806" name="acb0bf9acde41b603662ab45811cbc806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0bf9acde41b603662ab45811cbc806">&#9670;&#160;</a></span>ff_wtoupper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a> ff_wtoupper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a>&#160;</td>
+          <td class="paramname"><em>uni</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="ff_8c.html#a983f0614033bd7cf587eb56d3054a91c">f_mkfs()</a>.</p>
+
+</div>
+</div>
+<a id="af58b536abfd30f77213f4ecaf2ac52f5" name="af58b536abfd30f77213f4ecaf2ac52f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58b536abfd30f77213f4ecaf2ac52f5">&#9670;&#160;</a></span>get_fattime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a> get_fattime </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_85c56e450b3cb35d7543b2255c71e545.html">no-OS-FatFS-SD-SPI-RPi-Pico</a></li><li class="navelem"><a class="el" href="dir_5873464ee8fc386f57d942004acd9926.html">FatFs_SPI</a></li><li class="navelem"><a class="el" href="dir_258039b61be4d5699a645ea173ca3c08.html">ff15</a></li><li class="navelem"><a class="el" href="dir_5697ecc8e7c9dcf471d6400e4354ac66.html">source</a></li><li class="navelem"><a class="el" href="ff_8h.html">ff.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

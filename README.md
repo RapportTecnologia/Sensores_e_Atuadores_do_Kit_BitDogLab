@@ -6,12 +6,13 @@ Repositório raiz (monorepo) para projetos do KIT BitDogLab/EmbarcaTech, organiz
 
 - `BH1750-RP2040-RP3050/` — Driver/exemplos para o sensor de luminosidade BH1750 (RP2040/RP2350)
 - `HDMI-RP2040-RP2350/` — Exemplos/infra para saída de vídeo (HDMI/LVDS) no RP2040/RP2350
-- `I2C-RP2040-RP2350/` — Biblioteca I2C para RP2040/RP2350 (base para drivers)
+- `I2C-proxy-RP2040-RP2350/` — Biblioteca/proxy I2C para RP2040/RP2350 (base para drivers)
 - `MPU6050-RP2040-RP2350/` — Driver/exemplos para o sensor IMU MPU6050
 - `OLED_SSD1306-RP2040-RP2350/` — Driver/exemplos para display OLED SSD1306 (I2C)
 - `RP-Pico-Mock/` — Mocks do Pico SDK para testes (headers e stubs)
 - `VL53L0X-RP2040-RP2350/` — Driver/exemplos para o sensor de distância VL53L0X
 - `unity/` — Framework de testes unitários (submódulo externo ThrowTheSwitch/Unity)
+- `no-OS-FatFS-SD-SPI-RPi-Pico/` — Integração FatFS sobre SPI para cartão SD no Raspberry Pi Pico
 
 ## Clonagem
 
@@ -39,41 +40,44 @@ git submodule update --recursive --init
 git submodule update --remote --merge --recursive
 
 # Alternativamente, para um submódulo específico
-git submodule update --remote --merge -- I2C-RP2040-RP2350
+git submodule update --remote --merge -- I2C-proxy-RP2040-RP2350
 ```
 
 ## Remotos e protocolos
 
-- O arquivo `.gitmodules` usa uma combinação de HTTPS e SSH (git@) nos submódulos:
-  - HTTPS: `I2C-RP2040-RP2350`, `VL53L0X-RP2040-RP2350`, `OLED_SSD1306-RP2040-RP2350`, `MPU6050-RP2040-RP2350`, `RP-Pico-Mock`, `unity`
-  - SSH: `HDMI-RP2040-RP2350`, `BH1750-RP2040-RP3050`
+- O arquivo `.gitmodules` atualmente está configurado assim:
+  - SSH (git@): `I2C-proxy-RP2040-RP2350`
+  - HTTPS: `BH1750-RP2040-RP3050`, `HDMI-RP2040-RP2350`, `MPU6050-RP2040-RP2350`, `OLED_SSD1306-RP2040-RP2350`, `RP-Pico-Mock`, `VL53L0X-RP2040-RP2350`, `unity`, `no-OS-FatFS-SD-SPI-RPi-Pico`
 
 - Você pode padronizar para SSH (útil para push) ou HTTPS (sem chaves), por exemplo:
 
 ```bash
 # Para SSH (exemplos)
-cd HDMI-RP2040-RP2350 && git remote set-url origin git@github.com:RapportTecnologia/HDMI-RP2040-RP2350.git && cd -
-cd BH1750-RP2040-RP3050 && git remote set-url origin git@github.com:RapportTecnologia/BH1750-RP2040-RP3050.git && cd -
+cd I2C-proxy-RP2040-RP2350 && git remote set-url origin git@github.com:RapportTecnologia/I2C-proxy-RP2040-RP2350.git && cd -
 
 # Para HTTPS (exemplos)
-cd I2C-RP2040-RP2350 && git remote set-url origin https://github.com/carlosdelfino/I2C_proxy_RP2040_RP2350.git && cd -
-cd VL53L0X-RP2040-RP2350 && git remote set-url origin https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350.git && cd -
-cd OLED_SSD1306-RP2040-RP2350 && git remote set-url origin https://github.com/RapportTecnologia/OLED_SSD1306-RP2040-RP2350.git && cd -
+cd BH1750-RP2040-RP3050 && git remote set-url origin https://github.com/RapportTecnologia/BH1750-RP2040-RP3050.git && cd -
+cd HDMI-RP2040-RP2350 && git remote set-url origin https://github.com/RapportTecnologia/HDMI-RP2040-RP2350.git && cd -
+cd I2C-proxy-RP2040-RP2350 && git remote set-url origin https://github.com/RapportTecnologia/I2C-proxy-RP2040-RP2350.git && cd -
 cd MPU6050-RP2040-RP2350 && git remote set-url origin https://github.com/RapportTecnologia/MPU6050-RP2040-RP2350.git && cd -
+cd OLED_SSD1306-RP2040-RP2350 && git remote set-url origin https://github.com/RapportTecnologia/OLED_SSD1306-RP2040-RP2350.git && cd -
 cd RP-Pico-Mock && git remote set-url origin https://github.com/RapportTecnologia/RP-Pico-Mock.git && cd -
+cd VL53L0X-RP2040-RP2350 && git remote set-url origin https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350.git && cd -
+cd no-OS-FatFS-SD-SPI-RPi-Pico && git remote set-url origin https://github.com/ArvoreDosSaberes/no-OS-FatFS-SD-SPI-RPi-Pico.git && cd -
 cd unity && git remote set-url origin https://github.com/ThrowTheSwitch/Unity.git && cd -
 ```
 
 ### Submódulos e repositórios
 
-- `BH1750-RP2040-RP3050/` → git@github.com:RapportTecnologia/BH1750-RP2040-RP3050.git
-- `HDMI-RP2040-RP2350/` → git@github.com:RapportTecnologia/HDMI-RP2040-RP2350.git
-- `I2C-RP2040-RP2350/` → https://github.com/carlosdelfino/I2C_proxy_RP2040_RP2350.git
+- `BH1750-RP2040-RP3050/` → https://github.com/RapportTecnologia/BH1750-RP2040-RP3050.git
+- `HDMI-RP2040-RP2350/` → https://github.com/RapportTecnologia/HDMI-RP2040-RP2350.git
+- `I2C-proxy-RP2040-RP2350/` → git@github.com:RapportTecnologia/I2C-proxy-RP2040-RP2350.git
 - `MPU6050-RP2040-RP2350/` → https://github.com/RapportTecnologia/MPU6050-RP2040-RP2350.git
 - `OLED_SSD1306-RP2040-RP2350/` → https://github.com/RapportTecnologia/OLED_SSD1306-RP2040-RP2350.git
 - `RP-Pico-Mock/` → https://github.com/RapportTecnologia/RP-Pico-Mock.git
 - `VL53L0X-RP2040-RP2350/` → https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350.git
 - `unity/` → https://github.com/ThrowTheSwitch/Unity.git
+- `no-OS-FatFS-SD-SPI-RPi-Pico/` → https://github.com/ArvoreDosSaberes/no-OS-FatFS-SD-SPI-RPi-Pico.git
 
 Sincronizar URLs de submódulos com `.gitmodules` (após alterar `.gitmodules` ou clonar):
 

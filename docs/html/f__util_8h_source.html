@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sensores_e_Atuadores_do_Kit_BitDogLab: Código-Fonte de no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/include/f_util.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sensores_e_Atuadores_do_Kit_BitDogLab
+   </div>
+   <div id="projectbrief">Documentação consolidada dos módulos (RP2040/RP2350)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('f__util_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">f_util.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="f__util_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/* f_util.h</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">Copyright 2021 Carl John Kugler III</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">Licensed under the Apache License, Version 2.0 (the License); you may not use </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">this file except in compliance with the License. You may obtain a copy of the </span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">License at</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"></span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   http://www.apache.org/licenses/LICENSE-2.0 </span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">Unless required by applicable law or agreed to in writing, software distributed </span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">under the License is distributed on an AS IS BASIS, WITHOUT WARRANTIES OR </span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">CONDITIONS OF ANY KIND, either express or implied. See the License for the </span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">specific language governing permissions and limitations under the License.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="ff_8h.html">ff.h</a>&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="f__util_8h.html#a563ab2b3b434b4a7e97448c1c1c1e187">FRESULT_str</a>(<a class="code hl_enumeration" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> i);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_enumeration" href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a> <a class="code hl_function" href="f__util_8h.html#a246fe870ae7876feb9840f35c36f0969">delete_node</a> (</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_typedef" href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a>* path,    <span class="comment">/* Path name buffer with the sub-directory to delete */</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_typedef" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> sz_buff,   <span class="comment">/* Size of path name buffer (items) */</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_struct" href="structFILINFO.html">FILINFO</a>* fno    <span class="comment">/* Name read buffer */</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    );</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abig__file__test_8c_html_a36cb3b01d81ffd844bbbfb54003e06ec"><div class="ttname"><a href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></div><div class="ttdeci">unsigned int UINT</div><div class="ttdef"><b>Definição</b> big_file_test.c:44</div></div>
+<div class="ttc" id="af__util_8h_html_a246fe870ae7876feb9840f35c36f0969"><div class="ttname"><a href="f__util_8h.html#a246fe870ae7876feb9840f35c36f0969">delete_node</a></div><div class="ttdeci">FRESULT delete_node(TCHAR *path, UINT sz_buff, FILINFO *fno)</div><div class="ttdoc">Recursively delete a directory tree.</div><div class="ttdef"><b>Definição</b> app2.c:9</div></div>
+<div class="ttc" id="af__util_8h_html_a563ab2b3b434b4a7e97448c1c1c1e187"><div class="ttname"><a href="f__util_8h.html#a563ab2b3b434b4a7e97448c1c1c1e187">FRESULT_str</a></div><div class="ttdeci">const char * FRESULT_str(FRESULT i)</div><div class="ttdoc">Convert a FatFs FRESULT error/status to a human-readable string.</div><div class="ttdef"><b>Definição</b> f_util.c:26</div></div>
+<div class="ttc" id="aff_8h_html"><div class="ttname"><a href="ff_8h.html">ff.h</a></div></div>
+<div class="ttc" id="aff_8h_html_a03bdb8ce5895c7e261aadc2529637546"><div class="ttname"><a href="ff_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a></div><div class="ttdeci">char TCHAR</div><div class="ttdef"><b>Definição</b> ff.h:95</div></div>
+<div class="ttc" id="aff_8h_html_a49d0171ecbd362cda5680a0d360db44c"><div class="ttname"><a href="ff_8h.html#a49d0171ecbd362cda5680a0d360db44c">FRESULT</a></div><div class="ttdeci">FRESULT</div><div class="ttdef"><b>Definição</b> ff.h:274</div></div>
+<div class="ttc" id="astructFILINFO_html"><div class="ttname"><a href="structFILINFO.html">FILINFO</a></div><div class="ttdef"><b>Definição</b> ff.h:245</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_85c56e450b3cb35d7543b2255c71e545.html">no-OS-FatFS-SD-SPI-RPi-Pico</a></li><li class="navelem"><a class="el" href="dir_5873464ee8fc386f57d942004acd9926.html">FatFs_SPI</a></li><li class="navelem"><a class="el" href="dir_854db27c382be9ae8c136f3061dada48.html">include</a></li><li class="navelem"><a class="el" href="f__util_8h.html">f_util.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

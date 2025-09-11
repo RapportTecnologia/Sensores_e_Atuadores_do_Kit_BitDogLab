@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['advance_5fmock_5ftime_5fus_0',['advance_mock_time_us',['../pico__sdk__stubs_8h.html#acde64a975f61bfe0afd4cf7655ca1fe9',1,'advance_mock_time_us(uint64_t us):&#160;pico_sdk_mocks.cpp'],['../pico__sdk__mocks_8cpp.html#acde64a975f61bfe0afd4cf7655ca1fe9',1,'advance_mock_time_us(uint64_t us):&#160;pico_sdk_mocks.cpp']]],
-  ['available_1',['available',['../classI2C.html#a787172b1d9e36667c5b2b2ba9cd3cb64',1,'I2C']]]
+  ['_5f_5fattribute_5f_5f_0',['__attribute__',['../util_8h.html#ad47157efa4e73f0a164062d9f12a1633',1,'__attribute__((always_inline)) static inline void __disable_irq(void):&#160;util.h'],['../util_8h.html#aecfbeeb388f52966fe9c3736c2f5f38a',1,'__attribute__((__noreturn__)) static inline void system_reset():&#160;util.h']]]
 ];

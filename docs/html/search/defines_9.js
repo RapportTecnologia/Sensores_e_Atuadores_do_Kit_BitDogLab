@@ -1,5 +1,22 @@
 var searchData=
 [
-  ['max_5ftext_5fcolumns_0',['max_text_columns',['../ssd1306__i2c_8h.html#abe2b8a2431d0df962a7fe66e9281e6f5',1,'ssd1306_i2c.h']]],
-  ['max_5ftext_5flines_1',['max_text_lines',['../ssd1306__i2c_8h.html#afe0c35b2c6fdd7e94d1e6e0960448d07',1,'ssd1306_i2c.h']]]
+  ['i2c_5fdefault_0',['i2c_default',['../pico__sdk__stubs_8h.html#a9f2660265bb7f68a0813f59928c545f4',1,'pico_sdk_stubs.h']]],
+  ['i2c_5fid_1',['I2C_ID',['../MPU6050-RP2040-RP2350_2main_8cpp.html#ae9f2fc3817b4830b2ac6f35e21532d76',1,'main.cpp']]],
+  ['i2c_5fport_2',['I2C_PORT',['../BH1750-RP2040-RP3050_2main_8cpp.html#ad9ecf80e1eac083d16ec47f9d3aeb39f',1,'main.cpp']]],
+  ['i2c_5fscl_3',['I2C_SCL',['../oled_8h.html#a212ca328a6409c98f8c3dfbbe1ba561d',1,'oled.h']]],
+  ['i2c_5fscl_5fpin_4',['i2c_scl_pin',['../MPU6050-RP2040-RP2350_2main_8cpp.html#a0e4e08bab2fb484136d18b067bef372c',1,'I2C_SCL_PIN:&#160;main.cpp'],['../VL53L0X-RP2040-RP2350_2main_8cpp.html#a0e4e08bab2fb484136d18b067bef372c',1,'I2C_SCL_PIN:&#160;main.cpp']]],
+  ['i2c_5fsda_5',['I2C_SDA',['../oled_8h.html#a18aefd12ad84d4c33dc97923cb821e47',1,'oled.h']]],
+  ['i2c_5fsda_5fpin_6',['i2c_sda_pin',['../MPU6050-RP2040-RP2350_2main_8cpp.html#a2cade698267beb86ccaa38c14d35ab0f',1,'I2C_SDA_PIN:&#160;main.cpp'],['../VL53L0X-RP2040-RP2350_2main_8cpp.html#a2cade698267beb86ccaa38c14d35ab0f',1,'I2C_SDA_PIN:&#160;main.cpp']]],
+  ['init_5fnambuf_7',['INIT_NAMBUF',['../ff_8c.html#a9880dce2d33fe7708f982b5f80a31142',1,'ff.c']]],
+  ['isdigit_8',['IsDigit',['../ff_8c.html#a65dee564f69f2ec27f25b67a348018b9',1,'ff.c']]],
+  ['isdio_5fmrite_9',['ISDIO_MRITE',['../diskio_8h.html#aa79f4043470c49016d80558773e740a5',1,'diskio.h']]],
+  ['isdio_5fread_10',['ISDIO_READ',['../diskio_8h.html#a9eb2d8ccc0b89299bc442396811f8723',1,'diskio.h']]],
+  ['isdio_5fwrite_11',['ISDIO_WRITE',['../diskio_8h.html#a9637dcd58e0f1f301edf0cccff9e3507',1,'diskio.h']]],
+  ['islower_12',['IsLower',['../ff_8c.html#a4a9d454724926bd51a3aed589a97f08b',1,'ff.c']]],
+  ['isseparator_13',['IsSeparator',['../ff_8c.html#ad82f39ae601a5fa01233b70cf8a03080',1,'ff.c']]],
+  ['issurrogate_14',['IsSurrogate',['../ff_8c.html#a1678f40df73ed6cd30ed3e837b3558e7',1,'ff.c']]],
+  ['issurrogateh_15',['IsSurrogateH',['../ff_8c.html#ad148073d4a74bdff0f86f2b18284b569',1,'ff.c']]],
+  ['issurrogatel_16',['IsSurrogateL',['../ff_8c.html#a7a67adc6a71fa08dbbe481ad756849c4',1,'ff.c']]],
+  ['isterminator_17',['IsTerminator',['../ff_8c.html#a4f1355f5f96b054e17ef5883ab29863e',1,'ff.c']]],
+  ['isupper_18',['IsUpper',['../ff_8c.html#a89b2514198590e139dd064c5d534f302',1,'ff.c']]]
 ];

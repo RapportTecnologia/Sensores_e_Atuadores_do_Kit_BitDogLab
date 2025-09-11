@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sensores_e_Atuadores_do_Kit_BitDogLab: Código-Fonte de no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/include/ff_stdio.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sensores_e_Atuadores_do_Kit_BitDogLab
+   </div>
+   <div id="projectbrief">Documentação consolidada dos módulos (RP2040/RP2350)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('ff__stdio_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ff_stdio.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="ff__stdio_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">/* ff_stdio.h</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">Copyright 2021 Carl John Kugler III</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"></span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">Licensed under the Apache License, Version 2.0 (the License); you may not use </span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">this file except in compliance with the License. You may obtain a copy of the </span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">License at</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"></span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   http://www.apache.org/licenses/LICENSE-2.0 </span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">Unless required by applicable law or agreed to in writing, software distributed </span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">under the License is distributed on an AS IS BASIS, WITHOUT WARRANTIES OR </span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">CONDITIONS OF ANY KIND, either express or implied. See the License for the </span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">specific language governing permissions and limitations under the License.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// For compatibility with FreeRTOS+FAT API</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#include &lt;errno.h&gt;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#include &lt;<a class="code" href="stdlib_8h.html">stdlib.h</a>&gt;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">//</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#include &quot;<a class="code" href="ff_8h.html">ff.h</a>&quot;</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">//</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#include &quot;<a class="code" href="my__debug_8h.html">my_debug.h</a>&quot;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a5f27cdb72de7fe4c5533003191dd6cfd">   61</a></span><span class="preprocessor">#define BaseType_t int</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">   62</a></span><span class="preprocessor">#define FF_FILE FIL</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a6244695926ddfe8d4105e772eeb2a762">   64</a></span><span class="preprocessor">#define ff_rewind f_rewind</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a4d523dc6c079459faa62130465595246">   65</a></span><span class="preprocessor">#define pvPortMalloc malloc</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a5e70e878c0ed79ab346b5eab7e93ddff">   66</a></span><span class="preprocessor">#define vPortFree free</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a3ecca4eef624312ad2cf3db6420f4934">   67</a></span><span class="preprocessor">#define ffconfigMAX_FILENAME 250</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a5772e2afbf233c193d1eba5ced1a6166">   68</a></span><span class="preprocessor">#define configASSERT myASSERT</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a4deec3f4625b27b1cc7d8527806f2439">   69</a></span><span class="preprocessor">#define FF_PRINTF printf</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#ad836dd7abef3eced71f4ce24d39debd9">   70</a></span><span class="preprocessor">#define pdFREERTOS_ERRNO_NONE 0</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#ade408c032cf86b75eda35d9c4abfc001">   71</a></span><span class="preprocessor">#define FF_EOF (-1)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#aa9ba600eadd30d48786df0066e598a1a">   72</a></span><span class="preprocessor">#define FF_SEEK_SET 0</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a125e93dee542a3b8830e03af21fc1019">   73</a></span><span class="preprocessor">#define FF_SEEK_CUR 1</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a3e6d15c6d7e07f67c5c72cea5b70447c">   74</a></span><span class="preprocessor">#define FF_SEEK_END 2</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#aa56260e937e7e203026707e5ba944273">   75</a></span><span class="preprocessor">#define pdFALSE 0</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#af268cf937960eb029256bd9c4d949fbe">   76</a></span><span class="preprocessor">#define pdTRUE 1</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#af0eff474bcecac5fe06ca9247a0824a7">   77</a></span><span class="preprocessor">#define ff_filelength f_size</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#ae9e35eb9b49615817efe6ac8bff7897a">   78</a></span><span class="preprocessor">#define ff_feof f_eof</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structFF__STAT.html">   80</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structFF__STAT.html">FF_STAT</a> {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="structFF__STAT.html#af89270501119cf55167bea55c06de805">   81</a></span>    uint32_t <a class="code hl_variable" href="structFF__STAT.html#af89270501119cf55167bea55c06de805">st_size</a>; <span class="comment">/* Size of the object in number of bytes. */</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// uint16_t st_mode;      /* The mode (attribute bits) of this</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// file or directory. */</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="ff__stdio_8h.html#a9e1cacc103ba348d1eac55ee27488dd3">   84</a></span>} <a class="code hl_typedef" href="ff__stdio_8h.html#a9e1cacc103ba348d1eac55ee27488dd3">FF_Stat_t</a>;</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="};">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structFF__FindData__t.html">   86</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="structFF__FindData__t.html#a9f2aee34b5f73915019c71d1fad0c067">   87</a></span>    <a class="code hl_struct" href="structDIR.html">DIR</a> <a class="code hl_variable" href="structFF__FindData__t.html#a9f2aee34b5f73915019c71d1fad0c067">dir</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structFF__FindData__t.html#ac37be4cdc93eb54ac9c12828dabeec43">   88</a></span>    <a class="code hl_struct" href="structFILINFO.html">FILINFO</a> <a class="code hl_variable" href="structFF__FindData__t.html#ac37be4cdc93eb54ac9c12828dabeec43">fileinfo</a>;    </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structFF__FindData__t.html#a37d4fd777002e0e641a2ad60bf56624f">   89</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structFF__FindData__t.html#a37d4fd777002e0e641a2ad60bf56624f">pcFileName</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="structFF__FindData__t.html#a3ceb1c9ceaa2e94637e3cdfd31ab16e8">   90</a></span>    uint32_t <a class="code hl_variable" href="structFF__FindData__t.html#a3ceb1c9ceaa2e94637e3cdfd31ab16e8">ulFileSize</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">//uint8_t ucAttributes;</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>} <a class="code hl_struct" href="structFF__FindData__t.html">FF_FindData_t</a>;</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *<a class="code hl_function" href="ff__stdio_8h.html#a4d64c986de4f3fd2592bfd750693dad3">ff_fopen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pcFile, <span class="keyword">const</span> <span class="keywordtype">char</span> *pcMode);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#a5b15f8ec073fa17cc651690af3f53ebe">ff_fclose</a>(<a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *pxStream);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#a49475045158007036b818e99affb7a25">ff_stat</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pcFileName, <a class="code hl_struct" href="structFF__STAT.html">FF_Stat_t</a> *pxStatBuffer);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keywordtype">size_t</span> <a class="code hl_function" href="ff__stdio_8h.html#ab90fc9888a238b66e45114de90e521bf">ff_fwrite</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *pvBuffer, <span class="keywordtype">size_t</span> xSize, <span class="keywordtype">size_t</span> xItems,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                 <a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *pxStream);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keywordtype">size_t</span> <a class="code hl_function" href="ff__stdio_8h.html#a107d609a81b597957e92adfa632921c0">ff_fread</a>(<span class="keywordtype">void</span> *pvBuffer, <span class="keywordtype">size_t</span> xSize, <span class="keywordtype">size_t</span> xItems, <a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *pxStream);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#a8e04d7283dea389adfbedca14cea5b5c">ff_chdir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pcDirectoryName);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keywordtype">char</span> *<a class="code hl_function" href="ff__stdio_8h.html#a1a536dc743c880f709c82237e9a9cdde">ff_getcwd</a>(<span class="keywordtype">char</span> *pcBuffer, <span class="keywordtype">size_t</span> xBufferLength);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#aead5117d908f8a3bf6d51b97e3092d70">ff_mkdir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pcPath);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#ace16784968ed82304c10473e3511b7d4">ff_fputc</a>(<span class="keywordtype">int</span> iChar, <a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *pxStream);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#a6ce55d1d77e9997eea97261ec367dacc">ff_fgetc</a>(<a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *pxStream);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#a84b8e81964cdf38d4a1ac7bdf10751cf">ff_rmdir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pcDirectory);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#a12e11935112a6092014b16d1be7f77cc">ff_remove</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pcPath);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keywordtype">long</span> <a class="code hl_function" href="ff__stdio_8h.html#a609dac0af713ba070a042e39542b7377">ff_ftell</a>(<a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *pxStream);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#a9e7da1b8549ae70014a400a2c8e456cb">ff_fseek</a>(<a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *pxStream, <span class="keywordtype">int</span> iOffset, <span class="keywordtype">int</span> iWhence);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#a02f6cf92e67f39c89bebd31f8edaa7c8">ff_findfirst</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pcDirectory, <a class="code hl_struct" href="structFF__FindData__t.html">FF_FindData_t</a> *pxFindData);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#aa8a96be67632fd0bd93baa3eaf5bf722">ff_findnext</a>( <a class="code hl_struct" href="structFF__FindData__t.html">FF_FindData_t</a> *pxFindData );</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *<a class="code hl_function" href="ff__stdio_8h.html#a13549e8d2483b3b5870fe21de3ca71af">ff_truncate</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> * pcFileName, <span class="keywordtype">long</span> lTruncateSize );</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#a11333d6704842c4cf284cb2685ea326c">ff_seteof</a>( <a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *pxStream );</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keywordtype">int</span> <a class="code hl_function" href="ff__stdio_8h.html#ab1776c210388cc2e3099a8cfb8dc0a7e">ff_rename</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *pcOldName, <span class="keyword">const</span> <span class="keywordtype">char</span> *pcNewName, <span class="keywordtype">int</span> bDeleteIfExists );</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keywordtype">char</span> *<a class="code hl_function" href="ff__stdio_8h.html#a8ac366456015168ac7171a4e01d52943">ff_fgets</a>(<span class="keywordtype">char</span> *pcBuffer, <span class="keywordtype">size_t</span> xCount, <a class="code hl_define" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a> *pxStream);</div>
+<div class="ttc" id="aff_8h_html"><div class="ttname"><a href="ff_8h.html">ff.h</a></div></div>
+<div class="ttc" id="aff__stdio_8h_html_a02f6cf92e67f39c89bebd31f8edaa7c8"><div class="ttname"><a href="ff__stdio_8h.html#a02f6cf92e67f39c89bebd31f8edaa7c8">ff_findfirst</a></div><div class="ttdeci">int ff_findfirst(const char *pcDirectory, FF_FindData_t *pxFindData)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:336</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a107d609a81b597957e92adfa632921c0"><div class="ttname"><a href="ff__stdio_8h.html#a107d609a81b597957e92adfa632921c0">ff_fread</a></div><div class="ttdeci">size_t ff_fread(void *pvBuffer, size_t xSize, size_t xItems, FF_FILE *pxStream)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:162</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a11333d6704842c4cf284cb2685ea326c"><div class="ttname"><a href="ff__stdio_8h.html#a11333d6704842c4cf284cb2685ea326c">ff_seteof</a></div><div class="ttdeci">int ff_seteof(FF_FILE *pxStream)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:426</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a12e11935112a6092014b16d1be7f77cc"><div class="ttname"><a href="ff__stdio_8h.html#a12e11935112a6092014b16d1be7f77cc">ff_remove</a></div><div class="ttdeci">int ff_remove(const char *pcPath)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:293</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a13549e8d2483b3b5870fe21de3ca71af"><div class="ttname"><a href="ff__stdio_8h.html#a13549e8d2483b3b5870fe21de3ca71af">ff_truncate</a></div><div class="ttdeci">FF_FILE * ff_truncate(const char *pcFileName, long lTruncateSize)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:390</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a1a536dc743c880f709c82237e9a9cdde"><div class="ttname"><a href="ff__stdio_8h.html#a1a536dc743c880f709c82237e9a9cdde">ff_getcwd</a></div><div class="ttdeci">char * ff_getcwd(char *pcBuffer, size_t xBufferLength)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:192</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a49475045158007036b818e99affb7a25"><div class="ttname"><a href="ff__stdio_8h.html#a49475045158007036b818e99affb7a25">ff_stat</a></div><div class="ttdeci">int ff_stat(const char *pcFileName, FF_Stat_t *pxStatBuffer)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:127</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a4d64c986de4f3fd2592bfd750693dad3"><div class="ttname"><a href="ff__stdio_8h.html#a4d64c986de4f3fd2592bfd750693dad3">ff_fopen</a></div><div class="ttdeci">FF_FILE * ff_fopen(const char *pcFile, const char *pcMode)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:89</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a5b15f8ec073fa17cc651690af3f53ebe"><div class="ttname"><a href="ff__stdio_8h.html#a5b15f8ec073fa17cc651690af3f53ebe">ff_fclose</a></div><div class="ttdeci">int ff_fclose(FF_FILE *pxStream)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:111</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a609dac0af713ba070a042e39542b7377"><div class="ttname"><a href="ff__stdio_8h.html#a609dac0af713ba070a042e39542b7377">ff_ftell</a></div><div class="ttdeci">long ff_ftell(FF_FILE *pxStream)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:302</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a6ce55d1d77e9997eea97261ec367dacc"><div class="ttname"><a href="ff__stdio_8h.html#a6ce55d1d77e9997eea97261ec367dacc">ff_fgetc</a></div><div class="ttdeci">int ff_fgetc(FF_FILE *pxStream)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:256</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a7f360c4fe65347091f777eb7cd186b81"><div class="ttname"><a href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a></div><div class="ttdeci">#define FF_FILE</div><div class="ttdef"><b>Definição</b> ff_stdio.h:62</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a84b8e81964cdf38d4a1ac7bdf10751cf"><div class="ttname"><a href="ff__stdio_8h.html#a84b8e81964cdf38d4a1ac7bdf10751cf">ff_rmdir</a></div><div class="ttdeci">int ff_rmdir(const char *pcDirectory)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:278</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a8ac366456015168ac7171a4e01d52943"><div class="ttname"><a href="ff__stdio_8h.html#a8ac366456015168ac7171a4e01d52943">ff_fgets</a></div><div class="ttdeci">char * ff_fgets(char *pcBuffer, size_t xCount, FF_FILE *pxStream)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:452</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a8e04d7283dea389adfbedca14cea5b5c"><div class="ttname"><a href="ff__stdio_8h.html#a8e04d7283dea389adfbedca14cea5b5c">ff_chdir</a></div><div class="ttdeci">int ff_chdir(const char *pcDirectoryName)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:178</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a9e1cacc103ba348d1eac55ee27488dd3"><div class="ttname"><a href="ff__stdio_8h.html#a9e1cacc103ba348d1eac55ee27488dd3">FF_Stat_t</a></div><div class="ttdeci">struct FF_STAT FF_Stat_t</div></div>
+<div class="ttc" id="aff__stdio_8h_html_a9e7da1b8549ae70014a400a2c8e456cb"><div class="ttname"><a href="ff__stdio_8h.html#a9e7da1b8549ae70014a400a2c8e456cb">ff_fseek</a></div><div class="ttdeci">int ff_fseek(FF_FILE *pxStream, int iOffset, int iWhence)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:311</div></div>
+<div class="ttc" id="aff__stdio_8h_html_aa8a96be67632fd0bd93baa3eaf5bf722"><div class="ttname"><a href="ff__stdio_8h.html#aa8a96be67632fd0bd93baa3eaf5bf722">ff_findnext</a></div><div class="ttdeci">int ff_findnext(FF_FindData_t *pxFindData)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:372</div></div>
+<div class="ttc" id="aff__stdio_8h_html_ab1776c210388cc2e3099a8cfb8dc0a7e"><div class="ttname"><a href="ff__stdio_8h.html#ab1776c210388cc2e3099a8cfb8dc0a7e">ff_rename</a></div><div class="ttdeci">int ff_rename(const char *pcOldName, const char *pcNewName, int bDeleteIfExists)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:435</div></div>
+<div class="ttc" id="aff__stdio_8h_html_ab90fc9888a238b66e45114de90e521bf"><div class="ttname"><a href="ff__stdio_8h.html#ab90fc9888a238b66e45114de90e521bf">ff_fwrite</a></div><div class="ttdeci">size_t ff_fwrite(const void *pvBuffer, size_t xSize, size_t xItems, FF_FILE *pxStream)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:145</div></div>
+<div class="ttc" id="aff__stdio_8h_html_ace16784968ed82304c10473e3511b7d4"><div class="ttname"><a href="ff__stdio_8h.html#ace16784968ed82304c10473e3511b7d4">ff_fputc</a></div><div class="ttdeci">int ff_fputc(int iChar, FF_FILE *pxStream)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:231</div></div>
+<div class="ttc" id="aff__stdio_8h_html_aead5117d908f8a3bf6d51b97e3092d70"><div class="ttname"><a href="ff__stdio_8h.html#aead5117d908f8a3bf6d51b97e3092d70">ff_mkdir</a></div><div class="ttdeci">int ff_mkdir(const char *pcPath)</div><div class="ttdef"><b>Definição</b> ff_stdio.c:220</div></div>
+<div class="ttc" id="amy__debug_8h_html"><div class="ttname"><a href="my__debug_8h.html">my_debug.h</a></div></div>
+<div class="ttc" id="astdlib_8h_html"><div class="ttname"><a href="stdlib_8h.html">stdlib.h</a></div></div>
+<div class="ttc" id="astructDIR_html"><div class="ttname"><a href="structDIR.html">DIR</a></div><div class="ttdef"><b>Definição</b> ff.h:226</div></div>
+<div class="ttc" id="astructFF__FindData__t_html"><div class="ttname"><a href="structFF__FindData__t.html">FF_FindData_t</a></div><div class="ttdef"><b>Definição</b> ff_stdio.h:86</div></div>
+<div class="ttc" id="astructFF__FindData__t_html_a37d4fd777002e0e641a2ad60bf56624f"><div class="ttname"><a href="structFF__FindData__t.html#a37d4fd777002e0e641a2ad60bf56624f">FF_FindData_t::pcFileName</a></div><div class="ttdeci">const char * pcFileName</div><div class="ttdef"><b>Definição</b> ff_stdio.h:89</div></div>
+<div class="ttc" id="astructFF__FindData__t_html_a3ceb1c9ceaa2e94637e3cdfd31ab16e8"><div class="ttname"><a href="structFF__FindData__t.html#a3ceb1c9ceaa2e94637e3cdfd31ab16e8">FF_FindData_t::ulFileSize</a></div><div class="ttdeci">uint32_t ulFileSize</div><div class="ttdef"><b>Definição</b> ff_stdio.h:90</div></div>
+<div class="ttc" id="astructFF__FindData__t_html_a9f2aee34b5f73915019c71d1fad0c067"><div class="ttname"><a href="structFF__FindData__t.html#a9f2aee34b5f73915019c71d1fad0c067">FF_FindData_t::dir</a></div><div class="ttdeci">DIR dir</div><div class="ttdef"><b>Definição</b> ff_stdio.h:87</div></div>
+<div class="ttc" id="astructFF__FindData__t_html_ac37be4cdc93eb54ac9c12828dabeec43"><div class="ttname"><a href="structFF__FindData__t.html#ac37be4cdc93eb54ac9c12828dabeec43">FF_FindData_t::fileinfo</a></div><div class="ttdeci">FILINFO fileinfo</div><div class="ttdef"><b>Definição</b> ff_stdio.h:88</div></div>
+<div class="ttc" id="astructFF__STAT_html"><div class="ttname"><a href="structFF__STAT.html">FF_STAT</a></div><div class="ttdef"><b>Definição</b> ff_stdio.h:80</div></div>
+<div class="ttc" id="astructFF__STAT_html_af89270501119cf55167bea55c06de805"><div class="ttname"><a href="structFF__STAT.html#af89270501119cf55167bea55c06de805">FF_STAT::st_size</a></div><div class="ttdeci">uint32_t st_size</div><div class="ttdef"><b>Definição</b> ff_stdio.h:81</div></div>
+<div class="ttc" id="astructFILINFO_html"><div class="ttname"><a href="structFILINFO.html">FILINFO</a></div><div class="ttdef"><b>Definição</b> ff.h:245</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_85c56e450b3cb35d7543b2255c71e545.html">no-OS-FatFS-SD-SPI-RPi-Pico</a></li><li class="navelem"><a class="el" href="dir_5873464ee8fc386f57d942004acd9926.html">FatFs_SPI</a></li><li class="navelem"><a class="el" href="dir_854db27c382be9ae8c136f3061dada48.html">include</a></li><li class="navelem"><a class="el" href="ff__stdio_8h.html">ff_stdio.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

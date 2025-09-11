@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sensores_e_Atuadores_do_Kit_BitDogLab: no-OS-FatFS-SD-SPI-RPi-Pico (Português)</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sensores_e_Atuadores_do_Kit_BitDogLab
+   </div>
+   <div id="projectbrief">Documentação consolidada dos módulos (RP2040/RP2350)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('md_no-OS-FatFS-SD-SPI-RPi-Pico_2README_8pt.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">no-OS-FatFS-SD-SPI-RPi-Pico (Português)</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md160"></a> Este projeto integra o <a href="http://elm-chan.org/fsw/ff/00index_e.html">FatFs</a> (biblioteca de sistema de arquivos FAT) com um driver de cartão SD via SPI para o Raspberry Pi Pico (RP2040). Além da biblioteca, há projetos de exemplo prontos para compilar, um CLI simples e testes que podem ser usados como base para aplicações reais (ex.: data logger).</p>
+<ul>
+<li>Suporte a múltiplos cartões SD</li>
+<li>Suporte a múltiplas instâncias de SPI</li>
+<li>Suporte a RTC para timestamps</li>
+<li>API de alto nível do FatFs e camada compatível com FreeRTOS+FAT (<code><a class="el" href="ff__stdio_8h.html" title="FreeRTOS+FAT-like stdio wrapper over ChaN FatFs for RP2040 projects.">ff_stdio.h</a></code>)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md161"></a>
+Pré‑requisitos</h1>
+<ul>
+<li>Raspberry Pi Pico</li>
+<li>Placa/suporte para microSD com interface SPI</li>
+<li>SDK C/C++ do Raspberry Pi Pico configurado</li>
+<li>CMake e toolchain do Pico</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md162"></a>
+Como compilar</h1>
+<p>Exemplo genérico (substitua pelo exemplo desejado):</p>
+<div class="fragment"><div class="line"># Exemplo CLI completo</div>
+<div class="line">cd example</div>
+<div class="line">mkdir -p build &amp;&amp; cd build</div>
+<div class="line">cmake ..</div>
+<div class="line">make -j</div>
+</div><!-- fragment --><p>Outros exemplos:</p>
+<div class="fragment"><div class="line"># Exemplo simples</div>
+<div class="line">cd simple_example &amp;&amp; mkdir -p build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; make -j</div>
+<div class="line"> </div>
+<div class="line"># Exemplo de configuração dinâmica</div>
+<div class="line">cd dynamic_config_example &amp;&amp; mkdir -p build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; make -j</div>
+</div><!-- fragment --><p>O binário UF2 será gerado em <code>build/</code>. Entre em modo BOOTSEL no Pico, monte como unidade USB e arraste o <code>.uf2</code> correspondente.</p>
+<h1><a class="anchor" id="autotoc_md163"></a>
+Como usar (visão geral)</h1>
+<ul>
+<li>Conecte um terminal serial ao Pico (USB). Ferramentas úteis: <code>tio</code>, <code>minicom</code>, PuTTY.</li>
+<li>Exemplos:<ul>
+<li><code>simple_example</code>: monta o volume, escreve uma linha em <code>filename.txt</code>, desmonta.</li>
+<li><code>example</code> (CLI): comandos como <code>format</code>, <code>mount</code>, <code>ls</code>, <code>cat</code>, <code>mkdir</code>, <code>cd</code>, <code>start_logger</code>. Digite <code>help</code> para ver a ajuda.</li>
+<li><code>dynamic_config_example</code>: demonstra a criação dos objetos <code><a class="el" href="structspi__t.html">spi_t</a></code> e <code><a class="el" href="structsd__card__t.html" title="&quot;Class&quot; representing SD Cards on an SPI bus.">sd_card_t</a></code> em tempo de execução (sem <code>hw_config.c</code> fixo).</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md164"></a>
+Personalização de Hardware</h1>
+<p>A configuração de pinos e parâmetros é feita via objetos:</p><ul>
+<li><code><a class="el" href="structspi__t.html">spi_t</a></code> (pinos MISO/MOSI/SCK, <code>baud_rate</code>, drive strength)</li>
+<li><code><a class="el" href="structsd__card__t.html" title="&quot;Class&quot; representing SD Cards on an SPI bus.">sd_card_t</a></code> (pino CS, Card Detect, nome lógico, etc.)</li>
+</ul>
+<p>Você pode optar por configurar isso estaticamente (em <code>hw_config.c</code>) ou dinamicamente (ver <code><a class="el" href="hw__config_8cpp.html">dynamic_config_example/hw_config.cpp</a></code>). Consulte o <code>README.md</code> original para detalhes e tabelas de ligação de pinos.</p>
+<h1><a class="anchor" id="autotoc_md165"></a>
+Geração de Documentação (Doxygen)</h1>
+<p>Este repositório contém comentários Doxygen em headers e fontes principais. Para gerar documentação local:</p>
+<div class="fragment"><div class="line"># Na raiz do workspace/projeto onde houver Doxyfile</div>
+<div class="line"># (ajuste caminhos/conteúdos conforme seu ambiente)</div>
+<div class="line">doxygen Doxyfile</div>
+</div><!-- fragment --><p>A saída (HTML) será gerada no diretório configurado no <code>Doxyfile</code> (ex.: <code>docs/html/</code>).</p>
+<h1><a class="anchor" id="autotoc_md166"></a>
+Solução de Problemas (dicas rápidas)</h1>
+<ul>
+<li>Reduza o <code>baud_rate</code> do SPI caso esteja instável.</li>
+<li>Garanta boa alimentação do cartão SD (capacitores de desacoplamento próximos ao soquete ajudam).</li>
+<li>Cabos curtos e diretos; SPI opera em altas frequências.</li>
+<li>Utilize <code>Card Detect</code> (quando disponível) para evitar corrupção ao trocar cartões com o volume montado.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md167"></a>
+Licença</h1>
+<p>Apache 2.0. Consulte cabeçalhos dos arquivos e <code>LICENSE</code>. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sensores_e_Atuadores_do_Kit_BitDogLab: Referência ao ficheiro no-OS-FatFS-SD-SPI-RPi-Pico/example/tests/big_file_test.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sensores_e_Atuadores_do_Kit_BitDogLab
+   </div>
+   <div id="projectbrief">Documentação consolidada dos módulos (RP2040/RP2350)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('big__file__test_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro big_file_test.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="stdlib_8h_source.html">stdlib.h</a>&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="ff__stdio_8h_source.html">ff_stdio.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad92c940e7f2ef0d078d9326e942518e5" id="r_ad92c940e7f2ef0d078d9326e942518e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#ad92c940e7f2ef0d078d9326e942518e5">assert</a>&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a5772e2afbf233c193d1eba5ced1a6166">configASSERT</a></td></tr>
+<tr class="separator:ad92c940e7f2ef0d078d9326e942518e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f54f8a26f4c610ef15cd6af3b12339" id="r_a84f54f8a26f4c610ef15cd6af3b12339"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#a84f54f8a26f4c610ef15cd6af3b12339">BUFFSZ</a>&#160;&#160;&#160;8 * 1024</td></tr>
+<tr class="separator:a84f54f8a26f4c610ef15cd6af3b12339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03f640d90fbc5bcb75285d08a0f25ed" id="r_ab03f640d90fbc5bcb75285d08a0f25ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#ab03f640d90fbc5bcb75285d08a0f25ed">errno</a>&#160;&#160;&#160;stdioGET_ERRNO()</td></tr>
+<tr class="separator:ab03f640d90fbc5bcb75285d08a0f25ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba5ffb84241a674c082d911b80fc309" id="r_a1ba5ffb84241a674c082d911b80fc309"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#a1ba5ffb84241a674c082d911b80fc309">fclose</a>&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a5b15f8ec073fa17cc651690af3f53ebe">ff_fclose</a></td></tr>
+<tr class="separator:a1ba5ffb84241a674c082d911b80fc309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104c36ee46f9d6e76dadf37f3d9696cc" id="r_a104c36ee46f9d6e76dadf37f3d9696cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#a104c36ee46f9d6e76dadf37f3d9696cc">FF_MAX_SS</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:a104c36ee46f9d6e76dadf37f3d9696cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029f6d343db87fe8c80cf3e5bea2b5c1" id="r_a029f6d343db87fe8c80cf3e5bea2b5c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#a029f6d343db87fe8c80cf3e5bea2b5c1">fopen</a>&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a4d64c986de4f3fd2592bfd750693dad3">ff_fopen</a></td></tr>
+<tr class="separator:a029f6d343db87fe8c80cf3e5bea2b5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16cef9bb6d20a96eace63d043b03ce91" id="r_a16cef9bb6d20a96eace63d043b03ce91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#a16cef9bb6d20a96eace63d043b03ce91">fread</a>&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a107d609a81b597957e92adfa632921c0">ff_fread</a></td></tr>
+<tr class="separator:a16cef9bb6d20a96eace63d043b03ce91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6efa7679f8cd9f61af96e105017560" id="r_a2c6efa7679f8cd9f61af96e105017560"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#a2c6efa7679f8cd9f61af96e105017560">free</a>&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a5e70e878c0ed79ab346b5eab7e93ddff">vPortFree</a></td></tr>
+<tr class="separator:a2c6efa7679f8cd9f61af96e105017560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace50e1e3b73fb8bc9ae3a1ab3e972d91" id="r_ace50e1e3b73fb8bc9ae3a1ab3e972d91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#ace50e1e3b73fb8bc9ae3a1ab3e972d91">fwrite</a>&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#ab90fc9888a238b66e45114de90e521bf">ff_fwrite</a></td></tr>
+<tr class="separator:ace50e1e3b73fb8bc9ae3a1ab3e972d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf143577800376dd931c059ecc61ba06" id="r_acf143577800376dd931c059ecc61ba06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#acf143577800376dd931c059ecc61ba06">malloc</a>&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a4d523dc6c079459faa62130465595246">pvPortMalloc</a></td></tr>
+<tr class="separator:acf143577800376dd931c059ecc61ba06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:af483253b2143078cede883fc3c111ad2" id="r_af483253b2143078cede883fc3c111ad2"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a></td></tr>
+<tr class="separator:af483253b2143078cede883fc3c111ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cb3b01d81ffd844bbbfb54003e06ec" id="r_a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></td></tr>
+<tr class="separator:a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:aec2bb4bde829c647caffdae7c7188d17" id="r_aec2bb4bde829c647caffdae7c7188d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#aec2bb4bde829c647caffdae7c7188d17">big_file_test</a> (const char *const pathname, size_t <a class="el" href="util_8h.html#adc8fb9d4a6a3af28c3b454a0a628ec1c">size</a>, uint32_t seed)</td></tr>
+<tr class="separator:aec2bb4bde829c647caffdae7c7188d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c758a2281f7def7c50a381eb35eacb2" id="r_a1c758a2281f7def7c50a381eb35eacb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#a1c758a2281f7def7c50a381eb35eacb2">check_big_file_v1</a> (const char *const pathname, size_t <a class="el" href="util_8h.html#adc8fb9d4a6a3af28c3b454a0a628ec1c">size</a>, uint32_t seed)</td></tr>
+<tr class="separator:a1c758a2281f7def7c50a381eb35eacb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ced78511fab44340d231d302fb03f6" id="r_ae2ced78511fab44340d231d302fb03f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="big__file__test_8c.html#ae2ced78511fab44340d231d302fb03f6">create_big_file_v1</a> (const char *const pathname, size_t <a class="el" href="util_8h.html#adc8fb9d4a6a3af28c3b454a0a628ec1c">size</a>, unsigned seed)</td></tr>
+<tr class="separator:ae2ced78511fab44340d231d302fb03f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ad92c940e7f2ef0d078d9326e942518e5" name="ad92c940e7f2ef0d078d9326e942518e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92c940e7f2ef0d078d9326e942518e5">&#9670;&#160;</a></span>assert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define assert&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a5772e2afbf233c193d1eba5ced1a6166">configASSERT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84f54f8a26f4c610ef15cd6af3b12339" name="a84f54f8a26f4c610ef15cd6af3b12339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f54f8a26f4c610ef15cd6af3b12339">&#9670;&#160;</a></span>BUFFSZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUFFSZ&#160;&#160;&#160;8 * 1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab03f640d90fbc5bcb75285d08a0f25ed" name="ab03f640d90fbc5bcb75285d08a0f25ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab03f640d90fbc5bcb75285d08a0f25ed">&#9670;&#160;</a></span>errno</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define errno&#160;&#160;&#160;stdioGET_ERRNO()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ba5ffb84241a674c082d911b80fc309" name="a1ba5ffb84241a674c082d911b80fc309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba5ffb84241a674c082d911b80fc309">&#9670;&#160;</a></span>fclose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fclose&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a5b15f8ec073fa17cc651690af3f53ebe">ff_fclose</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a104c36ee46f9d6e76dadf37f3d9696cc" name="a104c36ee46f9d6e76dadf37f3d9696cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a104c36ee46f9d6e76dadf37f3d9696cc">&#9670;&#160;</a></span>FF_MAX_SS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FF_MAX_SS&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a029f6d343db87fe8c80cf3e5bea2b5c1" name="a029f6d343db87fe8c80cf3e5bea2b5c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a029f6d343db87fe8c80cf3e5bea2b5c1">&#9670;&#160;</a></span>fopen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fopen&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a4d64c986de4f3fd2592bfd750693dad3">ff_fopen</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16cef9bb6d20a96eace63d043b03ce91" name="a16cef9bb6d20a96eace63d043b03ce91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16cef9bb6d20a96eace63d043b03ce91">&#9670;&#160;</a></span>fread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fread&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a107d609a81b597957e92adfa632921c0">ff_fread</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c6efa7679f8cd9f61af96e105017560" name="a2c6efa7679f8cd9f61af96e105017560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6efa7679f8cd9f61af96e105017560">&#9670;&#160;</a></span>free</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define free&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a5e70e878c0ed79ab346b5eab7e93ddff">vPortFree</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace50e1e3b73fb8bc9ae3a1ab3e972d91" name="ace50e1e3b73fb8bc9ae3a1ab3e972d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace50e1e3b73fb8bc9ae3a1ab3e972d91">&#9670;&#160;</a></span>fwrite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fwrite&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#ab90fc9888a238b66e45114de90e521bf">ff_fwrite</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf143577800376dd931c059ecc61ba06" name="acf143577800376dd931c059ecc61ba06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf143577800376dd931c059ecc61ba06">&#9670;&#160;</a></span>malloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define malloc&#160;&#160;&#160;<a class="el" href="ff__stdio_8h.html#a4d523dc6c079459faa62130465595246">pvPortMalloc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="af483253b2143078cede883fc3c111ad2" name="af483253b2143078cede883fc3c111ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af483253b2143078cede883fc3c111ad2">&#9670;&#160;</a></span>DWORD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint32_t <a class="el" href="big__file__test_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36cb3b01d81ffd844bbbfb54003e06ec" name="a36cb3b01d81ffd844bbbfb54003e06ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36cb3b01d81ffd844bbbfb54003e06ec">&#9670;&#160;</a></span>UINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="big__file__test_8c.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="aec2bb4bde829c647caffdae7c7188d17" name="aec2bb4bde829c647caffdae7c7188d17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec2bb4bde829c647caffdae7c7188d17">&#9670;&#160;</a></span>big_file_test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void big_file_test </td>
+          <td>(</td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>pathname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="util_8h.html#adc8fb9d4a6a3af28c3b454a0a628ec1c">size</a>.</p>
+
+</div>
+</div>
+<a id="a1c758a2281f7def7c50a381eb35eacb2" name="a1c758a2281f7def7c50a381eb35eacb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c758a2281f7def7c50a381eb35eacb2">&#9670;&#160;</a></span>check_big_file_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void check_big_file_v1 </td>
+          <td>(</td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>pathname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="big__file__test_8c.html#ad92c940e7f2ef0d078d9326e942518e5">assert</a>, <a class="el" href="big__file__test_8c.html#ab03f640d90fbc5bcb75285d08a0f25ed">errno</a>, <a class="el" href="ff__stdio_8h.html#a5b15f8ec073fa17cc651690af3f53ebe">ff_fclose()</a>, <a class="el" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a>, <a class="el" href="ff__stdio_8h.html#a4d64c986de4f3fd2592bfd750693dad3">ff_fopen()</a>, <a class="el" href="ff__stdio_8h.html#a107d609a81b597957e92adfa632921c0">ff_fread()</a>, <a class="el" href="pico__sdk__stubs_8h.html#a3148c2194da0af9c04af97336818edf8">get_absolute_time()</a> e <a class="el" href="util_8h.html#adc8fb9d4a6a3af28c3b454a0a628ec1c">size</a>.</p>
+
+</div>
+</div>
+<a id="ae2ced78511fab44340d231d302fb03f6" name="ae2ced78511fab44340d231d302fb03f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ced78511fab44340d231d302fb03f6">&#9670;&#160;</a></span>create_big_file_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void create_big_file_v1 </td>
+          <td>(</td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>pathname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>seed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="big__file__test_8c.html#ad92c940e7f2ef0d078d9326e942518e5">assert</a>, <a class="el" href="big__file__test_8c.html#ab03f640d90fbc5bcb75285d08a0f25ed">errno</a>, <a class="el" href="ff__stdio_8h.html#a5b15f8ec073fa17cc651690af3f53ebe">ff_fclose()</a>, <a class="el" href="ff__stdio_8h.html#a7f360c4fe65347091f777eb7cd186b81">FF_FILE</a>, <a class="el" href="ff__stdio_8h.html#a4d64c986de4f3fd2592bfd750693dad3">ff_fopen()</a>, <a class="el" href="ff__stdio_8h.html#ab90fc9888a238b66e45114de90e521bf">ff_fwrite()</a>, <a class="el" href="pico__sdk__stubs_8h.html#a3148c2194da0af9c04af97336818edf8">get_absolute_time()</a> e <a class="el" href="util_8h.html#adc8fb9d4a6a3af28c3b454a0a628ec1c">size</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_85c56e450b3cb35d7543b2255c71e545.html">no-OS-FatFS-SD-SPI-RPi-Pico</a></li><li class="navelem"><a class="el" href="dir_9c9a1d31f85ca0f34751e7c198ed422b.html">example</a></li><li class="navelem"><a class="el" href="dir_c22b4a5597082ac523d19df2f6475282.html">tests</a></li><li class="navelem"><a class="el" href="big__file__test_8c.html">big_file_test.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

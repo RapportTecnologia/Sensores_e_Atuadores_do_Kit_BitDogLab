@@ -99,12 +99,13 @@ Estrutura</h1>
 <ul>
 <li><code>BH1750-RP2040-RP3050/</code> — Driver/exemplos para o sensor de luminosidade <a class="el" href="classBH1750.html">BH1750</a> (RP2040/RP2350)</li>
 <li><code>HDMI-RP2040-RP2350/</code> — Exemplos/infra para saída de vídeo (HDMI/LVDS) no RP2040/RP2350</li>
-<li><code>I2C-RP2040-RP2350/</code> — Biblioteca <a class="el" href="classI2C.html" title="Wrapper minimalista para operações I2C (begin, write/read, etc.).">I2C</a> para RP2040/RP2350 (base para drivers)</li>
+<li><code>I2C-proxy-RP2040-RP2350/</code> — Biblioteca/proxy <a class="el" href="classI2C.html" title="Wrapper minimalista para operações I2C (begin, write/read, etc.).">I2C</a> para RP2040/RP2350 (base para drivers)</li>
 <li><code>MPU6050-RP2040-RP2350/</code> — Driver/exemplos para o sensor IMU <a class="el" href="classMPU6050.html" title="Classe que encapsula o acesso ao sensor MPU6050 via I2C.">MPU6050</a></li>
 <li><code>OLED_SSD1306-RP2040-RP2350/</code> — Driver/exemplos para display OLED SSD1306 (<a class="el" href="classI2C.html" title="Wrapper minimalista para operações I2C (begin, write/read, etc.).">I2C</a>)</li>
 <li><code>RP-Pico-Mock/</code> — Mocks do Pico SDK para testes (headers e stubs)</li>
 <li><code>VL53L0X-RP2040-RP2350/</code> — Driver/exemplos para o sensor de distância <a class="el" href="classVL53L0X.html" title="Classe que encapsula a comunicação e configuração do sensor VL53L0X.">VL53L0X</a></li>
 <li><code>unity/</code> — Framework de testes unitários (submódulo externo ThrowTheSwitch/Unity)</li>
+<li><code>no-OS-FatFS-SD-SPI-RPi-Pico/</code> — Integração FatFS sobre SPI para cartão SD no Raspberry Pi Pico</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Clonagem</h1>
@@ -123,39 +124,42 @@ Atualizar submódulos (buscar últimas revisões do upstream)</h2>
 <div class="line">git submodule update --remote --merge --recursive</div>
 <div class="line"> </div>
 <div class="line"># Alternativamente, para um submódulo específico</div>
-<div class="line">git submodule update --remote --merge -- I2C-RP2040-RP2350</div>
+<div class="line">git submodule update --remote --merge -- I2C-proxy-RP2040-RP2350</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Remotos e protocolos</h1>
 <ul>
-<li>O arquivo <code>.gitmodules</code> usa uma combinação de HTTPS e SSH (git@) nos submódulos:<ul>
-<li>HTTPS: <code>I2C-RP2040-RP2350</code>, <code>VL53L0X-RP2040-RP2350</code>, <code>OLED_SSD1306-RP2040-RP2350</code>, <code>MPU6050-RP2040-RP2350</code>, <code>RP-Pico-Mock</code>, <code>unity</code></li>
-<li>SSH: <code>HDMI-RP2040-RP2350</code>, <code>BH1750-RP2040-RP3050</code></li>
+<li>O arquivo <code>.gitmodules</code> atualmente está configurado assim:<ul>
+<li>SSH (git@): <code>I2C-proxy-RP2040-RP2350</code></li>
+<li>HTTPS: <code>BH1750-RP2040-RP3050</code>, <code>HDMI-RP2040-RP2350</code>, <code>MPU6050-RP2040-RP2350</code>, <code>OLED_SSD1306-RP2040-RP2350</code>, <code>RP-Pico-Mock</code>, <code>VL53L0X-RP2040-RP2350</code>, <code>unity</code>, <code>no-OS-FatFS-SD-SPI-RPi-Pico</code></li>
 </ul>
 </li>
 <li>Você pode padronizar para SSH (útil para push) ou HTTPS (sem chaves), por exemplo:</li>
 </ul>
 <div class="fragment"><div class="line"># Para SSH (exemplos)</div>
-<div class="line">cd HDMI-RP2040-RP2350 &amp;&amp; git remote set-url origin git@github.com:RapportTecnologia/HDMI-RP2040-RP2350.git &amp;&amp; cd -</div>
-<div class="line">cd BH1750-RP2040-RP3050 &amp;&amp; git remote set-url origin git@github.com:RapportTecnologia/BH1750-RP2040-RP3050.git &amp;&amp; cd -</div>
+<div class="line">cd I2C-proxy-RP2040-RP2350 &amp;&amp; git remote set-url origin git@github.com:RapportTecnologia/I2C-proxy-RP2040-RP2350.git &amp;&amp; cd -</div>
 <div class="line"> </div>
 <div class="line"># Para HTTPS (exemplos)</div>
-<div class="line">cd I2C-RP2040-RP2350 &amp;&amp; git remote set-url origin https://github.com/carlosdelfino/I2C_proxy_RP2040_RP2350.git &amp;&amp; cd -</div>
-<div class="line">cd VL53L0X-RP2040-RP2350 &amp;&amp; git remote set-url origin https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350.git &amp;&amp; cd -</div>
-<div class="line">cd OLED_SSD1306-RP2040-RP2350 &amp;&amp; git remote set-url origin https://github.com/RapportTecnologia/OLED_SSD1306-RP2040-RP2350.git &amp;&amp; cd -</div>
+<div class="line">cd BH1750-RP2040-RP3050 &amp;&amp; git remote set-url origin https://github.com/RapportTecnologia/BH1750-RP2040-RP3050.git &amp;&amp; cd -</div>
+<div class="line">cd HDMI-RP2040-RP2350 &amp;&amp; git remote set-url origin https://github.com/RapportTecnologia/HDMI-RP2040-RP2350.git &amp;&amp; cd -</div>
+<div class="line">cd I2C-proxy-RP2040-RP2350 &amp;&amp; git remote set-url origin https://github.com/RapportTecnologia/I2C-proxy-RP2040-RP2350.git &amp;&amp; cd -</div>
 <div class="line">cd MPU6050-RP2040-RP2350 &amp;&amp; git remote set-url origin https://github.com/RapportTecnologia/MPU6050-RP2040-RP2350.git &amp;&amp; cd -</div>
+<div class="line">cd OLED_SSD1306-RP2040-RP2350 &amp;&amp; git remote set-url origin https://github.com/RapportTecnologia/OLED_SSD1306-RP2040-RP2350.git &amp;&amp; cd -</div>
 <div class="line">cd RP-Pico-Mock &amp;&amp; git remote set-url origin https://github.com/RapportTecnologia/RP-Pico-Mock.git &amp;&amp; cd -</div>
+<div class="line">cd VL53L0X-RP2040-RP2350 &amp;&amp; git remote set-url origin https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350.git &amp;&amp; cd -</div>
+<div class="line">cd no-OS-FatFS-SD-SPI-RPi-Pico &amp;&amp; git remote set-url origin https://github.com/ArvoreDosSaberes/no-OS-FatFS-SD-SPI-RPi-Pico.git &amp;&amp; cd -</div>
 <div class="line">cd unity &amp;&amp; git remote set-url origin https://github.com/ThrowTheSwitch/Unity.git &amp;&amp; cd -</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
 Submódulos e repositórios</h2>
 <ul>
-<li><code>BH1750-RP2040-RP3050/</code> → <a href="#" onclick="location.href='mai'+'lto:'+'git'+'@g'+'ith'+'ub'+'.co'+'m'; return false;">git@g<span class="obfuscator">.nosp@m.</span>ithu<span class="obfuscator">.nosp@m.</span>b.com</a>:RapportTecnologia/BH1750-RP2040-RP3050.git</li>
-<li><code>HDMI-RP2040-RP2350/</code> → <a href="#" onclick="location.href='mai'+'lto:'+'git'+'@g'+'ith'+'ub'+'.co'+'m'; return false;">git@g<span class="obfuscator">.nosp@m.</span>ithu<span class="obfuscator">.nosp@m.</span>b.com</a>:RapportTecnologia/HDMI-RP2040-RP2350.git</li>
-<li><code>I2C-RP2040-RP2350/</code> → <a href="https://github.com/carlosdelfino/I2C_proxy_RP2040_RP2350.git">https://github.com/carlosdelfino/I2C_proxy_RP2040_RP2350.git</a></li>
+<li><code>BH1750-RP2040-RP3050/</code> → <a href="https://github.com/RapportTecnologia/BH1750-RP2040-RP3050.git">https://github.com/RapportTecnologia/BH1750-RP2040-RP3050.git</a></li>
+<li><code>HDMI-RP2040-RP2350/</code> → <a href="https://github.com/RapportTecnologia/HDMI-RP2040-RP2350.git">https://github.com/RapportTecnologia/HDMI-RP2040-RP2350.git</a></li>
+<li><code>I2C-proxy-RP2040-RP2350/</code> → <a href="#" onclick="location.href='mai'+'lto:'+'git'+'@g'+'ith'+'ub'+'.co'+'m'; return false;">git@g<span class="obfuscator">.nosp@m.</span>ithu<span class="obfuscator">.nosp@m.</span>b.com</a>:RapportTecnologia/I2C-proxy-RP2040-RP2350.git</li>
 <li><code>MPU6050-RP2040-RP2350/</code> → <a href="https://github.com/RapportTecnologia/MPU6050-RP2040-RP2350.git">https://github.com/RapportTecnologia/MPU6050-RP2040-RP2350.git</a></li>
 <li><code>OLED_SSD1306-RP2040-RP2350/</code> → <a href="https://github.com/RapportTecnologia/OLED_SSD1306-RP2040-RP2350.git">https://github.com/RapportTecnologia/OLED_SSD1306-RP2040-RP2350.git</a></li>
 <li><code>RP-Pico-Mock/</code> → <a href="https://github.com/RapportTecnologia/RP-Pico-Mock.git">https://github.com/RapportTecnologia/RP-Pico-Mock.git</a></li>
 <li><code>VL53L0X-RP2040-RP2350/</code> → <a href="https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350.git">https://github.com/RapportTecnologia/VL53L0X-RP2040-RP2350.git</a></li>
 <li><code>unity/</code> → <a href="https://github.com/ThrowTheSwitch/Unity.git">https://github.com/ThrowTheSwitch/Unity.git</a></li>
+<li><code>no-OS-FatFS-SD-SPI-RPi-Pico/</code> → <a href="https://github.com/ArvoreDosSaberes/no-OS-FatFS-SD-SPI-RPi-Pico.git">https://github.com/ArvoreDosSaberes/no-OS-FatFS-SD-SPI-RPi-Pico.git</a></li>
 </ul>
 <p>Sincronizar URLs de submódulos com <code>.gitmodules</code> (após alterar <code>.gitmodules</code> ou clonar):</p>
 <div class="fragment"><div class="line">git submodule sync --recursive</div>

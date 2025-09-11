@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['regaddr_0',['regAddr',['../classVL53L0X.html#ae9d956d60961a009db8621edde00bfea',1,'VL53L0X']]]
+  ['gpio_5ffunction_0',['gpio_function',['../pico__sdk__stubs_8h.html#a2af81373f9f5764ac1a5bd6097477530',1,'pico_sdk_stubs.h']]]
 ];

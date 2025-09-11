@@ -1,4 +1,26 @@
 var searchData=
 [
-  ['crosstalk_5fcompensation_5fpeak_5frate_5fmcps_0',['CROSSTALK_COMPENSATION_PEAK_RATE_MCPS',['../classVL53L0X.html#ae9d956d60961a009db8621edde00bfeaac50e3abd89f2fc70a9706524923d3bcb',1,'VL53L0X']]]
+  ['cmd0_5fgo_5fidle_5fstate_0',['CMD0_GO_IDLE_STATE',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437ac0d49d0be913ea0759b60172648bca63',1,'sd_card.c']]],
+  ['cmd10_5fsend_5fcid_1',['CMD10_SEND_CID',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437ab0bed31cbc5377aeafbe82d456f105b4',1,'sd_card.c']]],
+  ['cmd12_5fstop_5ftransmission_2',['CMD12_STOP_TRANSMISSION',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a50a1b06fbfbfac3e88777e375713194b',1,'sd_card.c']]],
+  ['cmd13_5fsend_5fstatus_3',['CMD13_SEND_STATUS',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437ac57a11a2b3cd582a797f5b33ecdca429',1,'sd_card.c']]],
+  ['cmd16_5fset_5fblocklen_4',['CMD16_SET_BLOCKLEN',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a69b3ca3db78b1f657a5958a36dab2d1e',1,'sd_card.c']]],
+  ['cmd17_5fread_5fsingle_5fblock_5',['CMD17_READ_SINGLE_BLOCK',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437aa8ea642c880b96150fe8d7387b3c869f',1,'sd_card.c']]],
+  ['cmd18_5fread_5fmultiple_5fblock_6',['CMD18_READ_MULTIPLE_BLOCK',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a0425449a99e80e959b0376b9facbf86c',1,'sd_card.c']]],
+  ['cmd1_5fsend_5fop_5fcond_7',['CMD1_SEND_OP_COND',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a687d0215f942c29c67ed8e116ba65c42',1,'sd_card.c']]],
+  ['cmd24_5fwrite_5fblock_8',['CMD24_WRITE_BLOCK',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437acaf0335a4dc52fec2cd69fa926c240d3',1,'sd_card.c']]],
+  ['cmd25_5fwrite_5fmultiple_5fblock_9',['CMD25_WRITE_MULTIPLE_BLOCK',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437afaaf5657d5198f338bb555db8dbe0977',1,'sd_card.c']]],
+  ['cmd27_5fprogram_5fcsd_10',['CMD27_PROGRAM_CSD',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437af8a2ea974333f1b8b282e5fe1a78d452',1,'sd_card.c']]],
+  ['cmd32_5ferase_5fwr_5fblk_5fstart_5faddr_11',['CMD32_ERASE_WR_BLK_START_ADDR',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a42493da8336966eedb155f9fd5078725',1,'sd_card.c']]],
+  ['cmd33_5ferase_5fwr_5fblk_5fend_5faddr_12',['CMD33_ERASE_WR_BLK_END_ADDR',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437aab58521e43613f07685f8c125e53cc38',1,'sd_card.c']]],
+  ['cmd38_5ferase_13',['CMD38_ERASE',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437aa179ed73c43cdbb988f56eeea98a0c64',1,'sd_card.c']]],
+  ['cmd55_5fapp_5fcmd_14',['CMD55_APP_CMD',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437afe267879cd620c14cf8909eef99fd1c0',1,'sd_card.c']]],
+  ['cmd56_5fgen_5fcmd_15',['CMD56_GEN_CMD',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a60ed3ef8573485f4d9b7b18aace3967a',1,'sd_card.c']]],
+  ['cmd58_5fread_5focr_16',['CMD58_READ_OCR',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437aab2940925eb3b338f558bdd9012d2c98',1,'sd_card.c']]],
+  ['cmd59_5fcrc_5fon_5foff_17',['CMD59_CRC_ON_OFF',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a82dd3da0189cad047996069a968cb3b7',1,'sd_card.c']]],
+  ['cmd6_5fswitch_5ffunc_18',['CMD6_SWITCH_FUNC',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a2a8ad2f917bc227d95d29a0f92b62340',1,'sd_card.c']]],
+  ['cmd8_5fsend_5fif_5fcond_19',['CMD8_SEND_IF_COND',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a6b423cd241fe20485d3f14f0fb9926f4',1,'sd_card.c']]],
+  ['cmd9_5fsend_5fcsd_20',['CMD9_SEND_CSD',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437ac94c340b43f6e72a115bf05aee14a0c5',1,'sd_card.c']]],
+  ['cmd_5fnot_5fsupported_21',['CMD_NOT_SUPPORTED',['../sd__card_8c.html#a80c0a719c204547187230e0f87570437a6b16dc9538b6f7288a025222e1cc8e6b',1,'sd_card.c']]],
+  ['crosstalk_5fcompensation_5fpeak_5frate_5fmcps_22',['CROSSTALK_COMPENSATION_PEAK_RATE_MCPS',['../classVL53L0X.html#ae9d956d60961a009db8621edde00bfeaac50e3abd89f2fc70a9706524923d3bcb',1,'VL53L0X']]]
 ];

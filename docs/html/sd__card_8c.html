@@ -1,0 +1,1251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sensores_e_Atuadores_do_Kit_BitDogLab: Referência ao ficheiro no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sensores_e_Atuadores_do_Kit_BitDogLab
+   </div>
+   <div id="projectbrief">Documentação consolidada dos módulos (RP2040/RP2350)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('sd__card_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro sd_card.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;inttypes.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;pico/mutex.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="hw__config_8h_source.html">hw_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="my__debug_8h_source.html">my_debug.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sd__spi_8h_source.html">sd_spi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sd__card_8h_source.html">sd_card.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ff_8h_source.html">ff.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="diskio_8h_source.html">diskio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crc_8h_source.html">crc.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae29c04ecc4f5ee4f41694ac4d8a2fdd9" id="r_ae29c04ecc4f5ee4f41694ac4d8a2fdd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ae29c04ecc4f5ee4f41694ac4d8a2fdd9">BLOCK_SIZE_HC</a>&#160;&#160;&#160;512</td></tr>
+<tr class="memdesc:ae29c04ecc4f5ee4f41694ac4d8a2fdd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block size supported for SD card is 512 bytes.  <br /></td></tr>
+<tr class="separator:ae29c04ecc4f5ee4f41694ac4d8a2fdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bcf7921ec4872d70667001a21fbe3b4" id="r_a2bcf7921ec4872d70667001a21fbe3b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a2bcf7921ec4872d70667001a21fbe3b4">CARD_UNKNOWN</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a2bcf7921ec4872d70667001a21fbe3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unknown or unsupported card.  <br /></td></tr>
+<tr class="separator:a2bcf7921ec4872d70667001a21fbe3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77e3b44a84e04fd34a6084e23d7a67f" id="r_ac77e3b44a84e04fd34a6084e23d7a67f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ac77e3b44a84e04fd34a6084e23d7a67f">CMD8_PATTERN</a>&#160;&#160;&#160;(0xAA)</td></tr>
+<tr class="separator:ac77e3b44a84e04fd34a6084e23d7a67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9242e2740476a5965ace0b1276c9a24d" id="r_a9242e2740476a5965ace0b1276c9a24d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a9242e2740476a5965ace0b1276c9a24d">OCR_3_3V</a>&#160;&#160;&#160;(0x1 &lt;&lt; 20)</td></tr>
+<tr class="separator:a9242e2740476a5965ace0b1276c9a24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5b9334abefe4920fb519a5957b5cc3" id="r_ace5b9334abefe4920fb519a5957b5cc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ace5b9334abefe4920fb519a5957b5cc3">OCR_HCS_CCS</a>&#160;&#160;&#160;(0x1 &lt;&lt; 30)</td></tr>
+<tr class="separator:ace5b9334abefe4920fb519a5957b5cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b06744e5bb1b37b90d671dff109fd2" id="r_a34b06744e5bb1b37b90d671dff109fd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a34b06744e5bb1b37b90d671dff109fd2">OCR_LOW_VOLTAGE</a>&#160;&#160;&#160;(0x01 &lt;&lt; 24)</td></tr>
+<tr class="separator:a34b06744e5bb1b37b90d671dff109fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebdc7d8ca8e25ed8efc90bb88ef7ef5b" id="r_aebdc7d8ca8e25ed8efc90bb88ef7ef5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#aebdc7d8ca8e25ed8efc90bb88ef7ef5b">PACKET_SIZE</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:aebdc7d8ca8e25ed8efc90bb88ef7ef5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SD Packet size CMD+ARG+CRC.  <br /></td></tr>
+<tr class="separator:aebdc7d8ca8e25ed8efc90bb88ef7ef5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84256fd9d0fbf84f1c8fabd17d3f7adc" id="r_a84256fd9d0fbf84f1c8fabd17d3f7adc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a84256fd9d0fbf84f1c8fabd17d3f7adc">R1_ADDRESS_ERROR</a>&#160;&#160;&#160;(1 &lt;&lt; 5)</td></tr>
+<tr class="separator:a84256fd9d0fbf84f1c8fabd17d3f7adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f596336ebcb43f5c9e314ad697a8e8" id="r_ac9f596336ebcb43f5c9e314ad697a8e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ac9f596336ebcb43f5c9e314ad697a8e8">R1_COM_CRC_ERROR</a>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
+<tr class="separator:ac9f596336ebcb43f5c9e314ad697a8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4598fdd1bd123e39ca45cdcd30f2a0bb" id="r_a4598fdd1bd123e39ca45cdcd30f2a0bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a4598fdd1bd123e39ca45cdcd30f2a0bb">R1_ERASE_RESET</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="separator:a4598fdd1bd123e39ca45cdcd30f2a0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310cf4b26d5025bc4e0ac18b7dfd968a" id="r_a310cf4b26d5025bc4e0ac18b7dfd968a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a310cf4b26d5025bc4e0ac18b7dfd968a">R1_ERASE_SEQUENCE_ERROR</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="separator:a310cf4b26d5025bc4e0ac18b7dfd968a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adb3673fe75b9397a1f241533e3f08a" id="r_a7adb3673fe75b9397a1f241533e3f08a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a7adb3673fe75b9397a1f241533e3f08a">R1_IDLE_STATE</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="separator:a7adb3673fe75b9397a1f241533e3f08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317730607b37d51a7a470e8f33fa0e4d" id="r_a317730607b37d51a7a470e8f33fa0e4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a317730607b37d51a7a470e8f33fa0e4d">R1_ILLEGAL_COMMAND</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="separator:a317730607b37d51a7a470e8f33fa0e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d214c6916e6ca7f6e0ef1f52255a9a4" id="r_a9d214c6916e6ca7f6e0ef1f52255a9a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a9d214c6916e6ca7f6e0ef1f52255a9a4">R1_NO_RESPONSE</a>&#160;&#160;&#160;(0xFF)</td></tr>
+<tr class="separator:a9d214c6916e6ca7f6e0ef1f52255a9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf04d83e2c97907a519100efe9c8d7c" id="r_afaf04d83e2c97907a519100efe9c8d7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#afaf04d83e2c97907a519100efe9c8d7c">R1_PARAMETER_ERROR</a>&#160;&#160;&#160;(1 &lt;&lt; 6)</td></tr>
+<tr class="separator:afaf04d83e2c97907a519100efe9c8d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1084b6c1e98accf323f9eecb228db8" id="r_afa1084b6c1e98accf323f9eecb228db8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#afa1084b6c1e98accf323f9eecb228db8">R1_RESPONSE_RECV</a>&#160;&#160;&#160;(0x80)</td></tr>
+<tr class="separator:afa1084b6c1e98accf323f9eecb228db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df2beac299559f822a1368fd054eb3a" id="r_a8df2beac299559f822a1368fd054eb3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a8df2beac299559f822a1368fd054eb3a">R1_RESPONSE_SIZE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a8df2beac299559f822a1368fd054eb3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of R1 response.  <br /></td></tr>
+<tr class="separator:a8df2beac299559f822a1368fd054eb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eab7dbe8cb3b6fdc405351d986f949a" id="r_a2eab7dbe8cb3b6fdc405351d986f949a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a2eab7dbe8cb3b6fdc405351d986f949a">R2_RESPONSE_SIZE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a2eab7dbe8cb3b6fdc405351d986f949a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of R2 response.  <br /></td></tr>
+<tr class="separator:a2eab7dbe8cb3b6fdc405351d986f949a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1831e95cd6df93336f7e69e26b53854" id="r_ad1831e95cd6df93336f7e69e26b53854"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ad1831e95cd6df93336f7e69e26b53854">R3_R7_RESPONSE_SIZE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:ad1831e95cd6df93336f7e69e26b53854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of R3/R7 response.  <br /></td></tr>
+<tr class="separator:ad1831e95cd6df93336f7e69e26b53854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190b6bcf9ab4d85b71e05bd20955758a" id="r_a190b6bcf9ab4d85b71e05bd20955758a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a190b6bcf9ab4d85b71e05bd20955758a">SD_CMD0_GO_IDLE_STATE_RETRIES</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a190b6bcf9ab4d85b71e05bd20955758a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20fb82b6101b8963d5821dee2c0670e5" id="r_a20fb82b6101b8963d5821dee2c0670e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a20fb82b6101b8963d5821dee2c0670e5">SD_COMMAND_RETRIES</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a20fb82b6101b8963d5821dee2c0670e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Times SPI cmd is retried when there is no response.  <br /></td></tr>
+<tr class="separator:a20fb82b6101b8963d5821dee2c0670e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717a8dd1956ddc8608e30d577a0efa77" id="r_a717a8dd1956ddc8608e30d577a0efa77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a717a8dd1956ddc8608e30d577a0efa77">SD_COMMAND_TIMEOUT</a>&#160;&#160;&#160;2000</td></tr>
+<tr class="memdesc:a717a8dd1956ddc8608e30d577a0efa77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout in ms for response.  <br /></td></tr>
+<tr class="separator:a717a8dd1956ddc8608e30d577a0efa77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af636c4183b20282ac7479aaeb79cddc1" id="r_af636c4183b20282ac7479aaeb79cddc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#af636c4183b20282ac7479aaeb79cddc1">SD_CRC_ENABLED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:af636c4183b20282ac7479aaeb79cddc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55f267370ae58a08644b2644722816c" id="r_af55f267370ae58a08644b2644722816c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#af55f267370ae58a08644b2644722816c">SDCARD_NONE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:af55f267370ae58a08644b2644722816c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the different SD/MMC card types <br  />
+  <br /></td></tr>
+<tr class="separator:af55f267370ae58a08644b2644722816c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6276492f1a2805155b6526657910ad38" id="r_a6276492f1a2805155b6526657910ad38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a6276492f1a2805155b6526657910ad38">SDCARD_V1</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a6276492f1a2805155b6526657910ad38"><td class="mdescLeft">&#160;</td><td class="mdescRight">v1.x Standard Capacity  <br /></td></tr>
+<tr class="separator:a6276492f1a2805155b6526657910ad38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686de2fe0fb2f5f286e5597f26f0a752" id="r_a686de2fe0fb2f5f286e5597f26f0a752"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a686de2fe0fb2f5f286e5597f26f0a752">SDCARD_V2</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a686de2fe0fb2f5f286e5597f26f0a752"><td class="mdescLeft">&#160;</td><td class="mdescRight">v2.x Standard capacity SD card  <br /></td></tr>
+<tr class="separator:a686de2fe0fb2f5f286e5597f26f0a752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ba30fbe60067cdbb56273508fa2418" id="r_a37ba30fbe60067cdbb56273508fa2418"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a37ba30fbe60067cdbb56273508fa2418">SDCARD_V2HC</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a37ba30fbe60067cdbb56273508fa2418"><td class="mdescLeft">&#160;</td><td class="mdescRight">v2.x High capacity SD card  <br /></td></tr>
+<tr class="separator:a37ba30fbe60067cdbb56273508fa2418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc071acf45c59c2a107bf01bdbd52b8a" id="r_acc071acf45c59c2a107bf01bdbd52b8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#acc071acf45c59c2a107bf01bdbd52b8a">SPI_CMD</a>(x)&#160;&#160;&#160;(0x40 | (x &amp; 0x3f))</td></tr>
+<tr class="separator:acc071acf45c59c2a107bf01bdbd52b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4c36356a3259c4686dd6e534f3c75c" id="r_adf4c36356a3259c4686dd6e534f3c75c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#adf4c36356a3259c4686dd6e534f3c75c">SPI_DATA_ACCEPTED</a>&#160;&#160;&#160;(0x05)</td></tr>
+<tr class="separator:adf4c36356a3259c4686dd6e534f3c75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab76bad7e8faa76f8bad16e8de90ed6" id="r_a0ab76bad7e8faa76f8bad16e8de90ed6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a0ab76bad7e8faa76f8bad16e8de90ed6">SPI_DATA_CRC_ERROR</a>&#160;&#160;&#160;(0x0B)</td></tr>
+<tr class="separator:a0ab76bad7e8faa76f8bad16e8de90ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75d865e276033635f3fecc5c62b727c" id="r_ac75d865e276033635f3fecc5c62b727c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ac75d865e276033635f3fecc5c62b727c">SPI_DATA_READ_ERROR_MASK</a>&#160;&#160;&#160;(0xF)</td></tr>
+<tr class="memdesc:ac75d865e276033635f3fecc5c62b727c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Error Token: 4 LSB bits.  <br /></td></tr>
+<tr class="separator:ac75d865e276033635f3fecc5c62b727c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e561b17b7546b82dd822376f661c917" id="r_a0e561b17b7546b82dd822376f661c917"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a0e561b17b7546b82dd822376f661c917">SPI_DATA_RESPONSE_MASK</a>&#160;&#160;&#160;(0x1F)</td></tr>
+<tr class="separator:a0e561b17b7546b82dd822376f661c917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0c4048b2873fc3aab508f2caeac46c" id="r_ade0c4048b2873fc3aab508f2caeac46c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ade0c4048b2873fc3aab508f2caeac46c">SPI_DATA_WRITE_ERROR</a>&#160;&#160;&#160;(0x0D)</td></tr>
+<tr class="separator:ade0c4048b2873fc3aab508f2caeac46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975383e5fd06d3994775d34a2a12e340" id="r_a975383e5fd06d3994775d34a2a12e340"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a975383e5fd06d3994775d34a2a12e340">SPI_READ_ERROR</a>&#160;&#160;&#160;(0x1 &lt;&lt; 0)</td></tr>
+<tr class="memdesc:a975383e5fd06d3994775d34a2a12e340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error.  <br /></td></tr>
+<tr class="separator:a975383e5fd06d3994775d34a2a12e340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6333d33ce78082f55551b1cbf0e783a" id="r_ad6333d33ce78082f55551b1cbf0e783a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ad6333d33ce78082f55551b1cbf0e783a">SPI_READ_ERROR_CC</a>&#160;&#160;&#160;(0x1 &lt;&lt; 1)</td></tr>
+<tr class="memdesc:ad6333d33ce78082f55551b1cbf0e783a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CC Error.  <br /></td></tr>
+<tr class="separator:ad6333d33ce78082f55551b1cbf0e783a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6def03ff2e8d35d7bf4fe37ba5894d48" id="r_a6def03ff2e8d35d7bf4fe37ba5894d48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a6def03ff2e8d35d7bf4fe37ba5894d48">SPI_READ_ERROR_ECC_C</a>&#160;&#160;&#160;(0x1 &lt;&lt; 2)</td></tr>
+<tr class="memdesc:a6def03ff2e8d35d7bf4fe37ba5894d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Card ECC failed.  <br /></td></tr>
+<tr class="separator:a6def03ff2e8d35d7bf4fe37ba5894d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2243216470168aba1fd33f3363fed215" id="r_a2243216470168aba1fd33f3363fed215"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a2243216470168aba1fd33f3363fed215">SPI_READ_ERROR_OFR</a>&#160;&#160;&#160;(0x1 &lt;&lt; 3)</td></tr>
+<tr class="memdesc:a2243216470168aba1fd33f3363fed215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out of Range.  <br /></td></tr>
+<tr class="separator:a2243216470168aba1fd33f3363fed215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa72ab93c9e5bdf1176098cb9c2c4a0" id="r_adaa72ab93c9e5bdf1176098cb9c2c4a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#adaa72ab93c9e5bdf1176098cb9c2c4a0">SPI_START_BLK_MUL_WRITE</a>&#160;&#160;&#160;(0xFC)</td></tr>
+<tr class="memdesc:adaa72ab93c9e5bdf1176098cb9c2c4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start Multi-block write.  <br /></td></tr>
+<tr class="separator:adaa72ab93c9e5bdf1176098cb9c2c4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16316bd35058685a310b2782003f6461" id="r_a16316bd35058685a310b2782003f6461"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a16316bd35058685a310b2782003f6461">SPI_START_BLOCK</a>&#160;&#160;&#160;    (0xFE)</td></tr>
+<tr class="memdesc:a16316bd35058685a310b2782003f6461"><td class="mdescLeft">&#160;</td><td class="mdescRight">For Single Block Read/Write and Multiple Block Read.  <br /></td></tr>
+<tr class="separator:a16316bd35058685a310b2782003f6461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16316bd35058685a310b2782003f6461" id="r_a16316bd35058685a310b2782003f6461"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a16316bd35058685a310b2782003f6461">SPI_START_BLOCK</a>&#160;&#160;&#160;    (0xFE)</td></tr>
+<tr class="memdesc:a16316bd35058685a310b2782003f6461"><td class="mdescLeft">&#160;</td><td class="mdescRight">For Single Block Read/Write and Multiple Block Read.  <br /></td></tr>
+<tr class="separator:a16316bd35058685a310b2782003f6461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd35214020ca96c70838c6e2d206cc6" id="r_a0dd35214020ca96c70838c6e2d206cc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a0dd35214020ca96c70838c6e2d206cc6">SPI_STOP_TRAN</a>&#160;&#160;&#160;(0xFD)</td></tr>
+<tr class="memdesc:a0dd35214020ca96c70838c6e2d206cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop Multi-block write.  <br /></td></tr>
+<tr class="separator:a0dd35214020ca96c70838c6e2d206cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfc2f26d93bbecd277684888cf8f605" id="r_abbfc2f26d93bbecd277684888cf8f605"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#abbfc2f26d93bbecd277684888cf8f605">SSEL_ACTIVE</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:abbfc2f26d93bbecd277684888cf8f605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fd7f598b690093c06a7b0bb8c251a9" id="r_a07fd7f598b690093c06a7b0bb8c251a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a07fd7f598b690093c06a7b0bb8c251a9">SSEL_INACTIVE</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a07fd7f598b690093c06a7b0bb8c251a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ee3cef7e2f801857f2203f549d2a8c" id="r_a36ee3cef7e2f801857f2203f549d2a8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a36ee3cef7e2f801857f2203f549d2a8c">TRACE_PRINTF</a>(fmt,  args...)</td></tr>
+<tr class="separator:a36ee3cef7e2f801857f2203f549d2a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0671b9916d25ea33c26476349dc7c09" id="r_ac0671b9916d25ea33c26476349dc7c09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ac0671b9916d25ea33c26476349dc7c09">TRACE_PRINTF2</a>(fmt,  args...)</td></tr>
+<tr class="separator:ac0671b9916d25ea33c26476349dc7c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad984c476a3303f23fec47dacb20ffb35" id="r_ad984c476a3303f23fec47dacb20ffb35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ad984c476a3303f23fec47dacb20ffb35">TRC_PR_ADD</a>(fmt,  args...)</td></tr>
+<tr class="separator:ad984c476a3303f23fec47dacb20ffb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:a80c0a719c204547187230e0f87570437" id="r_a80c0a719c204547187230e0f87570437"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437">cmdSupported</a> { <br />
+&#160;&#160;<a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a6b16dc9538b6f7288a025222e1cc8e6b">CMD_NOT_SUPPORTED</a> = -1
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437ac0d49d0be913ea0759b60172648bca63">CMD0_GO_IDLE_STATE</a> = 0
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a687d0215f942c29c67ed8e116ba65c42">CMD1_SEND_OP_COND</a> = 1
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a2a8ad2f917bc227d95d29a0f92b62340">CMD6_SWITCH_FUNC</a> = 6
+, <br />
+&#160;&#160;<a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a6b423cd241fe20485d3f14f0fb9926f4">CMD8_SEND_IF_COND</a> = 8
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437ac94c340b43f6e72a115bf05aee14a0c5">CMD9_SEND_CSD</a> = 9
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437ab0bed31cbc5377aeafbe82d456f105b4">CMD10_SEND_CID</a> = 10
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a50a1b06fbfbfac3e88777e375713194b">CMD12_STOP_TRANSMISSION</a> = 12
+, <br />
+&#160;&#160;<a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437ac57a11a2b3cd582a797f5b33ecdca429">CMD13_SEND_STATUS</a> = 13
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a69b3ca3db78b1f657a5958a36dab2d1e">CMD16_SET_BLOCKLEN</a> = 16
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437aa8ea642c880b96150fe8d7387b3c869f">CMD17_READ_SINGLE_BLOCK</a> = 17
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a0425449a99e80e959b0376b9facbf86c">CMD18_READ_MULTIPLE_BLOCK</a> = 18
+, <br />
+&#160;&#160;<a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437acaf0335a4dc52fec2cd69fa926c240d3">CMD24_WRITE_BLOCK</a> = 24
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437afaaf5657d5198f338bb555db8dbe0977">CMD25_WRITE_MULTIPLE_BLOCK</a> = 25
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437af8a2ea974333f1b8b282e5fe1a78d452">CMD27_PROGRAM_CSD</a> = 27
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a42493da8336966eedb155f9fd5078725">CMD32_ERASE_WR_BLK_START_ADDR</a> = 32
+, <br />
+&#160;&#160;<a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437aab58521e43613f07685f8c125e53cc38">CMD33_ERASE_WR_BLK_END_ADDR</a> = 33
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437aa179ed73c43cdbb988f56eeea98a0c64">CMD38_ERASE</a> = 38
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437afe267879cd620c14cf8909eef99fd1c0">CMD55_APP_CMD</a> = 55
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a60ed3ef8573485f4d9b7b18aace3967a">CMD56_GEN_CMD</a> = 56
+, <br />
+&#160;&#160;<a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437aab2940925eb3b338f558bdd9012d2c98">CMD58_READ_OCR</a> = 58
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a82dd3da0189cad047996069a968cb3b7">CMD59_CRC_ON_OFF</a> = 59
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437aa7ccea821c49cb23280b5954f0b6f718">ACMD6_SET_BUS_WIDTH</a> = 6
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437ad00bb3f3cccda27fc142424dcbfef81b">ACMD13_SD_STATUS</a> = 13
+, <br />
+&#160;&#160;<a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a33335afba15c34e82ff7d9bf267ad577">ACMD22_SEND_NUM_WR_BLOCKS</a> = 22
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a176498dc1b43efc905fc638ace570d5d">ACMD23_SET_WR_BLK_ERASE_COUNT</a> = 23
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437abd6a8e1e93a30cdb68240a81ac8925f4">ACMD41_SD_SEND_OP_COND</a> = 41
+, <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a025b3258a75b77a9f94815517674d989">ACMD42_SET_CLR_CARD_DETECT</a> = 42
+, <br />
+&#160;&#160;<a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437a0fbb6c92dd6da700caaa3829a43720a5">ACMD51_SEND_SCR</a> = 51
+<br />
+ }</td></tr>
+<tr class="separator:a80c0a719c204547187230e0f87570437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:abcf24836967ff030ca8851efb8f530c3" id="r_abcf24836967ff030ca8851efb8f530c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#abcf24836967ff030ca8851efb8f530c3">sd_card_detect</a> (<a class="el" href="structsd__card__t.html">sd_card_t</a> *pSD)</td></tr>
+<tr class="memdesc:abcf24836967ff030ca8851efb8f530c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of retries for sending CMDO.  <br /></td></tr>
+<tr class="separator:abcf24836967ff030ca8851efb8f530c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae085fc0dd36a43c4d7a97e2e597eddbb" id="r_ae085fc0dd36a43c4d7a97e2e597eddbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ae085fc0dd36a43c4d7a97e2e597eddbb">sd_init_driver</a> ()</td></tr>
+<tr class="separator:ae085fc0dd36a43c4d7a97e2e597eddbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1708c3351d6a432ce57d6f9dadebecf" id="r_ac1708c3351d6a432ce57d6f9dadebecf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#ac1708c3351d6a432ce57d6f9dadebecf">sd_read_blocks</a> (<a class="el" href="structsd__card__t.html">sd_card_t</a> *pSD, uint8_t *buffer, uint64_t ulSectorNumber, uint32_t ulSectorCount)</td></tr>
+<tr class="separator:ac1708c3351d6a432ce57d6f9dadebecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8a5845bdbfd2e4b01d3d68c2cf37a3" id="r_a4e8a5845bdbfd2e4b01d3d68c2cf37a3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#a4e8a5845bdbfd2e4b01d3d68c2cf37a3">sd_sectors</a> (<a class="el" href="structsd__card__t.html">sd_card_t</a> *pSD)</td></tr>
+<tr class="separator:a4e8a5845bdbfd2e4b01d3d68c2cf37a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3bd496e3dace178dfbcbf0882a55106" id="r_aa3bd496e3dace178dfbcbf0882a55106"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8c.html#aa3bd496e3dace178dfbcbf0882a55106">sd_write_blocks</a> (<a class="el" href="structsd__card__t.html">sd_card_t</a> *pSD, const uint8_t *buffer, uint64_t ulSectorNumber, uint32_t blockCnt)</td></tr>
+<tr class="separator:aa3bd496e3dace178dfbcbf0882a55106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ae29c04ecc4f5ee4f41694ac4d8a2fdd9" name="ae29c04ecc4f5ee4f41694ac4d8a2fdd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29c04ecc4f5ee4f41694ac4d8a2fdd9">&#9670;&#160;</a></span>BLOCK_SIZE_HC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLOCK_SIZE_HC&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block size supported for SD card is 512 bytes. </p>
+
+</div>
+</div>
+<a id="a2bcf7921ec4872d70667001a21fbe3b4" name="a2bcf7921ec4872d70667001a21fbe3b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bcf7921ec4872d70667001a21fbe3b4">&#9670;&#160;</a></span>CARD_UNKNOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CARD_UNKNOWN&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unknown or unsupported card. </p>
+
+</div>
+</div>
+<a id="ac77e3b44a84e04fd34a6084e23d7a67f" name="ac77e3b44a84e04fd34a6084e23d7a67f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77e3b44a84e04fd34a6084e23d7a67f">&#9670;&#160;</a></span>CMD8_PATTERN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD8_PATTERN&#160;&#160;&#160;(0xAA)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9242e2740476a5965ace0b1276c9a24d" name="a9242e2740476a5965ace0b1276c9a24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9242e2740476a5965ace0b1276c9a24d">&#9670;&#160;</a></span>OCR_3_3V</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OCR_3_3V&#160;&#160;&#160;(0x1 &lt;&lt; 20)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace5b9334abefe4920fb519a5957b5cc3" name="ace5b9334abefe4920fb519a5957b5cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5b9334abefe4920fb519a5957b5cc3">&#9670;&#160;</a></span>OCR_HCS_CCS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OCR_HCS_CCS&#160;&#160;&#160;(0x1 &lt;&lt; 30)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34b06744e5bb1b37b90d671dff109fd2" name="a34b06744e5bb1b37b90d671dff109fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b06744e5bb1b37b90d671dff109fd2">&#9670;&#160;</a></span>OCR_LOW_VOLTAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OCR_LOW_VOLTAGE&#160;&#160;&#160;(0x01 &lt;&lt; 24)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebdc7d8ca8e25ed8efc90bb88ef7ef5b" name="aebdc7d8ca8e25ed8efc90bb88ef7ef5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebdc7d8ca8e25ed8efc90bb88ef7ef5b">&#9670;&#160;</a></span>PACKET_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PACKET_SIZE&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SD Packet size CMD+ARG+CRC. </p>
+
+</div>
+</div>
+<a id="a84256fd9d0fbf84f1c8fabd17d3f7adc" name="a84256fd9d0fbf84f1c8fabd17d3f7adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84256fd9d0fbf84f1c8fabd17d3f7adc">&#9670;&#160;</a></span>R1_ADDRESS_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_ADDRESS_ERROR&#160;&#160;&#160;(1 &lt;&lt; 5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9f596336ebcb43f5c9e314ad697a8e8" name="ac9f596336ebcb43f5c9e314ad697a8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f596336ebcb43f5c9e314ad697a8e8">&#9670;&#160;</a></span>R1_COM_CRC_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_COM_CRC_ERROR&#160;&#160;&#160;(1 &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4598fdd1bd123e39ca45cdcd30f2a0bb" name="a4598fdd1bd123e39ca45cdcd30f2a0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4598fdd1bd123e39ca45cdcd30f2a0bb">&#9670;&#160;</a></span>R1_ERASE_RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_ERASE_RESET&#160;&#160;&#160;(1 &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a310cf4b26d5025bc4e0ac18b7dfd968a" name="a310cf4b26d5025bc4e0ac18b7dfd968a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310cf4b26d5025bc4e0ac18b7dfd968a">&#9670;&#160;</a></span>R1_ERASE_SEQUENCE_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_ERASE_SEQUENCE_ERROR&#160;&#160;&#160;(1 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7adb3673fe75b9397a1f241533e3f08a" name="a7adb3673fe75b9397a1f241533e3f08a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7adb3673fe75b9397a1f241533e3f08a">&#9670;&#160;</a></span>R1_IDLE_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_IDLE_STATE&#160;&#160;&#160;(1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a317730607b37d51a7a470e8f33fa0e4d" name="a317730607b37d51a7a470e8f33fa0e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a317730607b37d51a7a470e8f33fa0e4d">&#9670;&#160;</a></span>R1_ILLEGAL_COMMAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_ILLEGAL_COMMAND&#160;&#160;&#160;(1 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d214c6916e6ca7f6e0ef1f52255a9a4" name="a9d214c6916e6ca7f6e0ef1f52255a9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d214c6916e6ca7f6e0ef1f52255a9a4">&#9670;&#160;</a></span>R1_NO_RESPONSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_NO_RESPONSE&#160;&#160;&#160;(0xFF)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaf04d83e2c97907a519100efe9c8d7c" name="afaf04d83e2c97907a519100efe9c8d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaf04d83e2c97907a519100efe9c8d7c">&#9670;&#160;</a></span>R1_PARAMETER_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_PARAMETER_ERROR&#160;&#160;&#160;(1 &lt;&lt; 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa1084b6c1e98accf323f9eecb228db8" name="afa1084b6c1e98accf323f9eecb228db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1084b6c1e98accf323f9eecb228db8">&#9670;&#160;</a></span>R1_RESPONSE_RECV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_RESPONSE_RECV&#160;&#160;&#160;(0x80)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8df2beac299559f822a1368fd054eb3a" name="a8df2beac299559f822a1368fd054eb3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df2beac299559f822a1368fd054eb3a">&#9670;&#160;</a></span>R1_RESPONSE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1_RESPONSE_SIZE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of R1 response. </p>
+
+</div>
+</div>
+<a id="a2eab7dbe8cb3b6fdc405351d986f949a" name="a2eab7dbe8cb3b6fdc405351d986f949a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eab7dbe8cb3b6fdc405351d986f949a">&#9670;&#160;</a></span>R2_RESPONSE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R2_RESPONSE_SIZE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of R2 response. </p>
+
+</div>
+</div>
+<a id="ad1831e95cd6df93336f7e69e26b53854" name="ad1831e95cd6df93336f7e69e26b53854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1831e95cd6df93336f7e69e26b53854">&#9670;&#160;</a></span>R3_R7_RESPONSE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R3_R7_RESPONSE_SIZE&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of R3/R7 response. </p>
+
+</div>
+</div>
+<a id="a190b6bcf9ab4d85b71e05bd20955758a" name="a190b6bcf9ab4d85b71e05bd20955758a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190b6bcf9ab4d85b71e05bd20955758a">&#9670;&#160;</a></span>SD_CMD0_GO_IDLE_STATE_RETRIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_CMD0_GO_IDLE_STATE_RETRIES&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20fb82b6101b8963d5821dee2c0670e5" name="a20fb82b6101b8963d5821dee2c0670e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20fb82b6101b8963d5821dee2c0670e5">&#9670;&#160;</a></span>SD_COMMAND_RETRIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_COMMAND_RETRIES&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Times SPI cmd is retried when there is no response. </p>
+
+</div>
+</div>
+<a id="a717a8dd1956ddc8608e30d577a0efa77" name="a717a8dd1956ddc8608e30d577a0efa77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717a8dd1956ddc8608e30d577a0efa77">&#9670;&#160;</a></span>SD_COMMAND_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_COMMAND_TIMEOUT&#160;&#160;&#160;2000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timeout in ms for response. </p>
+
+</div>
+</div>
+<a id="af636c4183b20282ac7479aaeb79cddc1" name="af636c4183b20282ac7479aaeb79cddc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af636c4183b20282ac7479aaeb79cddc1">&#9670;&#160;</a></span>SD_CRC_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_CRC_ENABLED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af55f267370ae58a08644b2644722816c" name="af55f267370ae58a08644b2644722816c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af55f267370ae58a08644b2644722816c">&#9670;&#160;</a></span>SDCARD_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDCARD_NONE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the different SD/MMC card types <br  />
+ </p>
+<p>No card is present </p>
+
+</div>
+</div>
+<a id="a6276492f1a2805155b6526657910ad38" name="a6276492f1a2805155b6526657910ad38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6276492f1a2805155b6526657910ad38">&#9670;&#160;</a></span>SDCARD_V1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDCARD_V1&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>v1.x Standard Capacity </p>
+
+</div>
+</div>
+<a id="a686de2fe0fb2f5f286e5597f26f0a752" name="a686de2fe0fb2f5f286e5597f26f0a752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686de2fe0fb2f5f286e5597f26f0a752">&#9670;&#160;</a></span>SDCARD_V2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDCARD_V2&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>v2.x Standard capacity SD card </p>
+
+</div>
+</div>
+<a id="a37ba30fbe60067cdbb56273508fa2418" name="a37ba30fbe60067cdbb56273508fa2418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ba30fbe60067cdbb56273508fa2418">&#9670;&#160;</a></span>SDCARD_V2HC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDCARD_V2HC&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>v2.x High capacity SD card </p>
+
+</div>
+</div>
+<a id="acc071acf45c59c2a107bf01bdbd52b8a" name="acc071acf45c59c2a107bf01bdbd52b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc071acf45c59c2a107bf01bdbd52b8a">&#9670;&#160;</a></span>SPI_CMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_CMD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(0x40 | (x &amp; 0x3f))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf4c36356a3259c4686dd6e534f3c75c" name="adf4c36356a3259c4686dd6e534f3c75c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4c36356a3259c4686dd6e534f3c75c">&#9670;&#160;</a></span>SPI_DATA_ACCEPTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_DATA_ACCEPTED&#160;&#160;&#160;(0x05)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ab76bad7e8faa76f8bad16e8de90ed6" name="a0ab76bad7e8faa76f8bad16e8de90ed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab76bad7e8faa76f8bad16e8de90ed6">&#9670;&#160;</a></span>SPI_DATA_CRC_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_DATA_CRC_ERROR&#160;&#160;&#160;(0x0B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac75d865e276033635f3fecc5c62b727c" name="ac75d865e276033635f3fecc5c62b727c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75d865e276033635f3fecc5c62b727c">&#9670;&#160;</a></span>SPI_DATA_READ_ERROR_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_DATA_READ_ERROR_MASK&#160;&#160;&#160;(0xF)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data Error Token: 4 LSB bits. </p>
+
+</div>
+</div>
+<a id="a0e561b17b7546b82dd822376f661c917" name="a0e561b17b7546b82dd822376f661c917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e561b17b7546b82dd822376f661c917">&#9670;&#160;</a></span>SPI_DATA_RESPONSE_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_DATA_RESPONSE_MASK&#160;&#160;&#160;(0x1F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade0c4048b2873fc3aab508f2caeac46c" name="ade0c4048b2873fc3aab508f2caeac46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0c4048b2873fc3aab508f2caeac46c">&#9670;&#160;</a></span>SPI_DATA_WRITE_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_DATA_WRITE_ERROR&#160;&#160;&#160;(0x0D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a975383e5fd06d3994775d34a2a12e340" name="a975383e5fd06d3994775d34a2a12e340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a975383e5fd06d3994775d34a2a12e340">&#9670;&#160;</a></span>SPI_READ_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_READ_ERROR&#160;&#160;&#160;(0x1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Error. </p>
+
+</div>
+</div>
+<a id="ad6333d33ce78082f55551b1cbf0e783a" name="ad6333d33ce78082f55551b1cbf0e783a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6333d33ce78082f55551b1cbf0e783a">&#9670;&#160;</a></span>SPI_READ_ERROR_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_READ_ERROR_CC&#160;&#160;&#160;(0x1 &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CC Error. </p>
+
+</div>
+</div>
+<a id="a6def03ff2e8d35d7bf4fe37ba5894d48" name="a6def03ff2e8d35d7bf4fe37ba5894d48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6def03ff2e8d35d7bf4fe37ba5894d48">&#9670;&#160;</a></span>SPI_READ_ERROR_ECC_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_READ_ERROR_ECC_C&#160;&#160;&#160;(0x1 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Card ECC failed. </p>
+
+</div>
+</div>
+<a id="a2243216470168aba1fd33f3363fed215" name="a2243216470168aba1fd33f3363fed215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2243216470168aba1fd33f3363fed215">&#9670;&#160;</a></span>SPI_READ_ERROR_OFR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_READ_ERROR_OFR&#160;&#160;&#160;(0x1 &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Out of Range. </p>
+
+</div>
+</div>
+<a id="adaa72ab93c9e5bdf1176098cb9c2c4a0" name="adaa72ab93c9e5bdf1176098cb9c2c4a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa72ab93c9e5bdf1176098cb9c2c4a0">&#9670;&#160;</a></span>SPI_START_BLK_MUL_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_START_BLK_MUL_WRITE&#160;&#160;&#160;(0xFC)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start Multi-block write. </p>
+
+</div>
+</div>
+<a id="a16316bd35058685a310b2782003f6461" name="a16316bd35058685a310b2782003f6461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16316bd35058685a310b2782003f6461">&#9670;&#160;</a></span>SPI_START_BLOCK <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_START_BLOCK&#160;&#160;&#160;    (0xFE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For Single Block Read/Write and Multiple Block Read. </p>
+
+</div>
+</div>
+<a id="a16316bd35058685a310b2782003f6461" name="a16316bd35058685a310b2782003f6461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16316bd35058685a310b2782003f6461">&#9670;&#160;</a></span>SPI_START_BLOCK <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_START_BLOCK&#160;&#160;&#160;    (0xFE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For Single Block Read/Write and Multiple Block Read. </p>
+
+</div>
+</div>
+<a id="a0dd35214020ca96c70838c6e2d206cc6" name="a0dd35214020ca96c70838c6e2d206cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd35214020ca96c70838c6e2d206cc6">&#9670;&#160;</a></span>SPI_STOP_TRAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_STOP_TRAN&#160;&#160;&#160;(0xFD)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop Multi-block write. </p>
+
+</div>
+</div>
+<a id="abbfc2f26d93bbecd277684888cf8f605" name="abbfc2f26d93bbecd277684888cf8f605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbfc2f26d93bbecd277684888cf8f605">&#9670;&#160;</a></span>SSEL_ACTIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SSEL_ACTIVE&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07fd7f598b690093c06a7b0bb8c251a9" name="a07fd7f598b690093c06a7b0bb8c251a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07fd7f598b690093c06a7b0bb8c251a9">&#9670;&#160;</a></span>SSEL_INACTIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SSEL_INACTIVE&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36ee3cef7e2f801857f2203f549d2a8c" name="a36ee3cef7e2f801857f2203f549d2a8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ee3cef7e2f801857f2203f549d2a8c">&#9670;&#160;</a></span>TRACE_PRINTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRACE_PRINTF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">args...&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0671b9916d25ea33c26476349dc7c09" name="ac0671b9916d25ea33c26476349dc7c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0671b9916d25ea33c26476349dc7c09">&#9670;&#160;</a></span>TRACE_PRINTF2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRACE_PRINTF2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">args...&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad984c476a3303f23fec47dacb20ffb35" name="ad984c476a3303f23fec47dacb20ffb35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad984c476a3303f23fec47dacb20ffb35">&#9670;&#160;</a></span>TRC_PR_ADD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRC_PR_ADD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">args...&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos valores da enumeração</h2>
+<a id="a80c0a719c204547187230e0f87570437" name="a80c0a719c204547187230e0f87570437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c0a719c204547187230e0f87570437">&#9670;&#160;</a></span>cmdSupported</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="sd__card_8c.html#a80c0a719c204547187230e0f87570437">cmdSupported</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a6b16dc9538b6f7288a025222e1cc8e6b" name="a80c0a719c204547187230e0f87570437a6b16dc9538b6f7288a025222e1cc8e6b"></a>CMD_NOT_SUPPORTED&#160;</td><td class="fielddoc"><p>Command not supported error. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437ac0d49d0be913ea0759b60172648bca63" name="a80c0a719c204547187230e0f87570437ac0d49d0be913ea0759b60172648bca63"></a>CMD0_GO_IDLE_STATE&#160;</td><td class="fielddoc"><p>Resets the SD Memory Card. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a687d0215f942c29c67ed8e116ba65c42" name="a80c0a719c204547187230e0f87570437a687d0215f942c29c67ed8e116ba65c42"></a>CMD1_SEND_OP_COND&#160;</td><td class="fielddoc"><p>Sends host capacity support. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a2a8ad2f917bc227d95d29a0f92b62340" name="a80c0a719c204547187230e0f87570437a2a8ad2f917bc227d95d29a0f92b62340"></a>CMD6_SWITCH_FUNC&#160;</td><td class="fielddoc"><p>Check and Switches card function. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a6b423cd241fe20485d3f14f0fb9926f4" name="a80c0a719c204547187230e0f87570437a6b423cd241fe20485d3f14f0fb9926f4"></a>CMD8_SEND_IF_COND&#160;</td><td class="fielddoc"><p>Supply voltage info. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437ac94c340b43f6e72a115bf05aee14a0c5" name="a80c0a719c204547187230e0f87570437ac94c340b43f6e72a115bf05aee14a0c5"></a>CMD9_SEND_CSD&#160;</td><td class="fielddoc"><p>Provides Card Specific data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437ab0bed31cbc5377aeafbe82d456f105b4" name="a80c0a719c204547187230e0f87570437ab0bed31cbc5377aeafbe82d456f105b4"></a>CMD10_SEND_CID&#160;</td><td class="fielddoc"><p>Provides Card Identification. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a50a1b06fbfbfac3e88777e375713194b" name="a80c0a719c204547187230e0f87570437a50a1b06fbfbfac3e88777e375713194b"></a>CMD12_STOP_TRANSMISSION&#160;</td><td class="fielddoc"><p>Forces the card to stop transmission. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437ac57a11a2b3cd582a797f5b33ecdca429" name="a80c0a719c204547187230e0f87570437ac57a11a2b3cd582a797f5b33ecdca429"></a>CMD13_SEND_STATUS&#160;</td><td class="fielddoc"><p>Card responds with status. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a69b3ca3db78b1f657a5958a36dab2d1e" name="a80c0a719c204547187230e0f87570437a69b3ca3db78b1f657a5958a36dab2d1e"></a>CMD16_SET_BLOCKLEN&#160;</td><td class="fielddoc"><p>Length for SC card is set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437aa8ea642c880b96150fe8d7387b3c869f" name="a80c0a719c204547187230e0f87570437aa8ea642c880b96150fe8d7387b3c869f"></a>CMD17_READ_SINGLE_BLOCK&#160;</td><td class="fielddoc"><p>Read single block of data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a0425449a99e80e959b0376b9facbf86c" name="a80c0a719c204547187230e0f87570437a0425449a99e80e959b0376b9facbf86c"></a>CMD18_READ_MULTIPLE_BLOCK&#160;</td><td class="fielddoc"><p>Card transfers data blocks to host until interrupted by a STOP_TRANSMISSION command. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437acaf0335a4dc52fec2cd69fa926c240d3" name="a80c0a719c204547187230e0f87570437acaf0335a4dc52fec2cd69fa926c240d3"></a>CMD24_WRITE_BLOCK&#160;</td><td class="fielddoc"><p>Write single block of data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437afaaf5657d5198f338bb555db8dbe0977" name="a80c0a719c204547187230e0f87570437afaaf5657d5198f338bb555db8dbe0977"></a>CMD25_WRITE_MULTIPLE_BLOCK&#160;</td><td class="fielddoc"><p>Continuously writes blocks of data until 'Stop Tran' token is sent. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437af8a2ea974333f1b8b282e5fe1a78d452" name="a80c0a719c204547187230e0f87570437af8a2ea974333f1b8b282e5fe1a78d452"></a>CMD27_PROGRAM_CSD&#160;</td><td class="fielddoc"><p>Programming bits of CSD. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a42493da8336966eedb155f9fd5078725" name="a80c0a719c204547187230e0f87570437a42493da8336966eedb155f9fd5078725"></a>CMD32_ERASE_WR_BLK_START_ADDR&#160;</td><td class="fielddoc"><p>Sets the address of the first write block to be erased. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437aab58521e43613f07685f8c125e53cc38" name="a80c0a719c204547187230e0f87570437aab58521e43613f07685f8c125e53cc38"></a>CMD33_ERASE_WR_BLK_END_ADDR&#160;</td><td class="fielddoc"><p>Sets the address of the last write block of the continuous range to be erased. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437aa179ed73c43cdbb988f56eeea98a0c64" name="a80c0a719c204547187230e0f87570437aa179ed73c43cdbb988f56eeea98a0c64"></a>CMD38_ERASE&#160;</td><td class="fielddoc"><p>Erases all previously selected write blocks. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437afe267879cd620c14cf8909eef99fd1c0" name="a80c0a719c204547187230e0f87570437afe267879cd620c14cf8909eef99fd1c0"></a>CMD55_APP_CMD&#160;</td><td class="fielddoc"><p>Extend to Applications specific commands. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a60ed3ef8573485f4d9b7b18aace3967a" name="a80c0a719c204547187230e0f87570437a60ed3ef8573485f4d9b7b18aace3967a"></a>CMD56_GEN_CMD&#160;</td><td class="fielddoc"><p>General Purpose Command. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437aab2940925eb3b338f558bdd9012d2c98" name="a80c0a719c204547187230e0f87570437aab2940925eb3b338f558bdd9012d2c98"></a>CMD58_READ_OCR&#160;</td><td class="fielddoc"><p>Read OCR register of card. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a82dd3da0189cad047996069a968cb3b7" name="a80c0a719c204547187230e0f87570437a82dd3da0189cad047996069a968cb3b7"></a>CMD59_CRC_ON_OFF&#160;</td><td class="fielddoc"><p>Turns the CRC option on or off. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437aa7ccea821c49cb23280b5954f0b6f718" name="a80c0a719c204547187230e0f87570437aa7ccea821c49cb23280b5954f0b6f718"></a>ACMD6_SET_BUS_WIDTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437ad00bb3f3cccda27fc142424dcbfef81b" name="a80c0a719c204547187230e0f87570437ad00bb3f3cccda27fc142424dcbfef81b"></a>ACMD13_SD_STATUS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a33335afba15c34e82ff7d9bf267ad577" name="a80c0a719c204547187230e0f87570437a33335afba15c34e82ff7d9bf267ad577"></a>ACMD22_SEND_NUM_WR_BLOCKS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a176498dc1b43efc905fc638ace570d5d" name="a80c0a719c204547187230e0f87570437a176498dc1b43efc905fc638ace570d5d"></a>ACMD23_SET_WR_BLK_ERASE_COUNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437abd6a8e1e93a30cdb68240a81ac8925f4" name="a80c0a719c204547187230e0f87570437abd6a8e1e93a30cdb68240a81ac8925f4"></a>ACMD41_SD_SEND_OP_COND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a025b3258a75b77a9f94815517674d989" name="a80c0a719c204547187230e0f87570437a025b3258a75b77a9f94815517674d989"></a>ACMD42_SET_CLR_CARD_DETECT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80c0a719c204547187230e0f87570437a0fbb6c92dd6da700caaa3829a43720a5" name="a80c0a719c204547187230e0f87570437a0fbb6c92dd6da700caaa3829a43720a5"></a>ACMD51_SEND_SCR&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="abcf24836967ff030ca8851efb8f530c3" name="abcf24836967ff030ca8851efb8f530c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf24836967ff030ca8851efb8f530c3">&#9670;&#160;</a></span>sd_card_detect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sd_card_detect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsd__card__t.html">sd_card_t</a> *&#160;</td>
+          <td class="paramname"><em>pSD</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of retries for sending CMDO. </p>
+<ul>
+<li>Disk Status Bits (DSTATUS) *&zwj;/ </li>
+</ul>
+
+<p class="reference">Referências <a class="el" href="structsd__card__t.html#a3a8aee8215d34d3f268bd5beefb1b1b8">sd_card_t::card_detect_gpio</a>, <a class="el" href="structsd__card__t.html#a9bf5f673c9359c767fd9d4d30f7df5c8">sd_card_t::card_detected_true</a>, <a class="el" href="structsd__card__t.html#a6cd24b10da9dd19ba594b8e4c5866deb">sd_card_t::card_type</a>, <a class="el" href="structsd__card__t.html#ac3d5f1250a025eac8a9a798993619ec4">sd_card_t::m_Status</a>, <a class="el" href="sd__card_8c.html#af55f267370ae58a08644b2644722816c">SDCARD_NONE</a>, <a class="el" href="diskio_8h.html#aec625080763d6cf487e550a6c9a2dd19">STA_NODISK</a>, <a class="el" href="diskio_8h.html#abd6503c70d862b979a3f7080a59e9acd">STA_NOINIT</a>, <a class="el" href="sd__card_8c.html#a36ee3cef7e2f801857f2203f549d2a8c">TRACE_PRINTF</a> e <a class="el" href="structsd__card__t.html#a53d4cefd22f526ad731a25d5d572d841">sd_card_t::use_card_detect</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="glue_8c.html#a8348ac5ee6d709420c02e45c111f4793">disk_status()</a>.</p>
+
+</div>
+</div>
+<a id="ae085fc0dd36a43c4d7a97e2e597eddbb" name="ae085fc0dd36a43c4d7a97e2e597eddbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae085fc0dd36a43c4d7a97e2e597eddbb">&#9670;&#160;</a></span>sd_init_driver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sd_init_driver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structsd__card__t.html#a3a8aee8215d34d3f268bd5beefb1b1b8">sd_card_t::card_detect_gpio</a>, <a class="el" href="pico__sdk__stubs_8h.html#a0362a6575fd0eb8a4811e3f49edb0fce">gpio_init()</a>, <a class="el" href="pico__sdk__stubs_8h.html#ac85d485c2235db026a1b7e491454c369">gpio_pull_up()</a>, <a class="el" href="pico__sdk__stubs_8h.html#aa9323775e480e4765b320ebfd4949fd0">gpio_put()</a>, <a class="el" href="pico__sdk__stubs_8h.html#a12bbbbb167d28c82edf06a5a1f96caf3">gpio_set_dir()</a>, <a class="el" href="spi_8c.html#a5d5491a577d50076f8f59b5de058f3d4">my_spi_init()</a>, <a class="el" href="hw__config_8cpp.html#ae019a1533d42fd3972c3f1eea96d23d4">sd_get_by_num()</a>, <a class="el" href="hw__config_8cpp.html#a43d3ae8133310f23860b4f5b8cf4934e">sd_get_num()</a>, <a class="el" href="structsd__card__t.html#af904a2208dbaa36f6a152ba61bb9154b">sd_card_t::set_drive_strength</a>, <a class="el" href="hw__config_8cpp.html#abd394728156df3a9907a93f0071a65a5">spi_get_by_num()</a>, <a class="el" href="hw__config_8cpp.html#af99b33f0ee7afbc385479c45c892b8ff">spi_get_num()</a>, <a class="el" href="structsd__card__t.html#a256fddde294b4980a86971aee3b8716f">sd_card_t::ss_gpio</a>, <a class="el" href="structsd__card__t.html#a65675e6dd36a081d68939a683196ce1f">sd_card_t::ss_gpio_drive_strength</a> e <a class="el" href="structsd__card__t.html#a53d4cefd22f526ad731a25d5d572d841">sd_card_t::use_card_detect</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="glue_8c.html#a09cdaa6f36fa409bdf002727bff98eb1">disk_initialize()</a>.</p>
+
+</div>
+</div>
+<a id="ac1708c3351d6a432ce57d6f9dadebecf" name="ac1708c3351d6a432ce57d6f9dadebecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1708c3351d6a432ce57d6f9dadebecf">&#9670;&#160;</a></span>sd_read_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sd_read_blocks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsd__card__t.html">sd_card_t</a> *&#160;</td>
+          <td class="paramname"><em>pSD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>ulSectorNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>ulSectorCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="sd__card_8c.html#a36ee3cef7e2f801857f2203f549d2a8c">TRACE_PRINTF</a>.</p>
+
+</div>
+</div>
+<a id="a4e8a5845bdbfd2e4b01d3d68c2cf37a3" name="a4e8a5845bdbfd2e4b01d3d68c2cf37a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8a5845bdbfd2e4b01d3d68c2cf37a3">&#9670;&#160;</a></span>sd_sectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sd_sectors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsd__card__t.html">sd_card_t</a> *&#160;</td>
+          <td class="paramname"><em>pSD</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="glue_8c.html#ab00fa450a811dbdabe3c655c1a36fab4">disk_ioctl()</a>.</p>
+
+</div>
+</div>
+<a id="aa3bd496e3dace178dfbcbf0882a55106" name="aa3bd496e3dace178dfbcbf0882a55106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3bd496e3dace178dfbcbf0882a55106">&#9670;&#160;</a></span>sd_write_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sd_write_blocks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsd__card__t.html">sd_card_t</a> *&#160;</td>
+          <td class="paramname"><em>pSD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>ulSectorNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>blockCnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="sd__card_8c.html#a36ee3cef7e2f801857f2203f549d2a8c">TRACE_PRINTF</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_85c56e450b3cb35d7543b2255c71e545.html">no-OS-FatFS-SD-SPI-RPi-Pico</a></li><li class="navelem"><a class="el" href="dir_5873464ee8fc386f57d942004acd9926.html">FatFs_SPI</a></li><li class="navelem"><a class="el" href="dir_d750d1af6251a74e101418e916195423.html">sd_driver</a></li><li class="navelem"><a class="el" href="sd__card_8c.html">sd_card.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

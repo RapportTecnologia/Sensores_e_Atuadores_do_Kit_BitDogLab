@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sensores_e_Atuadores_do_Kit_BitDogLab: Código-Fonte de no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sensores_e_Atuadores_do_Kit_BitDogLab
+   </div>
+   <div id="projectbrief">Documentação consolidada dos módulos (RP2040/RP2350)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('spi_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">spi.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="spi_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* spi.h</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">Copyright 2021 Carl John Kugler III</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"></span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">Licensed under the Apache License, Version 2.0 (the License); you may not use</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">this file except in compliance with the License. You may obtain a copy of the</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">License at</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">   http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">Unless required by applicable law or agreed to in writing, software distributed</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">under the License is distributed on an AS IS BASIS, WITHOUT WARRANTIES OR</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">CONDITIONS OF ANY KIND, either express or implied. See the License for the</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">specific language governing permissions and limitations under the License.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Pico includes</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;hardware/dma.h&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="gpio_8h.html">hardware/gpio.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;hardware/irq.h&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;hardware/spi.h&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;pico/mutex.h&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;pico/sem.h&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;pico/types.h&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="spi_8h.html#a513ef9f75f043b0b226ab09b9099902a">   28</a></span><span class="preprocessor">#define SPI_FILL_CHAR (0xFF)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// &quot;Class&quot; representing SPIs</span></div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structspi__t.html">   31</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// SPI HW</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structspi__t.html#a706b66fb3cf07cf64a7694dda25604d3">   33</a></span>    spi_inst_t *<a class="code hl_variable" href="structspi__t.html#a706b66fb3cf07cf64a7694dda25604d3">hw_inst</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structspi__t.html#ad87018051aabcf83a0c1745fb30c2a8d">   34</a></span>    <a class="code hl_typedef" href="pico__sdk__stubs_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="structspi__t.html#ad87018051aabcf83a0c1745fb30c2a8d">miso_gpio</a>;  <span class="comment">// SPI MISO GPIO number (not pin number)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structspi__t.html#af1f501fdd84069ae58e5bdc0d84ee95a">   35</a></span>    <a class="code hl_typedef" href="pico__sdk__stubs_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="structspi__t.html#af1f501fdd84069ae58e5bdc0d84ee95a">mosi_gpio</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structspi__t.html#a9ed772ce1eb1e449050444e7fd3f342b">   36</a></span>    <a class="code hl_typedef" href="pico__sdk__stubs_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="structspi__t.html#a9ed772ce1eb1e449050444e7fd3f342b">sck_gpio</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structspi__t.html#ab80a42ed92e22140c9803e7f9aec405d">   37</a></span>    <a class="code hl_typedef" href="pico__sdk__stubs_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="structspi__t.html#ab80a42ed92e22140c9803e7f9aec405d">baud_rate</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structspi__t.html#af398b1a9f6a96f4f464250a2ac6f56e1">   38</a></span>    <a class="code hl_typedef" href="pico__sdk__stubs_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="structspi__t.html#af398b1a9f6a96f4f464250a2ac6f56e1">DMA_IRQ_num</a>; <span class="comment">// DMA_IRQ_0 or DMA_IRQ_1</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// Drive strength levels for GPIO outputs.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// enum gpio_drive_strength { GPIO_DRIVE_STRENGTH_2MA = 0, GPIO_DRIVE_STRENGTH_4MA = 1, GPIO_DRIVE_STRENGTH_8MA = 2,</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// GPIO_DRIVE_STRENGTH_12MA = 3 }</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structspi__t.html#a2558c648e4f592e73083d83bb4215557">   43</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structspi__t.html#a2558c648e4f592e73083d83bb4215557">set_drive_strength</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structspi__t.html#af532bb52421a87bf88acadafd8396c30">   44</a></span>    <span class="keyword">enum</span> gpio_drive_strength <a class="code hl_variable" href="structspi__t.html#af532bb52421a87bf88acadafd8396c30">mosi_gpio_drive_strength</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structspi__t.html#ac3e7e60c19a9ae4ae718bcdcb4730507">   45</a></span>    <span class="keyword">enum</span> gpio_drive_strength <a class="code hl_variable" href="structspi__t.html#ac3e7e60c19a9ae4ae718bcdcb4730507">sck_gpio_drive_strength</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// State variables:</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structspi__t.html#a30c7d7e8772227122f29ef3750f295ad">   48</a></span>    <a class="code hl_typedef" href="pico__sdk__stubs_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="structspi__t.html#a30c7d7e8772227122f29ef3750f295ad">tx_dma</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structspi__t.html#a0630401b1f04d95555f2f3cd3165fbcc">   49</a></span>    <a class="code hl_typedef" href="pico__sdk__stubs_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="structspi__t.html#a0630401b1f04d95555f2f3cd3165fbcc">rx_dma</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structspi__t.html#af6b566c79dbd54e66854afa7d8622083">   50</a></span>    dma_channel_config <a class="code hl_variable" href="structspi__t.html#af6b566c79dbd54e66854afa7d8622083">tx_dma_cfg</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structspi__t.html#adbaf1c3bcc6640a2005e1df56da09015">   51</a></span>    dma_channel_config <a class="code hl_variable" href="structspi__t.html#adbaf1c3bcc6640a2005e1df56da09015">rx_dma_cfg</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structspi__t.html#a9fa0d1ec637fd82e234298eff053c600">   52</a></span>    irq_handler_t <a class="code hl_variable" href="structspi__t.html#a9fa0d1ec637fd82e234298eff053c600">dma_isr</a>; <span class="comment">// Ignored: no longer used</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structspi__t.html#a40e80d13ee9b5be8c6fa835cd014a95b">   53</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structspi__t.html#a40e80d13ee9b5be8c6fa835cd014a95b">initialized</a>;  </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structspi__t.html#af06f6e4c133083f237ac3d3c9a50b28c">   54</a></span>    semaphore_t <a class="code hl_variable" href="structspi__t.html#af06f6e4c133083f237ac3d3c9a50b28c">sem</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structspi__t.html#aa91779952c7597acd79e4afaa7a03dec">   55</a></span>    mutex_t <a class="code hl_variable" href="structspi__t.html#aa91779952c7597acd79e4afaa7a03dec">mutex</a>;    </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} <a class="code hl_struct" href="structspi__t.html">spi_t</a>;</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">bool</span> __not_in_flash_func(<a class="code hl_function" href="spi_8h.html#a3d732ea66b86118e69f3da11df4afc8c">spi_transfer</a>)(<a class="code hl_struct" href="structspi__t.html">spi_t</a> *pSPI, <span class="keyword">const</span> uint8_t *tx, uint8_t *rx, <span class="keywordtype">size_t</span> length);  </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">void</span> <a class="code hl_function" href="spi_8h.html#a38a3dca16d4b1956ee5357083f6c86ab">spi_lock</a>(<a class="code hl_struct" href="structspi__t.html">spi_t</a> *pSPI);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> <a class="code hl_function" href="spi_8h.html#ae580db98d06191a341a1a7cde40edc7b">spi_unlock</a>(<a class="code hl_struct" href="structspi__t.html">spi_t</a> *pSPI);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">bool</span> <a class="code hl_function" href="spi_8h.html#ab26b0c4849d11c76f2500c5e508913d1">my_spi_init</a>(<a class="code hl_struct" href="structspi__t.html">spi_t</a> *pSPI);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">void</span> <a class="code hl_function" href="spi_8h.html#a6a85370f74b509bc21e79db1fdf3bff2">set_spi_dma_irq_channel</a>(<span class="keywordtype">bool</span> useChannel1, <span class="keywordtype">bool</span> shared);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">/* </span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">This uses the Pico LED to show SD card activity.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">You can use it to get a rough idea of utilization.</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">Warning: Pico W uses GPIO 25 for SPI communication to the CYW43439.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"></span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">You can enable this by putting something like</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">    add_compile_definitions(USE_LED=1)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">in CMakeLists.txt, for example.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#if !defined(NO_PICO_LED) &amp;&amp; defined(USE_LED) &amp;&amp; USE_LED &amp;&amp; defined(PICO_DEFAULT_LED_PIN)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#  define LED_INIT()                     \</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">    {                                    \</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">        gpio_init(PICO_DEFAULT_LED_PIN);              \</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">        gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT); \</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">    }</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#  define LED_ON() gpio_put(PICO_DEFAULT_LED_PIN, 1)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#  define LED_OFF() gpio_put(PICO_DEFAULT_LED_PIN, 0)</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="spi_8h.html#afc74da9605d4f56e0664f5f872018ac3">   90</a></span><span class="preprocessor">#  define LED_ON()</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="spi_8h.html#abbeb6a9eaae16d9de86df5a82bbf81b5">   91</a></span><span class="preprocessor">#  define LED_OFF()</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="spi_8h.html#aa6f4394b930aab732740df9488d06c91">   92</a></span><span class="preprocessor">#  define LED_INIT()</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">/* [] END OF FILE */</span></div>
+<div class="ttc" id="agpio_8h_html"><div class="ttname"><a href="gpio_8h.html">gpio.h</a></div></div>
+<div class="ttc" id="apico__sdk__stubs_8h_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="pico__sdk__stubs_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definição</b> pico_sdk_stubs.h:9</div></div>
+<div class="ttc" id="aspi_8h_html_a38a3dca16d4b1956ee5357083f6c86ab"><div class="ttname"><a href="spi_8h.html#a38a3dca16d4b1956ee5357083f6c86ab">spi_lock</a></div><div class="ttdeci">void spi_lock(spi_t *pSPI)</div><div class="ttdef"><b>Definição</b> spi.c:134</div></div>
+<div class="ttc" id="aspi_8h_html_a3d732ea66b86118e69f3da11df4afc8c"><div class="ttname"><a href="spi_8h.html#a3d732ea66b86118e69f3da11df4afc8c">spi_transfer</a></div><div class="ttdeci">bool __not_in_flash_func() spi_transfer(spi_t *pSPI, const uint8_t *tx, uint8_t *rx, size_t length)</div><div class="ttdef"><b>Definição</b> spi.c:62</div></div>
+<div class="ttc" id="aspi_8h_html_a6a85370f74b509bc21e79db1fdf3bff2"><div class="ttname"><a href="spi_8h.html#a6a85370f74b509bc21e79db1fdf3bff2">set_spi_dma_irq_channel</a></div><div class="ttdeci">void set_spi_dma_irq_channel(bool useChannel1, bool shared)</div><div class="ttdef"><b>Definição</b> spi.c:52</div></div>
+<div class="ttc" id="aspi_8h_html_ab26b0c4849d11c76f2500c5e508913d1"><div class="ttname"><a href="spi_8h.html#ab26b0c4849d11c76f2500c5e508913d1">my_spi_init</a></div><div class="ttdeci">bool my_spi_init(spi_t *pSPI)</div><div class="ttdef"><b>Definição</b> spi.c:143</div></div>
+<div class="ttc" id="aspi_8h_html_ae580db98d06191a341a1a7cde40edc7b"><div class="ttname"><a href="spi_8h.html#ae580db98d06191a341a1a7cde40edc7b">spi_unlock</a></div><div class="ttdeci">void spi_unlock(spi_t *pSPI)</div><div class="ttdef"><b>Definição</b> spi.c:138</div></div>
+<div class="ttc" id="astructspi__t_html"><div class="ttname"><a href="structspi__t.html">spi_t</a></div><div class="ttdef"><b>Definição</b> spi.h:31</div></div>
+<div class="ttc" id="astructspi__t_html_a0630401b1f04d95555f2f3cd3165fbcc"><div class="ttname"><a href="structspi__t.html#a0630401b1f04d95555f2f3cd3165fbcc">spi_t::rx_dma</a></div><div class="ttdeci">uint rx_dma</div><div class="ttdef"><b>Definição</b> spi.h:49</div></div>
+<div class="ttc" id="astructspi__t_html_a2558c648e4f592e73083d83bb4215557"><div class="ttname"><a href="structspi__t.html#a2558c648e4f592e73083d83bb4215557">spi_t::set_drive_strength</a></div><div class="ttdeci">bool set_drive_strength</div><div class="ttdef"><b>Definição</b> spi.h:43</div></div>
+<div class="ttc" id="astructspi__t_html_a30c7d7e8772227122f29ef3750f295ad"><div class="ttname"><a href="structspi__t.html#a30c7d7e8772227122f29ef3750f295ad">spi_t::tx_dma</a></div><div class="ttdeci">uint tx_dma</div><div class="ttdef"><b>Definição</b> spi.h:48</div></div>
+<div class="ttc" id="astructspi__t_html_a40e80d13ee9b5be8c6fa835cd014a95b"><div class="ttname"><a href="structspi__t.html#a40e80d13ee9b5be8c6fa835cd014a95b">spi_t::initialized</a></div><div class="ttdeci">bool initialized</div><div class="ttdef"><b>Definição</b> spi.h:53</div></div>
+<div class="ttc" id="astructspi__t_html_a706b66fb3cf07cf64a7694dda25604d3"><div class="ttname"><a href="structspi__t.html#a706b66fb3cf07cf64a7694dda25604d3">spi_t::hw_inst</a></div><div class="ttdeci">spi_inst_t * hw_inst</div><div class="ttdef"><b>Definição</b> spi.h:33</div></div>
+<div class="ttc" id="astructspi__t_html_a9ed772ce1eb1e449050444e7fd3f342b"><div class="ttname"><a href="structspi__t.html#a9ed772ce1eb1e449050444e7fd3f342b">spi_t::sck_gpio</a></div><div class="ttdeci">uint sck_gpio</div><div class="ttdef"><b>Definição</b> spi.h:36</div></div>
+<div class="ttc" id="astructspi__t_html_a9fa0d1ec637fd82e234298eff053c600"><div class="ttname"><a href="structspi__t.html#a9fa0d1ec637fd82e234298eff053c600">spi_t::dma_isr</a></div><div class="ttdeci">irq_handler_t dma_isr</div><div class="ttdef"><b>Definição</b> spi.h:52</div></div>
+<div class="ttc" id="astructspi__t_html_aa91779952c7597acd79e4afaa7a03dec"><div class="ttname"><a href="structspi__t.html#aa91779952c7597acd79e4afaa7a03dec">spi_t::mutex</a></div><div class="ttdeci">mutex_t mutex</div><div class="ttdef"><b>Definição</b> spi.h:55</div></div>
+<div class="ttc" id="astructspi__t_html_ab80a42ed92e22140c9803e7f9aec405d"><div class="ttname"><a href="structspi__t.html#ab80a42ed92e22140c9803e7f9aec405d">spi_t::baud_rate</a></div><div class="ttdeci">uint baud_rate</div><div class="ttdef"><b>Definição</b> spi.h:37</div></div>
+<div class="ttc" id="astructspi__t_html_ac3e7e60c19a9ae4ae718bcdcb4730507"><div class="ttname"><a href="structspi__t.html#ac3e7e60c19a9ae4ae718bcdcb4730507">spi_t::sck_gpio_drive_strength</a></div><div class="ttdeci">enum gpio_drive_strength sck_gpio_drive_strength</div><div class="ttdef"><b>Definição</b> spi.h:45</div></div>
+<div class="ttc" id="astructspi__t_html_ad87018051aabcf83a0c1745fb30c2a8d"><div class="ttname"><a href="structspi__t.html#ad87018051aabcf83a0c1745fb30c2a8d">spi_t::miso_gpio</a></div><div class="ttdeci">uint miso_gpio</div><div class="ttdef"><b>Definição</b> spi.h:34</div></div>
+<div class="ttc" id="astructspi__t_html_adbaf1c3bcc6640a2005e1df56da09015"><div class="ttname"><a href="structspi__t.html#adbaf1c3bcc6640a2005e1df56da09015">spi_t::rx_dma_cfg</a></div><div class="ttdeci">dma_channel_config rx_dma_cfg</div><div class="ttdef"><b>Definição</b> spi.h:51</div></div>
+<div class="ttc" id="astructspi__t_html_af06f6e4c133083f237ac3d3c9a50b28c"><div class="ttname"><a href="structspi__t.html#af06f6e4c133083f237ac3d3c9a50b28c">spi_t::sem</a></div><div class="ttdeci">semaphore_t sem</div><div class="ttdef"><b>Definição</b> spi.h:54</div></div>
+<div class="ttc" id="astructspi__t_html_af1f501fdd84069ae58e5bdc0d84ee95a"><div class="ttname"><a href="structspi__t.html#af1f501fdd84069ae58e5bdc0d84ee95a">spi_t::mosi_gpio</a></div><div class="ttdeci">uint mosi_gpio</div><div class="ttdef"><b>Definição</b> spi.h:35</div></div>
+<div class="ttc" id="astructspi__t_html_af398b1a9f6a96f4f464250a2ac6f56e1"><div class="ttname"><a href="structspi__t.html#af398b1a9f6a96f4f464250a2ac6f56e1">spi_t::DMA_IRQ_num</a></div><div class="ttdeci">uint DMA_IRQ_num</div><div class="ttdef"><b>Definição</b> spi.h:38</div></div>
+<div class="ttc" id="astructspi__t_html_af532bb52421a87bf88acadafd8396c30"><div class="ttname"><a href="structspi__t.html#af532bb52421a87bf88acadafd8396c30">spi_t::mosi_gpio_drive_strength</a></div><div class="ttdeci">enum gpio_drive_strength mosi_gpio_drive_strength</div><div class="ttdef"><b>Definição</b> spi.h:44</div></div>
+<div class="ttc" id="astructspi__t_html_af6b566c79dbd54e66854afa7d8622083"><div class="ttname"><a href="structspi__t.html#af6b566c79dbd54e66854afa7d8622083">spi_t::tx_dma_cfg</a></div><div class="ttdeci">dma_channel_config tx_dma_cfg</div><div class="ttdef"><b>Definição</b> spi.h:50</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_85c56e450b3cb35d7543b2255c71e545.html">no-OS-FatFS-SD-SPI-RPi-Pico</a></li><li class="navelem"><a class="el" href="dir_5873464ee8fc386f57d942004acd9926.html">FatFs_SPI</a></li><li class="navelem"><a class="el" href="dir_d750d1af6251a74e101418e916195423.html">sd_driver</a></li><li class="navelem"><a class="el" href="spi_8h.html">spi.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

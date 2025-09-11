@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['fractal_5factive_0',['fractal_active',['../HDMI-RP2040-RP2350_2main_8c.html#a77eba73da1515293a1ac9e02b5bc0997',1,'main.c']]]
+  ['end_5fcolumn_0',['end_column',['../structrender__area.html#a15aacf5439d3ba9a3831bcda7079bf31',1,'render_area']]],
+  ['end_5fpage_1',['end_page',['../structrender__area.html#a9e9850aa2ea329f1630da64e6f82513b',1,'render_area']]],
+  ['err_2',['err',['../structFIL.html#aea440945db26de9c4a88065c0c887fda',1,'FIL']]],
+  ['external_5fvcc_3',['external_vcc',['../structssd1306__t.html#a6a21df12c17f2611931c25121dae3df8',1,'ssd1306_t']]]
 ];

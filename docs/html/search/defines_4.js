@@ -1,5 +1,24 @@
 var searchData=
 [
-  ['debounce_5fms_0',['DEBOUNCE_MS',['../HDMI-RP2040-RP2350_2main_8c.html#add56dedbc09f82766e39588e01978e7d',1,'main.c']]],
-  ['decodevcselperiod_1',['decodeVcselPeriod',['../VL53L0X_8cpp.html#a7dcb8458d7b06d003fc1c4786c492efa',1,'VL53L0X.cpp']]]
+  ['dbg_5fprintf_0',['DBG_PRINTF',['../my__debug_8h.html#a710d4bb73d7e75352c45802bc60f95a6',1,'my_debug.h']]],
+  ['ddem_1',['DDEM',['../ff_8c.html#a0f2455f7318e6d56318c62f5e4048e1e',1,'ff.c']]],
+  ['debounce_5fms_2',['DEBOUNCE_MS',['../HDMI-RP2040-RP2350_2main_8c.html#add56dedbc09f82766e39588e01978e7d',1,'main.c']]],
+  ['decodevcselperiod_3',['decodeVcselPeriod',['../VL53L0X_8cpp.html#a7dcb8458d7b06d003fc1c4786c492efa',1,'VL53L0X.cpp']]],
+  ['def_5fnambuf_4',['DEF_NAMBUF',['../ff_8c.html#ad9aa172b1cf1d54aca234228a7ae8503',1,'ff.c']]],
+  ['dev_5fmmc_5',['DEV_MMC',['../diskio_8c.html#afb573038812261a67140d1c63f57dd3e',1,'diskio.c']]],
+  ['dev_5fram_6',['DEV_RAM',['../diskio_8c.html#a76fb0c5f09176e9b4a8d773e525fe628',1,'diskio.c']]],
+  ['dev_5fusb_7',['DEV_USB',['../diskio_8c.html#a2e6996059106c1996a24d883954c43cd',1,'diskio.c']]],
+  ['devicename_8',['DEVICENAME',['../data__log__demo_8c.html#abca33c097566d788d5163e433fc84150',1,'data_log_demo.c']]],
+  ['dir_5fattr_9',['DIR_Attr',['../ff_8c.html#ad3233e40118ed66095f3c9545b788f8a',1,'ff.c']]],
+  ['dir_5fcrttime_10',['DIR_CrtTime',['../ff_8c.html#a47fb1881ea71d860db9b8280564cb4d5',1,'ff.c']]],
+  ['dir_5fcrttime10_11',['DIR_CrtTime10',['../ff_8c.html#af8ddb351ddcaaac5d52923ad442fd8cb',1,'ff.c']]],
+  ['dir_5ffilesize_12',['DIR_FileSize',['../ff_8c.html#abfbfa613864a02a65f0bf70ead6672c7',1,'ff.c']]],
+  ['dir_5ffstclushi_13',['DIR_FstClusHI',['../ff_8c.html#a0bc29c3f09e1e9c40c414f7d50d7905c',1,'ff.c']]],
+  ['dir_5ffstcluslo_14',['DIR_FstClusLO',['../ff_8c.html#aebe0e913bff75a89d38dbcb04baf5dff',1,'ff.c']]],
+  ['dir_5flstaccdate_15',['DIR_LstAccDate',['../ff_8c.html#afa0625d73f4683df24345f51e7a43da3',1,'ff.c']]],
+  ['dir_5fmodtime_16',['DIR_ModTime',['../ff_8c.html#aa136ac8eaf0b3febba999e37b7d01803',1,'ff.c']]],
+  ['dir_5fname_17',['DIR_Name',['../ff_8c.html#afa89348e9fc2de82ae9e12c661366b0e',1,'ff.c']]],
+  ['dir_5fntres_18',['DIR_NTres',['../ff_8c.html#a87ee1f701c2ab941862e3ce00c1c1e9d',1,'ff.c']]],
+  ['dir_5fread_5ffile_19',['DIR_READ_FILE',['../ff_8c.html#a7dc00ac3fd99f0a14d6b7f3fc76b8778',1,'ff.c']]],
+  ['dir_5fread_5flabel_20',['DIR_READ_LABEL',['../ff_8c.html#afd5d25039aad72791c8fd0e911ba7e97',1,'ff.c']]]
 ];

@@ -1,4 +1,23 @@
 var searchData=
 [
-  ['y_0',['y',['../structMPU6050_1_1VECT__3D.html#a8346c61ce63b31fce6f1bd086ee09a71',1,'MPU6050::VECT_3D']]]
+  ['sck_5fgpio_0',['sck_gpio',['../structspi__t.html#a9ed772ce1eb1e449050444e7fd3f342b',1,'spi_t']]],
+  ['sck_5fgpio_5fdrive_5fstrength_1',['sck_gpio_drive_strength',['../structspi__t.html#ac3e7e60c19a9ae4ae718bcdcb4730507',1,'spi_t']]],
+  ['sclust_2',['sclust',['../structFFOBJID.html#ad990393e2ddf16f73671ded4b751becb',1,'FFOBJID']]],
+  ['sd_5ftest_5fcom_3',['sd_test_com',['../structsd__card__t.html#aecc6c091ba59cc744e08a1b0e477960b',1,'sd_card_t']]],
+  ['sect_4',['sect',['../structFIL.html#aa3f9f9ed9341b765862d073a95c86001',1,'FIL::sect'],['../structDIR.html#ae76119034beae8f34eb1536d0ef83a40',1,'DIR::sect']]],
+  ['sectors_5',['sectors',['../structsd__card__t.html#ab514d0e9124651973d64396f0770128d',1,'sd_card_t']]],
+  ['sem_6',['sem',['../structspi__t.html#af06f6e4c133083f237ac3d3c9a50b28c',1,'spi_t']]],
+  ['set_5fdrive_5fstrength_7',['set_drive_strength',['../structsd__card__t.html#af904a2208dbaa36f6a152ba61bb9154b',1,'sd_card_t::set_drive_strength'],['../structspi__t.html#a2558c648e4f592e73083d83bb4215557',1,'spi_t::set_drive_strength']]],
+  ['signature_8',['signature',['../structrtc__save.html#a4d7a1bdbb6d88d9b16703f1a7e68906d',1,'rtc_save']]],
+  ['size_9',['size',['../util_8h.html#adc8fb9d4a6a3af28c3b454a0a628ec1c',1,'util.h']]],
+  ['sm_5fhdmi_10',['sm_hdmi',['../HDMI-RP2040-RP2350_2main_8c.html#a238fb8d2aa269dab774e5a79c28f5912',1,'main.c']]],
+  ['sm_5fhdmi_5fclk_11',['sm_hdmi_clk',['../HDMI-RP2040-RP2350_2main_8c.html#ad4218354504cd21ec02a5bc0035d3310',1,'main.c']]],
+  ['smpte_5foverride_5factive_12',['smpte_override_active',['../HDMI-RP2040-RP2350_2main_8c.html#a560106bd88eab6a384b0b27693df751a',1,'main.c']]],
+  ['spi_13',['spi',['../structsd__card__t.html#ae1722578c627bdeb55cf5fcd5f7beb28',1,'sd_card_t']]],
+  ['ss_5fgpio_14',['ss_gpio',['../structsd__card__t.html#a256fddde294b4980a86971aee3b8716f',1,'sd_card_t']]],
+  ['ss_5fgpio_5fdrive_5fstrength_15',['ss_gpio_drive_strength',['../structsd__card__t.html#a65675e6dd36a081d68939a683196ce1f',1,'sd_card_t']]],
+  ['st_5fsize_16',['st_size',['../structFF__STAT.html#af89270501119cf55167bea55c06de805',1,'FF_STAT']]],
+  ['start_5fcolumn_17',['start_column',['../structrender__area.html#a1825c1469d817e0db2856cfe9a547472',1,'render_area']]],
+  ['start_5fpage_18',['start_page',['../structrender__area.html#accddc433e23d914a75d796f8552b6acc',1,'render_area']]],
+  ['stat_19',['stat',['../structFFOBJID.html#aa7bfa8dd8958d11df042a67e1da25f63',1,'FFOBJID']]]
 ];

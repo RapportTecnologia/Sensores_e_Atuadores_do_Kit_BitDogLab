@@ -1,4 +1,22 @@
 var searchData=
 [
-  ['current_5fpattern_0',['current_pattern',['../HDMI-RP2040-RP2350_2main_8c.html#ad7b1562214589580b6d5e29ccfbacf25',1,'main.c']]]
+  ['c_5fofs_0',['c_ofs',['../structFFOBJID.html#a564878e1c6951edfcd1a6ed29007eb36',1,'FFOBJID']]],
+  ['c_5fscl_1',['c_scl',['../structFFOBJID.html#a1ecaff32cf70a8f1d2c4b80964b283c8',1,'FFOBJID']]],
+  ['c_5fsize_2',['c_size',['../structFFOBJID.html#a989b81519645681bee531d56df5a9360',1,'FFOBJID']]],
+  ['card_5fdetect_5fgpio_3',['card_detect_gpio',['../structsd__card__t.html#a3a8aee8215d34d3f268bd5beefb1b1b8',1,'sd_card_t']]],
+  ['card_5fdetected_5ftrue_4',['card_detected_true',['../structsd__card__t.html#a9bf5f673c9359c767fd9d4d30f7df5c8',1,'sd_card_t']]],
+  ['card_5ftype_5',['card_type',['../structsd__card__t.html#a6cd24b10da9dd19ba594b8e4c5866deb',1,'sd_card_t']]],
+  ['cdc_5fofs_6',['cdc_ofs',['../structFATFS.html#a5c550420faccf751479362b169ceb4b6',1,'FATFS']]],
+  ['cdc_5fscl_7',['cdc_scl',['../structFATFS.html#a414276514ce740c8d9c918902b6a0209',1,'FATFS']]],
+  ['cdc_5fsize_8',['cdc_size',['../structFATFS.html#ac73223fa63b37375636ef8d5c2d079d1',1,'FATFS']]],
+  ['cdir_9',['cdir',['../structFATFS.html#a217d0ce0c8cec84aa7f0c142679412c6',1,'FATFS']]],
+  ['checksum_10',['checksum',['../structrtc__save.html#ae2c1111f913371cf8401ef6ac5245e16',1,'rtc_save::checksum'],['../util_8h.html#ac47c47e23cb9765cfa41fea8436039f6',1,'checksum:&#160;util.h']]],
+  ['cltbl_11',['cltbl',['../structFIL.html#a28a30613d48cefcf9efbd334cd861fc8',1,'FIL']]],
+  ['clu_12',['clu',['../structFILESEM.html#a02edc835188d6af7c1b1bc52486a5d78',1,'FILESEM']]],
+  ['clust_13',['clust',['../structFIL.html#aa41312aba551b9a6d1c9d3c8c7d2734b',1,'FIL::clust'],['../structDIR.html#acfbb8ba2d6e73b6f999ceffd1857c190',1,'DIR::clust']]],
+  ['command_14',['command',['../structcmd__def__t.html#a6ff32a0f85f92f61562ae913fb637c96',1,'cmd_def_t']]],
+  ['csize_15',['csize',['../structFATFS.html#ad7fa7a509f8d097a9ab182d6c47be568',1,'FATFS']]],
+  ['ct_16',['ct',['../structputbuff.html#ad126da4c7fb6d576b73c85f61d9cf84b',1,'putbuff']]],
+  ['ctr_17',['ctr',['../structFILESEM.html#ab77051bea6f08f4ce8db1771c961459f',1,'FILESEM']]],
+  ['current_5fpattern_18',['current_pattern',['../HDMI-RP2040-RP2350_2main_8c.html#ad7b1562214589580b6d5e29ccfbacf25',1,'main.c']]]
 ];

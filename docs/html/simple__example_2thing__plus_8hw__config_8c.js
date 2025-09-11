@@ -1,0 +1,8 @@
+var simple__example_2thing__plus_8hw__config_8c =
+[
+    [ "sd_get_by_num", "simple__example_2thing__plus_8hw__config_8c.html#ae019a1533d42fd3972c3f1eea96d23d4", null ],
+    [ "sd_get_num", "simple__example_2thing__plus_8hw__config_8c.html#a43d3ae8133310f23860b4f5b8cf4934e", null ],
+    [ "spi_dma_isr", "simple__example_2thing__plus_8hw__config_8c.html#a1579aa73010e757d400b4da3e3de93b1", null ],
+    [ "spi_get_by_num", "simple__example_2thing__plus_8hw__config_8c.html#abd394728156df3a9907a93f0071a65a5", null ],
+    [ "spi_get_num", "simple__example_2thing__plus_8hw__config_8c.html#af99b33f0ee7afbc385479c45c892b8ff", null ]
+];

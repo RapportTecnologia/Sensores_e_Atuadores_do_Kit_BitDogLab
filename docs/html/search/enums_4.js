@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vcselperiodtype_0',['vcselPeriodType',['../classVL53L0X.html#a536b605b1242dd5355f49273450f8c83',1,'VL53L0X']]]
+  ['oled_5ftext_5falignment_5ft_0',['oled_text_alignment_t',['../oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6',1,'oled.h']]]
 ];

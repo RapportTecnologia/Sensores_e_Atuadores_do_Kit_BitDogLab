@@ -1,15 +1,10 @@
 var searchData=
 [
-  ['read_0',['read',['../classI2C.html#aedd4e31a079208c4bea41b13fc91c4f8',1,'I2C']]],
-  ['readlux_1',['readLux',['../classBH1750.html#a677cbedb85b07884695ef23d0ffd03dc',1,'BH1750']]],
-  ['readmulti_2',['readMulti',['../classVL53L0X.html#a9decb4846fd2cc6d9c15b29ff2edc275',1,'VL53L0X']]],
-  ['readrangecontinuousmillimeters_3',['readRangeContinuousMillimeters',['../classVL53L0X.html#adc60c0fb1b9aa8b5642513f37cefa3e9',1,'VL53L0X']]],
-  ['readrangesinglemillimeters_4',['readRangeSingleMillimeters',['../classVL53L0X.html#ab4a4ab20cde669bee54a7e6efcc93cc1',1,'VL53L0X']]],
-  ['readreg_5',['readReg',['../classVL53L0X.html#a44cad5c80035df82bdc1c28894ac714e',1,'VL53L0X']]],
-  ['readreg16bit_6',['readReg16Bit',['../classVL53L0X.html#afa23131ef0c5edc982a3d9ab843fefc8',1,'VL53L0X']]],
-  ['readreg32bit_7',['readReg32Bit',['../classVL53L0X.html#a8e6edc19a09bff41ac070d22204ce5db',1,'VL53L0X']]],
-  ['render_5fon_5fdisplay_8',['render_on_display',['../ssd1306_8h.html#acc5a43ec9a35c7841e9f90761b9d7f7e',1,'render_on_display(uint8_t *ssd, struct render_area *area):&#160;ssd1306_i2c.c'],['../ssd1306__i2c_8c.html#acc5a43ec9a35c7841e9f90761b9d7f7e',1,'render_on_display(uint8_t *ssd, struct render_area *area):&#160;ssd1306_i2c.c']]],
-  ['requestfrom_9',['requestFrom',['../classI2C.html#a8d4502390cca9c562c77992a2702e7b5',1,'I2C']]],
-  ['reset_10',['reset',['../classMPU6050.html#a641d1bd51cf77c6053120a348a5bf9e7',1,'MPU6050']]],
-  ['reset_5fmock_5fi2c_11',['reset_mock_i2c',['../pico__sdk__stubs_8h.html#ad4eb026a5fa0fa8e82633e34cc4f6194',1,'reset_mock_i2c():&#160;pico_sdk_mocks.cpp'],['../pico__sdk__mocks_8cpp.html#ad4eb026a5fa0fa8e82633e34cc4f6194',1,'reset_mock_i2c():&#160;pico_sdk_mocks.cpp']]]
+  ['i2c_0',['I2C',['../classI2C.html#ad7e43c8c3c42893ec2bfa82b6a025e41',1,'I2C']]],
+  ['i2c_5fdeinit_1',['i2c_deinit',['../pico__sdk__stubs_8h.html#a2e2ac8f345157b0095fc463ac3e584ba',1,'i2c_deinit(i2c_inst_t *i2c):&#160;pico_sdk_mocks.cpp'],['../pico__sdk__mocks_8cpp.html#a2e2ac8f345157b0095fc463ac3e584ba',1,'i2c_deinit(i2c_inst_t *i2c):&#160;pico_sdk_mocks.cpp']]],
+  ['i2c_5finit_2',['i2c_init',['../pico__sdk__stubs_8h.html#a80a0c402347bc0b48b5e130ec032091c',1,'i2c_init(i2c_inst_t *i2c, uint baudrate):&#160;pico_sdk_mocks.cpp'],['../pico__sdk__mocks_8cpp.html#a80a0c402347bc0b48b5e130ec032091c',1,'i2c_init(i2c_inst_t *i2c, uint baudrate):&#160;pico_sdk_mocks.cpp']]],
+  ['i2c_5fread_5fblocking_3',['i2c_read_blocking',['../pico__sdk__stubs_8h.html#aba4ea440285edec58eba507308c568c6',1,'i2c_read_blocking(i2c_inst_t *i2c, uint8_t addr, uint8_t *dst, size_t len, bool nostop):&#160;pico_sdk_mocks.cpp'],['../pico__sdk__mocks_8cpp.html#aba4ea440285edec58eba507308c568c6',1,'i2c_read_blocking(i2c_inst_t *i2c, uint8_t addr, uint8_t *dst, size_t len, bool nostop):&#160;pico_sdk_mocks.cpp']]],
+  ['i2c_5fset_5fbaudrate_4',['i2c_set_baudrate',['../pico__sdk__stubs_8h.html#a615525cad9398b3ec37e8208523c73b4',1,'i2c_set_baudrate(i2c_inst_t *i2c, uint baudrate):&#160;pico_sdk_mocks.cpp'],['../pico__sdk__mocks_8cpp.html#a615525cad9398b3ec37e8208523c73b4',1,'i2c_set_baudrate(i2c_inst_t *i2c, uint baudrate):&#160;pico_sdk_mocks.cpp']]],
+  ['i2c_5fwrite_5fblocking_5',['i2c_write_blocking',['../pico__sdk__stubs_8h.html#a5149e9af84926fa19db6677691ab2900',1,'i2c_write_blocking(i2c_inst_t *i2c, uint8_t addr, const uint8_t *src, size_t len, bool nostop):&#160;pico_sdk_mocks.cpp'],['../pico__sdk__mocks_8cpp.html#a5149e9af84926fa19db6677691ab2900',1,'i2c_write_blocking(i2c_inst_t *i2c, uint8_t addr, const uint8_t *src, size_t len, bool nostop):&#160;pico_sdk_mocks.cpp']]],
+  ['init_6',['init',['../classVL53L0X.html#a2bd7f966631ee954fd1c4119f901b240',1,'VL53L0X']]]
 ];

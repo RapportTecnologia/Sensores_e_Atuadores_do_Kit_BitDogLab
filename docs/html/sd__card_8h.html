@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sensores_e_Atuadores_do_Kit_BitDogLab: Referência ao ficheiro no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sensores_e_Atuadores_do_Kit_BitDogLab
+   </div>
+   <div id="projectbrief">Documentação consolidada dos módulos (RP2040/RP2350)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('sd__card_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estruturas de Dados</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro sd_card.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>SD Card abstraction and configuration for RP2040 SPI driver.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="gpio_8h_source.html">hardware/gpio.h</a>&quot;</code><br />
+<code>#include &quot;pico/mutex.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="ff_8h_source.html">ff.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="spi_8h_source.html">spi.h</a>&quot;</code><br />
+</div>
+<p><a href="sd__card_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estruturas de Dados</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsd__card__t.html">sd_card_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Class" representing SD Cards on an SPI bus.  <a href="structsd__card__t.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a07208e021a15e0c2b5425e3355c7c2a9" id="r_a07208e021a15e0c2b5425e3355c7c2a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a07208e021a15e0c2b5425e3355c7c2a9">SD_BLOCK_DEVICE_ERROR_CRC</a>&#160;&#160;&#160;-5009</td></tr>
+<tr class="memdesc:a07208e021a15e0c2b5425e3355c7c2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC error.  <br /></td></tr>
+<tr class="separator:a07208e021a15e0c2b5425e3355c7c2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a546df19eddae71eb0ccf0e62913143" id="r_a6a546df19eddae71eb0ccf0e62913143"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a6a546df19eddae71eb0ccf0e62913143">SD_BLOCK_DEVICE_ERROR_ERASE</a>&#160;&#160;&#160;-5010</td></tr>
+<tr class="memdesc:a6a546df19eddae71eb0ccf0e62913143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase error: reset/sequence.  <br /></td></tr>
+<tr class="separator:a6a546df19eddae71eb0ccf0e62913143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa7734f02804b218f71f2a988111b15" id="r_aafa7734f02804b218f71f2a988111b15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#aafa7734f02804b218f71f2a988111b15">SD_BLOCK_DEVICE_ERROR_NO_DEVICE</a>&#160;&#160;&#160;-5005</td></tr>
+<tr class="memdesc:aafa7734f02804b218f71f2a988111b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">device is missing or not connected  <br /></td></tr>
+<tr class="separator:aafa7734f02804b218f71f2a988111b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e13316f0b76a30fd38db3f0d84e58d0" id="r_a6e13316f0b76a30fd38db3f0d84e58d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a6e13316f0b76a30fd38db3f0d84e58d0">SD_BLOCK_DEVICE_ERROR_NO_INIT</a>&#160;&#160;&#160;-5004</td></tr>
+<tr class="memdesc:a6e13316f0b76a30fd38db3f0d84e58d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">uninitialized  <br /></td></tr>
+<tr class="separator:a6e13316f0b76a30fd38db3f0d84e58d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fdf7470707e7b523c36bac1f15d98a" id="r_a42fdf7470707e7b523c36bac1f15d98a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a42fdf7470707e7b523c36bac1f15d98a">SD_BLOCK_DEVICE_ERROR_NO_RESPONSE</a>&#160;&#160;&#160;-5008</td></tr>
+<tr class="memdesc:a42fdf7470707e7b523c36bac1f15d98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">No response from device.  <br /></td></tr>
+<tr class="separator:a42fdf7470707e7b523c36bac1f15d98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbef0ea1f0ae971ac7af6b4ad5df275" id="r_a7fbef0ea1f0ae971ac7af6b4ad5df275"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a7fbef0ea1f0ae971ac7af6b4ad5df275">SD_BLOCK_DEVICE_ERROR_NONE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a7fbef0ea1f0ae971ac7af6b4ad5df275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7204a59a7a908a0b8559c4868129f4c4" id="r_a7204a59a7a908a0b8559c4868129f4c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a7204a59a7a908a0b8559c4868129f4c4">SD_BLOCK_DEVICE_ERROR_PARAMETER</a>&#160;&#160;&#160;-5003</td></tr>
+<tr class="memdesc:a7204a59a7a908a0b8559c4868129f4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">invalid parameter  <br /></td></tr>
+<tr class="separator:a7204a59a7a908a0b8559c4868129f4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcac3a18f2010c23804be1dddf7f5ba2" id="r_adcac3a18f2010c23804be1dddf7f5ba2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#adcac3a18f2010c23804be1dddf7f5ba2">SD_BLOCK_DEVICE_ERROR_UNSUPPORTED</a>&#160;&#160;&#160;-5002</td></tr>
+<tr class="memdesc:adcac3a18f2010c23804be1dddf7f5ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsupported operation  <br /></td></tr>
+<tr class="separator:adcac3a18f2010c23804be1dddf7f5ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc41dc1dffb1f500b7a3f87e3de10f5c" id="r_afc41dc1dffb1f500b7a3f87e3de10f5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#afc41dc1dffb1f500b7a3f87e3de10f5c">SD_BLOCK_DEVICE_ERROR_UNUSABLE</a>&#160;&#160;&#160;-5007</td></tr>
+<tr class="memdesc:afc41dc1dffb1f500b7a3f87e3de10f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">unusable card  <br /></td></tr>
+<tr class="separator:afc41dc1dffb1f500b7a3f87e3de10f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6379b6ca92270ced3e83ca3c1f5dc524" id="r_a6379b6ca92270ced3e83ca3c1f5dc524"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a6379b6ca92270ced3e83ca3c1f5dc524">SD_BLOCK_DEVICE_ERROR_WOULD_BLOCK</a>&#160;&#160;&#160;-5001</td></tr>
+<tr class="memdesc:a6379b6ca92270ced3e83ca3c1f5dc524"><td class="mdescLeft">&#160;</td><td class="mdescRight">operation would block  <br /></td></tr>
+<tr class="separator:a6379b6ca92270ced3e83ca3c1f5dc524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d74153e7cf51464b90cbc47cbc83b2e" id="r_a0d74153e7cf51464b90cbc47cbc83b2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a0d74153e7cf51464b90cbc47cbc83b2e">SD_BLOCK_DEVICE_ERROR_WRITE</a>&#160;&#160;&#160;-5011</td></tr>
+<tr class="memdesc:a0d74153e7cf51464b90cbc47cbc83b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI Write error: !SPI_DATA_ACCEPTED.  <br /></td></tr>
+<tr class="separator:a0d74153e7cf51464b90cbc47cbc83b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba3557e527c48137703786c54cf271f" id="r_a2ba3557e527c48137703786c54cf271f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a2ba3557e527c48137703786c54cf271f">SD_BLOCK_DEVICE_ERROR_WRITE_PROTECTED</a>&#160;&#160;&#160;-5006</td></tr>
+<tr class="memdesc:a2ba3557e527c48137703786c54cf271f"><td class="mdescLeft">&#160;</td><td class="mdescRight">write protected  <br /></td></tr>
+<tr class="separator:a2ba3557e527c48137703786c54cf271f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:af4be786afa22ce94dfa2f9685dff3ffe" id="r_af4be786afa22ce94dfa2f9685dff3ffe"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structsd__card__t.html">sd_card_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#af4be786afa22ce94dfa2f9685dff3ffe">sd_card_t</a></td></tr>
+<tr class="separator:af4be786afa22ce94dfa2f9685dff3ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:abcf24836967ff030ca8851efb8f530c3" id="r_abcf24836967ff030ca8851efb8f530c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#abcf24836967ff030ca8851efb8f530c3">sd_card_detect</a> (<a class="el" href="structsd__card__t.html">sd_card_t</a> *pSD)</td></tr>
+<tr class="memdesc:abcf24836967ff030ca8851efb8f530c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of retries for sending CMDO.  <br /></td></tr>
+<tr class="separator:abcf24836967ff030ca8851efb8f530c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae085fc0dd36a43c4d7a97e2e597eddbb" id="r_ae085fc0dd36a43c4d7a97e2e597eddbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#ae085fc0dd36a43c4d7a97e2e597eddbb">sd_init_driver</a> ()</td></tr>
+<tr class="separator:ae085fc0dd36a43c4d7a97e2e597eddbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8a5845bdbfd2e4b01d3d68c2cf37a3" id="r_a4e8a5845bdbfd2e4b01d3d68c2cf37a3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sd__card_8h.html#a4e8a5845bdbfd2e4b01d3d68c2cf37a3">sd_sectors</a> (<a class="el" href="structsd__card__t.html">sd_card_t</a> *pSD)</td></tr>
+<tr class="separator:a4e8a5845bdbfd2e4b01d3d68c2cf37a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>SD Card abstraction and configuration for RP2040 SPI driver. </p>
+<p>Provides the <code><a class="el" href="structsd__card__t.html" title="&quot;Class&quot; representing SD Cards on an SPI bus.">sd_card_t</a></code> structure that describes one SD card socket and aggregates runtime state and driver callbacks. The design supports:</p><ul>
+<li>Multiple SD cards per SPI controller</li>
+<li>Optional Card Detect GPIO</li>
+<li>Mounting state and associated FatFs volume (<code><a class="el" href="structFATFS.html">FATFS</a></code>)</li>
+</ul>
+<p>Typical flow:</p><ol type="1">
+<li>Define one or more <code><a class="el" href="structspi__t.html">spi_t</a></code> instances (see <code><a class="el" href="spi_8h.html">sd_driver/spi.h</a></code>).</li>
+<li>Define one or more <code><a class="el" href="structsd__card__t.html" title="&quot;Class&quot; representing SD Cards on an SPI bus.">sd_card_t</a></code> instances referencing the desired <code><a class="el" href="structspi__t.html">spi_t</a></code>.</li>
+<li>Call helper functions (provided by the application) to register these instances and then mount the volumes using FatFs (<code>f_mount</code>).</li>
+</ol>
+<p>The function pointers in <code><a class="el" href="structsd__card__t.html" title="&quot;Class&quot; representing SD Cards on an SPI bus.">sd_card_t</a></code> are implemented by the SPI SD driver and bound during initialization.</p>
+<p>Copyright 2021 Carl John Kugler III - Apache-2.0 License. </p>
+</div><h2 class="groupheader">Documentação das macros</h2>
+<a id="a07208e021a15e0c2b5425e3355c7c2a9" name="a07208e021a15e0c2b5425e3355c7c2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07208e021a15e0c2b5425e3355c7c2a9">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_CRC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_CRC&#160;&#160;&#160;-5009</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CRC error. </p>
+
+</div>
+</div>
+<a id="a6a546df19eddae71eb0ccf0e62913143" name="a6a546df19eddae71eb0ccf0e62913143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a546df19eddae71eb0ccf0e62913143">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_ERASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_ERASE&#160;&#160;&#160;-5010</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Erase error: reset/sequence. </p>
+
+</div>
+</div>
+<a id="aafa7734f02804b218f71f2a988111b15" name="aafa7734f02804b218f71f2a988111b15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa7734f02804b218f71f2a988111b15">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_NO_DEVICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_NO_DEVICE&#160;&#160;&#160;-5005</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>device is missing or not connected </p>
+
+</div>
+</div>
+<a id="a6e13316f0b76a30fd38db3f0d84e58d0" name="a6e13316f0b76a30fd38db3f0d84e58d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e13316f0b76a30fd38db3f0d84e58d0">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_NO_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_NO_INIT&#160;&#160;&#160;-5004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>uninitialized </p>
+
+</div>
+</div>
+<a id="a42fdf7470707e7b523c36bac1f15d98a" name="a42fdf7470707e7b523c36bac1f15d98a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42fdf7470707e7b523c36bac1f15d98a">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_NO_RESPONSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_NO_RESPONSE&#160;&#160;&#160;-5008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>No response from device. </p>
+
+</div>
+</div>
+<a id="a7fbef0ea1f0ae971ac7af6b4ad5df275" name="a7fbef0ea1f0ae971ac7af6b4ad5df275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbef0ea1f0ae971ac7af6b4ad5df275">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_NONE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7204a59a7a908a0b8559c4868129f4c4" name="a7204a59a7a908a0b8559c4868129f4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7204a59a7a908a0b8559c4868129f4c4">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_PARAMETER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_PARAMETER&#160;&#160;&#160;-5003</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>invalid parameter </p>
+
+</div>
+</div>
+<a id="adcac3a18f2010c23804be1dddf7f5ba2" name="adcac3a18f2010c23804be1dddf7f5ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcac3a18f2010c23804be1dddf7f5ba2">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_UNSUPPORTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_UNSUPPORTED&#160;&#160;&#160;-5002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unsupported operation </p>
+
+</div>
+</div>
+<a id="afc41dc1dffb1f500b7a3f87e3de10f5c" name="afc41dc1dffb1f500b7a3f87e3de10f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc41dc1dffb1f500b7a3f87e3de10f5c">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_UNUSABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_UNUSABLE&#160;&#160;&#160;-5007</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unusable card </p>
+
+</div>
+</div>
+<a id="a6379b6ca92270ced3e83ca3c1f5dc524" name="a6379b6ca92270ced3e83ca3c1f5dc524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6379b6ca92270ced3e83ca3c1f5dc524">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_WOULD_BLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_WOULD_BLOCK&#160;&#160;&#160;-5001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>operation would block </p>
+
+</div>
+</div>
+<a id="a0d74153e7cf51464b90cbc47cbc83b2e" name="a0d74153e7cf51464b90cbc47cbc83b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d74153e7cf51464b90cbc47cbc83b2e">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_WRITE&#160;&#160;&#160;-5011</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SPI Write error: !SPI_DATA_ACCEPTED. </p>
+
+</div>
+</div>
+<a id="a2ba3557e527c48137703786c54cf271f" name="a2ba3557e527c48137703786c54cf271f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba3557e527c48137703786c54cf271f">&#9670;&#160;</a></span>SD_BLOCK_DEVICE_ERROR_WRITE_PROTECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SD_BLOCK_DEVICE_ERROR_WRITE_PROTECTED&#160;&#160;&#160;-5006</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write protected </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="af4be786afa22ce94dfa2f9685dff3ffe" name="af4be786afa22ce94dfa2f9685dff3ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4be786afa22ce94dfa2f9685dff3ffe">&#9670;&#160;</a></span>sd_card_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structsd__card__t.html">sd_card_t</a> <a class="el" href="structsd__card__t.html">sd_card_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="abcf24836967ff030ca8851efb8f530c3" name="abcf24836967ff030ca8851efb8f530c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf24836967ff030ca8851efb8f530c3">&#9670;&#160;</a></span>sd_card_detect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sd_card_detect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsd__card__t.html">sd_card_t</a> *&#160;</td>
+          <td class="paramname"><em>pSD</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of retries for sending CMDO. </p>
+<ul>
+<li>Disk Status Bits (DSTATUS) *&zwj;/ </li>
+</ul>
+
+<p class="reference">Referências <a class="el" href="structsd__card__t.html#a3a8aee8215d34d3f268bd5beefb1b1b8">sd_card_t::card_detect_gpio</a>, <a class="el" href="structsd__card__t.html#a9bf5f673c9359c767fd9d4d30f7df5c8">sd_card_t::card_detected_true</a>, <a class="el" href="structsd__card__t.html#a6cd24b10da9dd19ba594b8e4c5866deb">sd_card_t::card_type</a>, <a class="el" href="structsd__card__t.html#ac3d5f1250a025eac8a9a798993619ec4">sd_card_t::m_Status</a>, <a class="el" href="sd__card_8c.html#af55f267370ae58a08644b2644722816c">SDCARD_NONE</a>, <a class="el" href="diskio_8h.html#aec625080763d6cf487e550a6c9a2dd19">STA_NODISK</a>, <a class="el" href="diskio_8h.html#abd6503c70d862b979a3f7080a59e9acd">STA_NOINIT</a>, <a class="el" href="sd__card_8c.html#a36ee3cef7e2f801857f2203f549d2a8c">TRACE_PRINTF</a> e <a class="el" href="structsd__card__t.html#a53d4cefd22f526ad731a25d5d572d841">sd_card_t::use_card_detect</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="glue_8c.html#a8348ac5ee6d709420c02e45c111f4793">disk_status()</a>.</p>
+
+</div>
+</div>
+<a id="ae085fc0dd36a43c4d7a97e2e597eddbb" name="ae085fc0dd36a43c4d7a97e2e597eddbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae085fc0dd36a43c4d7a97e2e597eddbb">&#9670;&#160;</a></span>sd_init_driver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sd_init_driver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structsd__card__t.html#a3a8aee8215d34d3f268bd5beefb1b1b8">sd_card_t::card_detect_gpio</a>, <a class="el" href="pico__sdk__stubs_8h.html#a0362a6575fd0eb8a4811e3f49edb0fce">gpio_init()</a>, <a class="el" href="pico__sdk__stubs_8h.html#ac85d485c2235db026a1b7e491454c369">gpio_pull_up()</a>, <a class="el" href="pico__sdk__stubs_8h.html#aa9323775e480e4765b320ebfd4949fd0">gpio_put()</a>, <a class="el" href="pico__sdk__stubs_8h.html#a12bbbbb167d28c82edf06a5a1f96caf3">gpio_set_dir()</a>, <a class="el" href="spi_8c.html#a5d5491a577d50076f8f59b5de058f3d4">my_spi_init()</a>, <a class="el" href="hw__config_8cpp.html#ae019a1533d42fd3972c3f1eea96d23d4">sd_get_by_num()</a>, <a class="el" href="hw__config_8cpp.html#a43d3ae8133310f23860b4f5b8cf4934e">sd_get_num()</a>, <a class="el" href="structsd__card__t.html#af904a2208dbaa36f6a152ba61bb9154b">sd_card_t::set_drive_strength</a>, <a class="el" href="hw__config_8cpp.html#abd394728156df3a9907a93f0071a65a5">spi_get_by_num()</a>, <a class="el" href="hw__config_8cpp.html#af99b33f0ee7afbc385479c45c892b8ff">spi_get_num()</a>, <a class="el" href="structsd__card__t.html#a256fddde294b4980a86971aee3b8716f">sd_card_t::ss_gpio</a>, <a class="el" href="structsd__card__t.html#a65675e6dd36a081d68939a683196ce1f">sd_card_t::ss_gpio_drive_strength</a> e <a class="el" href="structsd__card__t.html#a53d4cefd22f526ad731a25d5d572d841">sd_card_t::use_card_detect</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="glue_8c.html#a09cdaa6f36fa409bdf002727bff98eb1">disk_initialize()</a>.</p>
+
+</div>
+</div>
+<a id="a4e8a5845bdbfd2e4b01d3d68c2cf37a3" name="a4e8a5845bdbfd2e4b01d3d68c2cf37a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8a5845bdbfd2e4b01d3d68c2cf37a3">&#9670;&#160;</a></span>sd_sectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sd_sectors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsd__card__t.html">sd_card_t</a> *&#160;</td>
+          <td class="paramname"><em>pSD</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="glue_8c.html#ab00fa450a811dbdabe3c655c1a36fab4">disk_ioctl()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_85c56e450b3cb35d7543b2255c71e545.html">no-OS-FatFS-SD-SPI-RPi-Pico</a></li><li class="navelem"><a class="el" href="dir_5873464ee8fc386f57d942004acd9926.html">FatFs_SPI</a></li><li class="navelem"><a class="el" href="dir_d750d1af6251a74e101418e916195423.html">sd_driver</a></li><li class="navelem"><a class="el" href="sd__card_8h.html">sd_card.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['i2c_5fdefault_0',['i2c_default',['../pico__sdk__stubs_8h.html#a9f2660265bb7f68a0813f59928c545f4',1,'pico_sdk_stubs.h']]],
-  ['i2c_5fid_1',['I2C_ID',['../MPU6050-RP2040-RP2350_2main_8cpp.html#ae9f2fc3817b4830b2ac6f35e21532d76',1,'main.cpp']]],
-  ['i2c_5fport_2',['I2C_PORT',['../BH1750-RP2040-RP3050_2main_8cpp.html#ad9ecf80e1eac083d16ec47f9d3aeb39f',1,'main.cpp']]],
-  ['i2c_5fscl_3',['I2C_SCL',['../oled_8h.html#a212ca328a6409c98f8c3dfbbe1ba561d',1,'oled.h']]],
-  ['i2c_5fscl_5fpin_4',['i2c_scl_pin',['../MPU6050-RP2040-RP2350_2main_8cpp.html#a0e4e08bab2fb484136d18b067bef372c',1,'I2C_SCL_PIN:&#160;main.cpp'],['../VL53L0X-RP2040-RP2350_2main_8cpp.html#a0e4e08bab2fb484136d18b067bef372c',1,'I2C_SCL_PIN:&#160;main.cpp']]],
-  ['i2c_5fsda_5',['I2C_SDA',['../oled_8h.html#a18aefd12ad84d4c33dc97923cb821e47',1,'oled.h']]],
-  ['i2c_5fsda_5fpin_6',['i2c_sda_pin',['../MPU6050-RP2040-RP2350_2main_8cpp.html#a2cade698267beb86ccaa38c14d35ab0f',1,'I2C_SDA_PIN:&#160;main.cpp'],['../VL53L0X-RP2040-RP2350_2main_8cpp.html#a2cade698267beb86ccaa38c14d35ab0f',1,'I2C_SDA_PIN:&#160;main.cpp']]]
+  ['hdmi_5fclk_0',['HDMI_CLK',['../HDMI-RP2040-RP2350_2main_8c.html#a3c687621ecc22f38bfc62fe61dca8db0',1,'main.c']]],
+  ['hdmi_5fd0_1',['HDMI_D0',['../HDMI-RP2040-RP2350_2main_8c.html#a388a690a4ff20df39515e52b722d41ab',1,'main.c']]],
+  ['hdmi_5fd1_2',['HDMI_D1',['../HDMI-RP2040-RP2350_2main_8c.html#aa8a65579c1e5b5cd36d2d2afe7c4013e',1,'main.c']]],
+  ['hdmi_5fd2_3',['HDMI_D2',['../HDMI-RP2040-RP2350_2main_8c.html#aa5773ff9ed441411a4c30ba979324303',1,'main.c']]],
+  ['hdmi_5fheight_4',['HDMI_HEIGHT',['../HDMI-RP2040-RP2350_2main_8c.html#a526bcdfa2a50a805a614cd2a4c0f0b11',1,'main.c']]],
+  ['hdmi_5fwidth_5',['HDMI_WIDTH',['../HDMI-RP2040-RP2350_2main_8c.html#a0f0f43392736433e4e23b789123ef224',1,'main.c']]]
 ];
