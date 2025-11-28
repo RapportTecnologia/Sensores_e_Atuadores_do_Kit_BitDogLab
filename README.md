@@ -1,5 +1,14 @@
 # Sensores e Atuadores do KIT
 
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=ArvoreDosSaberes.Sensores_e_Atuadores_do_KIT)
+[![Build](https://img.shields.io/github/actions/workflow/status/ArvoreDosSaberes/Sensores_e_Atuadores_do_KIT/ci.yml?branch=main)](https://github.com/ArvoreDosSaberes/Sensores_e_Atuadores_do_KIT/actions)
+[![Issues](https://img.shields.io/github/issues/ArvoreDosSaberes/Sensores_e_Atuadores_do_KIT)](https://github.com/ArvoreDosSaberes/Sensores_e_Atuadores_do_KIT/issues)
+[![Stars](https://img.shields.io/github/stars/ArvoreDosSaberes/Sensores_e_Atuadores_do_KIT)](https://github.com/ArvoreDosSaberes/Sensores_e_Atuadores_do_KIT/stargazers)
+[![Forks](https://img.shields.io/github/forks/ArvoreDosSaberes/Sensores_e_Atuadores_do_KIT)](https://github.com/ArvoreDosSaberes/Sensores_e_Atuadores_do_KIT/network/members)
+[![Language](https://img.shields.io/badge/Language-C%2FC%2B%2B-brightgreen.svg)]()
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+
 Repositório raiz (monorepo) para projetos do KIT BitDogLab/EmbarcaTech, organizado com submódulos Git.
 
 ## Estrutura
