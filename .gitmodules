@@ -25,3 +25,6 @@
 [submodule "no-OS-FatFS-SD-SPI-RPi-Pico"]
 	path = no-OS-FatFS-SD-SPI-RPi-Pico
 	url = https://github.com/RapportTecnologia/no-OS-FatFS-SD-SPI-RPi-Pico.git
+[submodule "BitDogLab_Matriz_de_LED-WS2818b"]
+	path = BitDogLab_Matriz_de_LED-WS2818b
+	url = git@github.com:ArvoreDosSaberes/BitDogLab_Matriz_de_LED-WS2818b.git
